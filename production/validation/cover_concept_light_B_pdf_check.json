@@ -1,0 +1,101 @@
+{
+ "file": "cover/ZTFC_cover_CONCEPT_light_B_not_for_print.pdf",
+ "pages": 1,
+ "fonts": {
+  "SXBTPW+Manrope-Ultra-Bold": {
+   "type": "Type0",
+   "embedded": true,
+   "ext": "ttf"
+  },
+  "ZMQUBA+Inter-Semi-Bold": {
+   "type": "Type0",
+   "embedded": true,
+   "ext": "otf"
+  },
+  "LNXIQZ+Inter": {
+   "type": "Type0",
+   "embedded": true,
+   "ext": "otf"
+  },
+  "DEVBAD+Inter-Medium": {
+   "type": "Type0",
+   "embedded": true,
+   "ext": "otf"
+  },
+  "QUWLDS+Inter-Bold": {
+   "type": "Type0",
+   "embedded": true,
+   "ext": "otf"
+  },
+  "IJXZHT+Inter-Ultra-Bold": {
+   "type": "Type0",
+   "embedded": true,
+   "ext": "otf"
+  },
+  "YXXRGO+Manrope-Bold": {
+   "type": "Type0",
+   "embedded": true,
+   "ext": "ttf"
+  }
+ },
+ "image_colourspaces": [],
+ "checks": [
+  {
+   "check": "page count",
+   "status": "PASS",
+   "detail": "1 pages"
+  },
+  {
+   "check": "trim size 289 × 232 mm on every page",
+   "status": "PASS",
+   "detail": "all pages exact"
+  },
+  {
+   "check": "all fonts embedded",
+   "status": "PASS",
+   "detail": "7 fonts, all embedded"
+  },
+  {
+   "check": "no Type3 fonts",
+   "status": "PASS",
+   "detail": "none"
+  },
+  {
+   "check": "no dotted-circle / replacement glyphs (broken shaping)",
+   "status": "PASS",
+   "detail": "none"
+  },
+  {
+   "check": "Devanagari orthography (no doubled marks)",
+   "status": "PASS",
+   "detail": "clean"
+  },
+  {
+   "check": "link annotations (informational)",
+   "status": "PASS",
+   "detail": "0 found"
+  },
+  {
+   "check": "raster images ≥ 300 ppi effective",
+   "status": "PASS",
+   "detail": "all images ≥ 300 ppi"
+  },
+  {
+   "check": "no accidental blank pages",
+   "status": "PASS",
+   "detail": "none"
+  }
+ ],
+ "page_detail": [
+  {
+   "page": 1,
+   "label": "",
+   "size_mm": [
+    289.0,
+    232.0
+   ],
+   "images": 0
+  }
+ ],
+ "status": "PASS"
+}

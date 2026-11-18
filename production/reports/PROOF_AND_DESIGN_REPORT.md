@@ -9,7 +9,8 @@
 | `previews/proof/ZTFC_interior_proof_5pp_print.pdf` | **5-page paperback interior proof** (135 × 210 mm, B&W, K-only text) |
 | `previews/proof/proof_print_p-1…5.png` | 200 dpi previews of each proof page |
 | `previews/proof/ZTFC_interior_proof_5pp_digital.pdf` + `proof_digital_p-*.png` | Same pages in the digital-edition palette (for comparison only) |
-| `cover/ZTFC_cover_CONCEPT_not_for_print.pdf`, `previews/cover_concept-1.png` | **Preliminary cover concept**: back, spine and front, labelled as a concept |
+| `cover/ZTFC_cover_CONCEPT_not_for_print.pdf`, `previews/cover_concept-1.png` | First (dark) cover concept: **superseded**, kept for reference |
+| `cover/ZTFC_cover_CONCEPT_light_{A,B}_not_for_print.pdf`, `previews/cover/` | **Revised LIGHT cover concepts A and B** (see `reports/COVER_CONCEPTS_LIGHT.md`) |
 | `validation/proof_print_pdf_check.json` | Font, trim, glyph, link and image verification |
 
 ### The five proof pages (all actual manuscript content, all actual author assets)
@@ -97,6 +98,6 @@ Provisional spine ≈ pages ÷ 2 × paper caliper: at 70 gsm natural (~0.09–0.
 | D6 | 10 rewritten Hinglish passages flagged `author_review: true` in `source/print_edits.yaml` | Read and approve or reword |
 | D7 | For print, convert the black signature PNG from RGB(17,17,17) to a greyscale+alpha file with identical strokes, so it prints as pure K | Approve (pure prepress conversion; the supplied file stays unchanged) |
 | D8 | About the Author placed at the **end** of the book (after Glossary) | Approve, or move to front matter |
-| D9 | Cover concept direction (navy, ivory, violet; typographic; stepped "first client" path motif) | Approve, or send revisions |
+| D9 | Cover: the dark concept was not approved; choose light concept **A (Editorial Ripple)** or **B (Thirty-Day Dial)** | See `reports/COVER_CONCEPTS_LIGHT.md` |
 | D10 | Copyright line stays "© 2026 DEADCODE LABS"; author credited on cover, title page and About page | Confirm |
-| D11 | Back-cover copy (in the concept) | Approve or edit; it only states verified features |
+| D11 | Back-cover copy (in concepts A/B): "Written in Hinglish", statistics as specified | Approve or edit; it only states verified features |

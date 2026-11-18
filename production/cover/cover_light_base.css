@@ -1,0 +1,44 @@
+/* ZERO TO FIRST CLIENT — shared base for the LIGHT cover concepts (A and B).
+   Concept only: screen RGB for review. The final wrap is built in CMYK to the
+   printer's template once the page count and paper caliper are known.
+   Layout: [3 bleed][back 135][spine S][front 135][3 bleed] × [3 + 210 + 3] mm + 16 mm review slug. */
+@font-face { font-family: Inter; font-weight: 400; src: url(../design-system/fonts/Inter-Regular.otf); }
+@font-face { font-family: Inter; font-weight: 400; font-style: italic; src: url(../design-system/fonts/Inter-Italic.otf); }
+@font-face { font-family: Inter; font-weight: 500; src: url(../design-system/fonts/Inter-Medium.otf); }
+@font-face { font-family: Inter; font-weight: 600; src: url(../design-system/fonts/Inter-SemiBold.otf); }
+@font-face { font-family: Inter; font-weight: 700; src: url(../design-system/fonts/Inter-Bold.otf); }
+@font-face { font-family: Manrope; font-weight: 500; src: url(../design-system/fonts/manrope-latin-500-normal.woff2); }
+@font-face { font-family: Manrope; font-weight: 600; src: url(../design-system/fonts/manrope-latin-600-normal.woff2); }
+@font-face { font-family: Manrope; font-weight: 700; src: url(../design-system/fonts/manrope-latin-700-normal.woff2); }
+@font-face { font-family: Manrope; font-weight: 800; src: url(../design-system/fonts/manrope-latin-800-normal.woff2); }
+
+:root {
+  --ivory: #F7F4EE;        /* warm ivory ground */
+  --ivory-deep: #EFEAE0;   /* quiet tonal panel */
+  --navy: #14213D;         /* deep navy type */
+  --navy-2: #3A4560;       /* secondary text */
+  --navy-3: #6B7389;       /* captions, labels */
+  --hair: #C9C3B6;         /* hairlines on ivory */
+  --violet: #6D28D9;       /* restrained electric violet accent */
+  --S: 13mm;               /* PROVISIONAL spine width (not final) */
+}
+@page { size: calc(276mm + var(--S)) 232mm; margin: 0; }
+html, body { margin: 0; font-family: Inter, sans-serif; color: var(--navy); }
+.wrap { position: relative; width: calc(276mm + var(--S)); height: 216mm; background: var(--ivory); overflow: hidden; }
+.panel { position: absolute; top: 3mm; height: 210mm; }
+.back  { left: 3mm; width: 135mm; }
+.spine { left: 138mm; width: var(--S); }
+.front { left: calc(138mm + var(--S)); width: 135mm; }
+.abs { position: absolute; margin: 0; }
+
+/* barcode placeholder (no ISBN allocated) */
+.barcode { position: absolute; width: 38mm; height: 23mm; background: #fff; border: 0.4pt solid var(--hair);
+  box-sizing: border-box; padding-top: 7.2mm; text-align: center; font: 600 5.4pt/7.2pt Inter; color: var(--navy-3); letter-spacing: 0.04em; }
+
+/* review guides (concept only, never printed) */
+.trim { position: absolute; left: 3mm; top: 3mm; width: calc(270mm + var(--S)); height: 210mm; border: 0.3pt solid rgba(214,40,60,0.7); box-sizing: border-box; }
+.spine-guide { position: absolute; top: 0; height: 216mm; border-left: 0.35pt dashed rgba(214,40,60,0.75); }
+.spine-flag { position: absolute; top: 0.6mm; left: 138mm; width: var(--S); text-align: center; font: 700 4.2pt/4.8pt Inter; color: rgb(214,40,60); }
+.slug { position: absolute; left: 0; top: 216mm; width: 100%; height: 16mm; background: #fff; color: #222;
+  font: 500 6.4pt/9pt Inter; padding: 2.4mm 4mm; box-sizing: border-box; border-top: 0.4pt solid #ddd; }
+.slug b { color: #b00020; }
