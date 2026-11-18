@@ -59,7 +59,7 @@ def prompts(path):
             "category": norm(div.select_one(".prompt-cat").get_text()) if div.select_one(".prompt-cat") else "",
             "location": loc,
             "purpose": norm(" ".join(x.get_text() for x in div.select(".pf-purpose"))).removeprefix("PURPOSE").strip(),
-            "body": norm(" ".join(x.get_text(" ") for x in div.select(".prompt-body"))),
+            "body": norm(" ".join(x.get_text() for x in div.select(".prompt-body"))),
             "output": norm(" ".join(x.get_text() for x in div.select(".pf-output"))).removeprefix("OUTPUT").strip(),
             "example": norm(" ".join(x.get_text() for x in div.select(".pf-example"))).removeprefix("EXAMPLE").strip(),
             "verify": norm(" ".join(x.get_text() for x in div.select(".pf-verify"))).removeprefix("VERIFY").strip(),

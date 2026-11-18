@@ -32,6 +32,9 @@ def main():
     if "--trim" in args:
         w, h = args[args.index("--trim") + 1].split("x")
         trim = (float(w), float(h))
+    allowed_blank = set()
+    if "--page-map" in args:
+        allowed_blank = set(json.loads(Path(args[args.index("--page-map") + 1]).read_text()).get("intentional_blank_pages", []))
     if "--expect-links" in args:
         expect_links = int(args[args.index("--expect-links") + 1])
     doc = pymupdf.open(pdf)
@@ -51,10 +54,13 @@ def main():
             fonts[name] = {"type": ftype, "embedded": ext != "n/a" and ext != "", "ext": ext}
         links += len([l for l in p.get_links()])
         text = p.get_text()
+        # Devanagari checks use Poppler, which honours /ActualText (MuPDF splits ActualText spans)
+        import subprocess as _sp
+        ptext = _sp.run(["pdftotext", "-f", str(i + 1), "-l", str(i + 1), pdf, "-"], capture_output=True, text=True).stdout
         if "◌" in text or "�" in text:
             glyph_issues.append(f"p{i + 1}")
-        for m in DUP_MARK.finditer(text):
-            ortho.append(f"p{i + 1}: {text[max(0, m.start() - 6):m.end() + 6]!r}")
+        for m in DUP_MARK.finditer(ptext):
+            ortho.append(f"p{i + 1}: {ptext[max(0, m.start() - 6):m.end() + 6]!r}")
         imgs = p.get_image_info(xrefs=True)
         for im in imgs:
             bw, bh = im["bbox"][2] - im["bbox"][0], im["bbox"][3] - im["bbox"][1]
@@ -64,7 +70,7 @@ def main():
             img_cs.add(str(im.get("colorspace")))
             if ppi < 300:
                 low_res.append(f"p{i + 1}: {im['width']}×{im['height']} px at {bw / MM:.1f}×{bh / MM:.1f} mm = {ppi:.0f} ppi")
-        if not text.strip() and not imgs and not p.get_drawings():
+        if not text.strip() and not imgs and not p.get_drawings() and (i + 1) not in allowed_blank:
             blanks.append(i + 1)
         pages.append({"page": i + 1, "label": p.get_label(), "size_mm": [round(w, 2), round(h, 2)],
                       "images": len(imgs)})
@@ -82,7 +88,9 @@ def main():
     else:
         check("link annotations (informational)", True, f"{links} found")
     check("raster images ≥ 300 ppi effective", not low_res, "; ".join(low_res) or "all images ≥ 300 ppi", level="WARN")
-    check("no accidental blank pages", not blanks, f"blank pages: {blanks}" if blanks else "none", level="WARN")
+    check("no accidental blank pages", not blanks,
+          (f"blank pages: {blanks}" if blanks else "none") + (f" (intentional blank versos before recto openers: {len(allowed_blank)})" if allowed_blank else ""),
+          level="WARN")
 
     res = {"file": pdf, "pages": doc.page_count, "fonts": fonts, "image_colourspaces": sorted(img_cs),
            "checks": checks, "page_detail": pages,

@@ -1,0 +1,73 @@
+{
+ "interior_pages": 258,
+ "caliper_mm_per_leaf_assumed": 0.1,
+ "cover_allowance_mm": 0.5,
+ "spine_mm_provisional": 13.4,
+ "formula": "pages \u00f7 2 \u00d7 caliper + cover allowance",
+ "wrap_mm_incl_bleed": [
+  289.4,
+  216
+ ],
+ "trim_per_panel_mm": [
+  135,
+  210
+ ],
+ "bleed_mm": 3,
+ "cmyk_builds": {
+  "ivory": [
+   0.0,
+   0.01,
+   0.05,
+   0.03
+  ],
+  "navy": [
+   1.0,
+   0.82,
+   0.3,
+   0.42
+  ],
+  "navy2": [
+   0.72,
+   0.58,
+   0.25,
+   0.3
+  ],
+  "navy3": [
+   0.55,
+   0.43,
+   0.25,
+   0.08
+  ],
+  "hair": [
+   0.18,
+   0.17,
+   0.25,
+   0.0
+  ],
+  "violet": [
+   0.68,
+   0.82,
+   0.0,
+   0.0
+  ],
+  "white": [
+   0.0,
+   0.0,
+   0.0,
+   0.0
+  ],
+  "ivory2": [
+   0.03,
+   0.04,
+   0.1,
+   0.04
+  ]
+ },
+ "files": {
+  "wrap": "ZTFC_cover_WRAP_PROVISIONAL_SPINE_13.4mm_NOT_PRINTER_READY.pdf",
+  "front": "ZTFC_cover_FRONT_artwork_141x216_incl_3mm_bleed.pdf",
+  "back": "ZTFC_cover_BACK_artwork_141x216_incl_3mm_bleed.pdf",
+  "spine": "ZTFC_cover_SPINE_artwork_PROVISIONAL_13.4mm.pdf"
+ },
+ "status": "front and back artwork final; spine and wrap PROVISIONAL until printer confirms caliper/template"
+}

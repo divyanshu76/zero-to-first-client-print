@@ -1,6 +1,6 @@
 # About the Author — production assets
 
-Status: **page designed in the proof (`production/about-the-author/about.html`), awaiting approval.** The current manuscript (`manuscript/ZERO_TO_FIRST_CLIENT_2026.pdf`) has no About the Author page, so it needs to be added during the print build. Do not edit the manuscript PDF itself.
+Status: **final.** Page source `production/about-the-author/about.html`; placed at the end of the book (paperback p. 237); exported to `production/final/about-the-author/`. Print uses `signature_black_print_gray.png` (K + alpha, alpha byte-identical to the supplied black version, made by `build_signature_print.py`); digital uses the original blue cleaned signature. Portrait print derivative `portrait_print_gray.jpg` (greyscale, framing crop only, `build_portrait.py`). The current manuscript (`manuscript/ZERO_TO_FIRST_CLIENT_2026.pdf`) has no About the Author page, so it needs to be added during the print build. Do not edit the manuscript PDF itself.
 
 | Element | File | Notes |
 |---|---|---|

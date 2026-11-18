@@ -91,7 +91,9 @@ table { width: 100%; border-collapse: collapse; margin: 1.6mm 0 3.6mm; font-size
 thead { display: table-header-group; }
 th { font: 700 6.7pt/9pt var(--text); letter-spacing: 0.04em; text-transform: none; text-align: left;
      border-bottom: 0.8pt solid var(--ink); padding: 1.1mm 1.6mm 1.1mm 0; vertical-align: bottom; }
-td { padding: 1.25mm 1.6mm 1.25mm 0; border-bottom: 0.3pt solid var(--rule-soft); vertical-align: top; }
+td { padding: 1.25mm 1.6mm 1.25mm 0; border-bottom: 0.3pt solid var(--rule-soft); vertical-align: top; overflow-wrap: break-word; }
+th { overflow-wrap: break-word; }
+td.url, th.url { overflow-wrap: anywhere; }
 tbody tr:last-child td { border-bottom: 0.6pt solid var(--ink); }
 tr { break-inside: avoid; }
 td:first-child { font-weight: 500; }
@@ -155,6 +157,34 @@ figure.diagram { margin: 3.6mm 0 4.4mm; break-inside: avoid; }
 .dg-row b { font-weight: 700; }
 figcaption { font-size: var(--small); line-height: 11pt; color: var(--ink-2); margin-top: 2mm; padding-top: 1.6mm; border-top: 0.3pt solid var(--rule-soft); }
 figcaption .fig-num { font-weight: 700; color: var(--ink); }
+.dgc { margin-top: 0.6mm; }
+.dgc .dgb { position: absolute; box-sizing: border-box; border: 0.5pt solid var(--dg-line); border-radius: 0.8mm;
+  background: var(--dg-paper); display: flex; flex-direction: column; justify-content: center;
+  padding: 0.7mm 1.1mm; font-size: 5.9pt; line-height: 7.3pt; color: var(--ink); }
+.dgb-t { font: 700 6.6pt/8pt var(--display); }
+.dgb-s { display: block; color: var(--ink-2); margin-top: 0.3mm; }
+.dgc .dgb-em1 { background: var(--dg-soft); }
+.dgc .dgb-em2 { background: var(--dg-strong); border-color: var(--dg-strong); color: var(--reverse-text); }
+.dgc .dgb-em2 .dgb-s { color: var(--reverse-text); }
+.dgc .dgb-dash { border-style: dashed; }
+.dgc .dgb-ex { background: var(--tint-1); border-color: var(--rule-soft); }
+.dgc .dgb-ex .dgb-s { color: var(--ink); margin: 0; }
+.dgc .dgt { position: absolute; font-size: 6.1pt; line-height: 8pt; color: var(--ink); }
+.dg-small { font-size: 6.3pt !important; line-height: 8.4pt !important; }
+.dg-tiny { font-size: 5.8pt !important; line-height: 7.5pt !important; }
+.dg-note { font-size: 6pt !important; line-height: 8pt !important; font-weight: 600; }
+.dg-lane { font: 700 5.6pt/1 var(--text) !important; letter-spacing: 0.16em; color: var(--ink-2) !important; }
+.dg-big { font: 800 9.5pt/11pt var(--display); }
+.dg-letter { font: 800 7.4pt/1 var(--display); margin-right: 0.6mm; }
+.dg-tier { font: 800 6.2pt/8pt var(--display); letter-spacing: 0.12em; }
+.dg-num { font: 800 9pt/10pt var(--display); }
+.dg-op { font: 800 10pt/1 var(--display); }
+.dgb ul.dg-bullets, .dgb ul.dg-checks { margin: 0.8mm 0 0; padding: 0; }
+.dgb ul.dg-bullets li, .dgb ul.dg-checks li { margin: 0 0 0.5mm; padding-left: 2.6mm; text-indent: -2.6mm; color: var(--ink); }
+.dgb ul.dg-bullets li::before { content: "•"; width: 2.6mm; }
+.dgb ul.dg-checks li::before { content: ""; display: inline-block; width: 1.7mm; height: 1.7mm; margin-right: 0.9mm;
+  border: 0.45pt solid var(--ink); border-radius: 0.25mm; vertical-align: -0.2mm; }
+.dgb ul.dg-checks { margin-top: 0; }
 .diagram-pending { border: 0.6pt dashed var(--ink-3); padding: 6mm 3mm; text-align: center; font-size: var(--small); color: var(--ink-3); }
 
 /* ---------------------------------------------------------------- chapter opener */
@@ -188,13 +218,13 @@ section.frontmatter { break-before: page; }
 .template h2 { margin-top: 0; }
 .template .instructions { font-size: 8.4pt; line-height: 12.4pt; color: var(--ink-2); margin-bottom: 3mm; }
 .form { border-top: 0.8pt solid var(--ink); }
-.form-field { display: flex; break-inside: avoid; border-bottom: 0.3pt solid var(--rule-soft); padding: 0.9mm 0 1.3mm; }
+.form-field { display: flex; break-inside: avoid; border-bottom: 0.3pt solid var(--rule-soft); padding: 0.6mm 0 1mm; }
 .ff-head { flex: 0 0 33mm; padding-right: 3mm; }
 .ff-label { font: 700 8pt/10.6pt var(--text); }
 .ff-example { font-size: 6.6pt; line-height: 8.8pt; color: var(--ink-3); margin-top: 0.6mm; }
 .ff-example::before { content: "e.g. "; font-weight: 700; letter-spacing: 0.03em; }
 .ff-lines { flex: 1; }
-.ff-line { height: 6.6mm; border-bottom: 0.45pt solid var(--write-line); }
+.ff-line { height: 6.2mm; border-bottom: 0.45pt solid var(--write-line); }
 .template-note { font-size: 7pt; color: var(--ink-3); margin-top: 3mm; }
 .write-cell { height: 8.5mm; }
 
@@ -217,3 +247,96 @@ section.frontmatter { break-before: page; }
 /* ---------------------------------------------------------------- utilities */
 .keep { break-inside: avoid; }
 .proof-label { display: none; }
+
+/* =====================================================================
+   COMPLETE-BOOK COMPONENTS (Phase 6)
+   ===================================================================== */
+/* prompt card continued across a page: label in the empty header corner */
+.prompt-head { string-set: pcont ""; }
+.prompt .pf-purpose { string-set: pcont attr(data-cont); }
+.prompt-end { string-set: pcont ""; height: 0; }
+@page :right { @top-left { content: string(pcont, start); font: italic 600 6.4pt/1 var(--text); color: var(--ink-2); vertical-align: bottom; padding-bottom: 5mm; } }
+@page :left { @top-right { content: string(pcont, start); font: italic 600 6.4pt/1 var(--text); color: var(--ink-2); vertical-align: bottom; padding-bottom: 5mm; } }
+
+/* half-title and title page */
+section.half-title { page: divider; height: 170mm; }
+.ht { font: 800 13pt/1 var(--display); letter-spacing: 0.04em; margin: 60mm 0 0; }
+section.title-page { page: divider; break-before: right; height: 172mm; position: relative; }
+.tp-imprint { font: 700 7pt/1 var(--text); letter-spacing: 0.3em; margin: 0; padding-bottom: 3mm; border-bottom: 0.5pt solid var(--rule-soft); }
+.tp-title { font: 800 40pt/36pt var(--display); letter-spacing: -0.035em; margin: 22mm 0 0; }
+.tp-title span { display: block; }
+.tp-rule { width: 10mm; border-top: 1.4pt solid var(--accent); margin: 8mm 0 4mm; }
+.tp-sub { font: 500 11pt/15pt var(--text); margin: 0; }
+.tp-edition { font: 600 7pt/1 var(--text); letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-2); margin: 5mm 0 0; }
+.tp-author { position: absolute; left: 0; top: 150mm; font: 700 11.5pt/1 var(--display); margin: 0; }
+.tp-pub { position: absolute; left: 0; top: 158mm; font: 600 6.6pt/1 var(--text); letter-spacing: 0.16em; color: var(--ink-2); margin: 0; }
+
+/* copyright page (verso of the title page) */
+section.frontmatter.copyright { break-before: left; font-size: 7.6pt; line-height: 11.4pt; }
+section.frontmatter.copyright > h1 { font: 700 8pt/1 var(--text); letter-spacing: 0.2em; text-transform: uppercase;
+  border: none; margin: 0 0 5mm; padding: 0; }
+section.frontmatter.copyright p { margin-bottom: 2.4mm; }
+section.frontmatter.fm-continue { break-before: auto; }
+section.frontmatter.fm-continue > h1 { margin-top: 9mm; }
+
+/* contents */
+section.toc { break-before: right; }
+.toc-list { list-style: none; margin: 0; padding: 0; font-size: 7.9pt; line-height: 11pt; }
+.toc-list li { padding: 0; margin: 0; text-indent: 0; }
+.toc-list li::before { content: none; }
+.toc-list a { display: block; }
+.toc-list .pg::before { content: leader(" . "); color: var(--ink-3); font-weight: 400; }
+.toc-list .pg { font-variant-numeric: tabular-nums; }
+.toc-list .l1 { font-weight: 700; margin-top: 2.2mm; }
+.toc-list .l1.k-stage { font: 700 6.6pt/10pt var(--text); letter-spacing: 0.16em; text-transform: uppercase; margin-top: 4mm; color: var(--ink-2); }
+.toc-list .l1.k-front { font-weight: 500; margin-top: 0.3mm; }
+.toc-list .l2 { font-weight: 700; margin-top: 1.6mm; padding-left: 0; }
+.toc-list .l2.k-sub { font-weight: 400; margin-top: 0; padding-left: 4mm; }
+.toc-list .l3 { padding-left: 4mm; color: var(--ink); }
+.toc-list li { break-inside: avoid; }
+.toc-list .l1, .toc-list .l2.k-chapter { break-after: avoid; }
+
+/* worksheet writing space */
+td.w { height: 7.6mm; }
+td.w.tick::before { content: ""; display: inline-block; width: 3mm; height: 3mm; border: 0.6pt solid var(--ink); border-radius: 0.4mm; margin-top: 0.6mm; }
+.nw { white-space: nowrap; }
+table.dense { font-size: 6.8pt; line-height: 9.2pt; }
+table.dense th { font-size: 6pt; line-height: 7.8pt; }
+table.dense td { padding: 1mm 1.1mm 1mm 0; }
+table.xdense { font-size: 6.2pt; }
+table.xdense th { font-size: 5.6pt; line-height: 7pt; letter-spacing: 0; }
+table.xdense td.w { height: 8.4mm; }
+
+/* tracker record cards (Templates 17-19) */
+.tracker-sheet { break-before: page; }
+.sheet-label { font: 800 6.4pt/1 var(--display); letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 3mm; }
+table.record { table-layout: fixed; border: 0.8pt solid var(--ink); margin: 0 0 4mm; break-inside: avoid; }
+table.record td { border: 0.4pt solid var(--rule); height: 7.3mm; vertical-align: top; padding: 0.6mm 1mm; }
+table.record td:first-child { font-weight: 400; }
+table.record .cl { font: 600 5.6pt/1 var(--text); letter-spacing: 0.04em; color: var(--ink-3); }
+table.record tbody tr:last-child td { border-bottom: 0.4pt solid var(--rule); }
+
+/* 30-day planner (Template 20) */
+.planner { break-before: page; }
+table.planner-table { font-size: 6.9pt; line-height: 9pt; }
+table.planner-table td { height: 6.6mm; padding: 0.9mm 1.2mm 0.9mm 0; vertical-align: middle; }
+table.planner-table th:nth-child(1), table.planner-table td:nth-child(1) { width: 6mm; }
+table.planner-table th:nth-child(3), table.planner-table td:nth-child(3) { width: 9mm; }
+table.planner-table th:nth-child(4), table.planner-table td:nth-child(4) { width: 13mm; }
+table.planner-table th:nth-child(5), table.planner-table td:nth-child(5) { width: 22mm; }
+
+/* Bonus C calculator sheets */
+.calculator { break-before: page; }
+.calculator h2 { margin-top: 0; }
+.calc-meta { font-size: 7.6pt; line-height: 11pt; color: var(--ink-2); margin-bottom: 3mm; }
+table.calc { font-size: 7.2pt; line-height: 9.8pt; }
+table.calc td { vertical-align: middle; }
+table.calc td:first-child { width: 5mm; font-weight: 700; }
+table.calc td.w { height: 7mm; border-bottom: 0.45pt solid var(--write-line); min-width: 18mm; }
+table.calc tr.result td { font-weight: 600; }
+table.calc.calc-3 td.w { min-width: 12mm; }
+table.calc.calc-tally td:first-child, table.calc.calc-score td:first-child { width: auto; }
+.calc-note { font-size: 7.4pt; line-height: 11pt; color: var(--ink-2); margin-top: 2mm; }
+
+/* About the Author: slightly larger portrait (approved correction) */
+.about-portrait { width: 36mm !important; height: 45mm !important; flex: 0 0 36mm !important; }

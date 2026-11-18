@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[2]
 PROD = ROOT / "production"
 DS = PROD / "design-system"
 
-SIGNATURE = {"print": ROOT / "production/SOURCE_AND_BUILD/DIVYANSHU_VERMA_AUTHOR_SIGNATURE_BLACK.png",
+SIGNATURE = {"print": ROOT / "production/about-the-author/signature_black_print_gray.png",
              "digital": ROOT / "author-assets/DIVYANSHU_VERMA_AUTHOR_SIGNATURE.png"}
 PORTRAIT = PROD / "about-the-author/portrait_print_gray.jpg"
 
@@ -112,18 +112,20 @@ def templates(soup):
             first_p["class"] = first_p.get("class", []) + ["instructions"]
         for t in wrap.find_all("table"):
             head = [th.get_text(strip=True) for th in t.select("thead th")]
-            if len(head) == 3 and head[0] in ("Field",) and head[1] == "Your entry":
+            if len(head) == 3 and head[0] in ("Field", "Column") and "Your entry" in head:
                 t.replace_with(form_from_table(soup, t))
 
 
 def form_from_table(soup, t):
+    head = [th.get_text(strip=True) for th in t.select("thead th")]
+    ex_i = next((i for i, h in enumerate(head) if h.startswith("Example")), len(head) - 1)
     box = soup.new_tag("div", attrs={"class": "form"})
     for tr in t.select("tbody tr"):
         cells = tr.find_all("td")
         if not cells:
             continue
         label = cells[0].get_text(" ", strip=True)
-        example = cells[-1].get_text(" ", strip=True) if len(cells) > 1 else ""
+        example = cells[ex_i].get_text(" ", strip=True) if len(cells) > ex_i else ""
         ff = soup.new_tag("div", attrs={"class": "form-field"})
         head = soup.new_tag("div", attrs={"class": "ff-head"})
         lab = soup.new_tag("div", attrs={"class": "ff-label"}); lab.string = label
@@ -146,6 +148,29 @@ def about(edition):
                 .replace("{{SIGNATURE}}", SIGNATURE[edition].as_uri()))
 
 
+# diagram colour tokens (SVG cannot read CSS variables): print = K-only DeviceCMYK
+DG_TOKENS = {
+    "print": {"DGINK": "device-cmyk(0 0 0 0.9)", "DGMID": "device-cmyk(0 0 0 0.6)",
+              "DGACC": "device-cmyk(0 0 0 1)", "DGPAPER": "device-cmyk(0 0 0 0)"},
+    "digital": {"DGINK": "#14213D", "DGMID": "#6B7389", "DGACC": "#6D28D9", "DGPAPER": "#FFFFFF"},
+}
+
+
+def diagram_markup(name, edition):
+    html = re.sub(r"<!--.*?-->", "", (DS / "diagrams" / name).read_text(), flags=re.S)
+    def tint(m):
+        a = float(m.group(1))
+        if edition == "print":
+            return f"device-cmyk(0 0 0 {0.9 * a:.3f})"
+        r, g, b = 0x14, 0x21, 0x3D        # navy over white
+        mix = lambda c: round(255 - (255 - c) * a)  # noqa: E731
+        return f"#{mix(r):02X}{mix(g):02X}{mix(b):02X}"
+    html = re.sub(r"DGTINT:([0-9.]+)", tint, html)
+    for k, v in DG_TOKENS[edition].items():
+        html = html.replace(k, v)
+    return html
+
+
 def compose(body_html, edition, title="ZERO TO FIRST CLIENT", extra_css=""):
     soup = soupify(f"<div id='book'>{body_html}</div>")
     pending = figures(soup)
@@ -159,7 +184,7 @@ def compose(body_html, edition, title="ZERO TO FIRST CLIENT", extra_css=""):
             + (f"<style>{extra_css}</style>" if extra_css else "") + "</head><body>")
     inner = soup.select_one("#book").decode_contents()
     inner = re.sub(r'<div class="svg-slot" data-svg="([^"]+)"></div>',
-                   lambda m: re.sub(r"<!--.*?-->", "", (DS / "diagrams" / m.group(1)).read_text(), flags=re.S), inner)
+                   lambda m: diagram_markup(m.group(1), edition), inner)
     return head + inner + "</body></html>", pending
 
 

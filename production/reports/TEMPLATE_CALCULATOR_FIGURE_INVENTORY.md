@@ -45,30 +45,30 @@ The original Bonus C is a one-page index of an Excel workbook (removed). The pap
 
 | Fig. | Source page (A4) | Section | Caption | Rebuild status |
 |---|---|---|---|---|
-| 1 | 8 | Learning roadmap | Figure 1. पूरा journey: Zero से first client attempt तक, दस chapters में। | Phase 6 |
-| 2 | 16 | Chapter 01 | Figure 2. तीनों circles का overlap ही आपकी service है। दाईं तरफ़ scoring weights हैं, जो नीचे की matrix में इस | rebuilt (proof) |
-| 3 | 23 | Chapter 02 | Figure 3. Human-in-the-loop workflow. Brief, Verify और Deliver आपके हाथ में रहते हैं। | Phase 6 |
-| 4 | 25 | Chapter 02 | Figure 4. Job के हिसाब से tools। हर row से एक चुनिए; सब कुछ एक साथ खरीदने की ज़रूरत नहीं। | Phase 6 |
-| 5 | 26 | Chapter 02 | Figure 5. RCTFV prompt framework. Verification आखिरी step नहीं, prompt का ही हिस्सा है। | Phase 6 |
-| 6 | 34 | Chapter 03 | Figure 6. पाँच steps में skill एक खरीदने लायक service बनती है। नीचे की row एक hypothetical video editor का exa | Phase 6 |
-| 7 | 35 | Chapter 03 | Figure 7. Package के बीच फर्क scope का होना चाहिए, और तीनों tiers समझने में आसान होने चाहिए। | Phase 6 |
-| 8 | 43 | Chapter 04 | Figure 8. पाँच research steps और decision rule। आखिरी दो steps में real लोगों से बात होती है। | Phase 6 |
-| 9 | 45 | Chapter 04 | Figure 9. Persona card का example। सभी details काल्पनिक हैं। आपके card में हर line के पीछे कोई evidence होना च | Phase 6 |
-| 10 | 47 | Chapter 04 | Figure 10. Positioning map का illustration। अपने 5 से 10 real competitors रखकर बनाइए। | Phase 6 |
-| 11 | 51 | Chapter 05 | Figure 11. Brand identity की layers। ऊपर की layer नीचे की सब चीज़ें तय करती है, इसलिए logo से शुरू मत कीजिए। | Phase 6 |
-| 12 | 53 | Chapter 05 | Figure 12. Portfolio का simple structure। Beginner के लिए यह एक ही लंबे page पर भी हो सकता है। | Phase 6 |
-| 13 | 60 | Chapter 06 | Figure 13. Floor आपकी cost से, range market से, और ceiling client की value से आती है। | Phase 6 |
-| 14 | 60 | Chapter 06 | Figure 14. Revenue calculation का hypothetical example। अपने numbers Monthly Target sheet में डालिए। | Phase 6 |
-| 15 | 61 | Chapter 06 | Figure 15. Proposal से payment तक: दो parties, एक clear sequence। | Phase 6 |
-| 16 | 63 | Chapter 06 | Figure 16. GST registration को समझने का map। अपने case के लिए professional से confirm कीजिए। | Phase 6 |
-| 17 | 70 | Chapter 07 | Figure 17. Client acquisition funnel का illustration। यह benchmark नहीं है। Chapter 10 में अपने actual numbers | Phase 6 |
-| 18 | 77 | Chapter 08 | Figure 18. Lead generation process। Weekly review बताता है कि कौन सा source काम कर रहा है। | Phase 6 |
-| 19 | 79 | Chapter 08 | Figure 19. Outreach sequence। ये days एक suggested rhythm हैं, कोई तय नियम नहीं। ना मिलते ही रुक जाइए। | Phase 6 |
-| 20 | 81 | Chapter 08 | Figure 20. 30-minute discovery call। ज़्यादातर समय client बोलता है। | Phase 6 |
-| 21 | 87 | Chapter 09 | Figure 21. पहले 48 घंटे का onboarding sequence। | Phase 6 |
-| 22 | 89 | Chapter 09 | Figure 22. Delivery lifecycle। Client को कुछ दिखाने से पहले Self QA, और revisions का सीमित loop। | Phase 6 |
-| 23 | 92 | Chapter 09 | Figure 23. Client retention loop। | Phase 6 |
-| 24 | 96 | Chapter 10 | Figure 24. चार weekly milestones और उनके outputs। | Phase 6 |
+| 1 | 8 | Learning roadmap | Figure 1. पूरा journey: Zero से first client attempt तक, दस chapters में। | rebuilt as vector (24/24 verified) |
+| 2 | 16 | Chapter 01 | Figure 2. तीनों circles का overlap ही आपकी service है। दाईं तरफ़ scoring weights हैं, जो नीचे की matrix में इस | rebuilt as vector (24/24 verified) |
+| 3 | 23 | Chapter 02 | Figure 3. Human-in-the-loop workflow. Brief, Verify और Deliver आपके हाथ में रहते हैं। | rebuilt as vector (24/24 verified) |
+| 4 | 25 | Chapter 02 | Figure 4. Job के हिसाब से tools। हर row से एक चुनिए; सब कुछ एक साथ खरीदने की ज़रूरत नहीं। | rebuilt as vector (24/24 verified) |
+| 5 | 26 | Chapter 02 | Figure 5. RCTFV prompt framework. Verification आखिरी step नहीं, prompt का ही हिस्सा है। | rebuilt as vector (24/24 verified) |
+| 6 | 34 | Chapter 03 | Figure 6. पाँच steps में skill एक खरीदने लायक service बनती है। नीचे की row एक hypothetical video editor का exa | rebuilt as vector (24/24 verified) |
+| 7 | 35 | Chapter 03 | Figure 7. Package के बीच फर्क scope का होना चाहिए, और तीनों tiers समझने में आसान होने चाहिए। | rebuilt as vector (24/24 verified) |
+| 8 | 43 | Chapter 04 | Figure 8. पाँच research steps और decision rule। आखिरी दो steps में real लोगों से बात होती है। | rebuilt as vector (24/24 verified) |
+| 9 | 45 | Chapter 04 | Figure 9. Persona card का example। सभी details काल्पनिक हैं। आपके card में हर line के पीछे कोई evidence होना च | rebuilt as vector (24/24 verified) |
+| 10 | 47 | Chapter 04 | Figure 10. Positioning map का illustration। अपने 5 से 10 real competitors रखकर बनाइए। | rebuilt as vector (24/24 verified) |
+| 11 | 51 | Chapter 05 | Figure 11. Brand identity की layers। ऊपर की layer नीचे की सब चीज़ें तय करती है, इसलिए logo से शुरू मत कीजिए। | rebuilt as vector (24/24 verified) |
+| 12 | 53 | Chapter 05 | Figure 12. Portfolio का simple structure। Beginner के लिए यह एक ही लंबे page पर भी हो सकता है। | rebuilt as vector (24/24 verified) |
+| 13 | 60 | Chapter 06 | Figure 13. Floor आपकी cost से, range market से, और ceiling client की value से आती है। | rebuilt as vector (24/24 verified) |
+| 14 | 60 | Chapter 06 | Figure 14. Revenue calculation का hypothetical example। अपने numbers Monthly Target sheet में डालिए। | rebuilt as vector (24/24 verified) |
+| 15 | 61 | Chapter 06 | Figure 15. Proposal से payment तक: दो parties, एक clear sequence। | rebuilt as vector (24/24 verified) |
+| 16 | 63 | Chapter 06 | Figure 16. GST registration को समझने का map। अपने case के लिए professional से confirm कीजिए। | rebuilt as vector (24/24 verified) |
+| 17 | 70 | Chapter 07 | Figure 17. Client acquisition funnel का illustration। यह benchmark नहीं है। Chapter 10 में अपने actual numbers | rebuilt as vector (24/24 verified) |
+| 18 | 77 | Chapter 08 | Figure 18. Lead generation process। Weekly review बताता है कि कौन सा source काम कर रहा है। | rebuilt as vector (24/24 verified) |
+| 19 | 79 | Chapter 08 | Figure 19. Outreach sequence। ये days एक suggested rhythm हैं, कोई तय नियम नहीं। ना मिलते ही रुक जाइए। | rebuilt as vector (24/24 verified) |
+| 20 | 81 | Chapter 08 | Figure 20. 30-minute discovery call। ज़्यादातर समय client बोलता है। | rebuilt as vector (24/24 verified) |
+| 21 | 87 | Chapter 09 | Figure 21. पहले 48 घंटे का onboarding sequence। | rebuilt as vector (24/24 verified) |
+| 22 | 89 | Chapter 09 | Figure 22. Delivery lifecycle। Client को कुछ दिखाने से पहले Self QA, और revisions का सीमित loop। | rebuilt as vector (24/24 verified) |
+| 23 | 92 | Chapter 09 | Figure 23. Client retention loop। | rebuilt as vector (24/24 verified) |
+| 24 | 96 | Chapter 10 | Figure 24. चार weekly milestones और उनके outputs। | rebuilt as vector (24/24 verified) |
 
 ## Other preserved content
 

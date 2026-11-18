@@ -18,6 +18,10 @@
   --accent:       device-cmyk(0 0 0 1);        /* accent = black in mono interior */
   --accent-soft:  device-cmyk(0 0 0 0.10);
   --knockout:     device-cmyk(0 0 0 0);
+  --dg-line:      device-cmyk(0 0 0 0.85);
+  --dg-soft:      device-cmyk(0 0 0 0.10);
+  --dg-strong:    device-cmyk(0 0 0 1);
+  --dg-paper:     device-cmyk(0 0 0 0);
   --reverse-text: device-cmyk(0 0 0 0);
   /* selected colour diagrams only (printer must confirm colour-page workflow) */
   --accent-violet: device-cmyk(0.62 0.80 0 0);

@@ -3,15 +3,15 @@
 ## Phase status
 | Phase | Status | Output |
 |---|---|---|
-| 1 Repository and manuscript audit | ✅ done | `audit/PHASE1_AUDIT_REPORT.md`, `audit/*.json` |
-| 2 Content cleanup, resource removal | ✅ done (10 passages await author wording review) | `source/extracted.html`, `source/print_edits.yaml`, `source/book_{print,digital}.html` |
+| 1 Repository and manuscript audit | ✅ done | `audit/PHASE1_AUDIT_REPORT.md` |
+| 2 Content cleanup, resource removal | ✅ done | `source/print_edits.yaml`, `reports/HINGLISH_EDITS_BEFORE_AFTER.md` |
 | 3 Design system and typography | ✅ done | `design-system/` |
-| 4 Five-page proof + cover concepts | ✅ done; cover revised into light concepts A and B | `previews/proof/`, `cover/`, `previews/cover/` |
-| **5 Approval gate** | **cover ✅ approved (Concept A, locked) · ⏸ interior proof awaiting approval** | `reports/COVER_CONCEPTS_LIGHT.md`, `reports/PROOF_AND_DESIGN_REPORT.md` |
-| 6 Complete interior | not started | |
-| 7 Cover production, printer specs | not started (needs printer answers) | |
-| 8 Automated + visual QA | scripts ready; runs on the full book in Phase 8 | `scripts/run_checks.sh` |
-| 9 Final deliverables + report | not started | `final/` |
+| 4 Five-page proof + cover concepts | ✅ done | `previews/` |
+| 5 Approval gate | ✅ cover Concept A approved and locked; full production authorised | `cover/APPROVED_COVER_DIRECTION.md` |
+| 6 Complete interior | ✅ done: 258-page paperback, 257-page digital | `final/` |
+| 7 Cover production | ✅ front/back final; ⚠️ spine/wrap provisional pending printer caliper and template | `final/cover/` |
+| 8 Automated + visual QA | ✅ all checks pass; every page rendered and inspected | `validation/`, `final/previews/` |
+| 9 Final deliverables + report | ✅ | `reports/FINAL_PRODUCTION_REPORT.md` |
 
 ## Pipeline (reproducible, from the original PDF)
 ```

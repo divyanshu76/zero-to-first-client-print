@@ -1,0 +1,222 @@
+{
+ "summary": "24 / 24 diagrams verified",
+ "status": "PASS",
+ "figures": [
+  {
+   "figure": 1,
+   "file": "design-system/diagrams/fig-01.html",
+   "status": "PASS",
+   "original_label_words": 50,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 2,
+   "file": "design-system/diagrams/fig-02.html",
+   "status": "PASS",
+   "original_label_words": 56,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 3,
+   "file": "design-system/diagrams/fig-03.html",
+   "status": "PASS",
+   "original_label_words": 51,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 4,
+   "file": "design-system/diagrams/fig-04.html",
+   "status": "PASS",
+   "original_label_words": 61,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 5,
+   "file": "design-system/diagrams/fig-05.html",
+   "status": "PASS",
+   "original_label_words": 46,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 6,
+   "file": "design-system/diagrams/fig-06.html",
+   "status": "PASS",
+   "original_label_words": 60,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 7,
+   "file": "design-system/diagrams/fig-07.html",
+   "status": "PASS",
+   "original_label_words": 47,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 8,
+   "file": "design-system/diagrams/fig-08.html",
+   "status": "PASS",
+   "original_label_words": 72,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 9,
+   "file": "design-system/diagrams/fig-09.html",
+   "status": "PASS",
+   "original_label_words": 68,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 10,
+   "file": "design-system/diagrams/fig-10.html",
+   "status": "PASS",
+   "original_label_words": 60,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 11,
+   "file": "design-system/diagrams/fig-11.html",
+   "status": "PASS",
+   "original_label_words": 38,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 12,
+   "file": "design-system/diagrams/fig-12.html",
+   "status": "PASS",
+   "original_label_words": 48,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 13,
+   "file": "design-system/diagrams/fig-13.html",
+   "status": "PASS",
+   "original_label_words": 71,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 14,
+   "file": "design-system/diagrams/fig-14.html",
+   "status": "PASS",
+   "original_label_words": 48,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 15,
+   "file": "design-system/diagrams/fig-15.html",
+   "status": "PASS",
+   "original_label_words": 52,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 16,
+   "file": "design-system/diagrams/fig-16.html",
+   "status": "PASS",
+   "original_label_words": 87,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 17,
+   "file": "design-system/diagrams/fig-17.html",
+   "status": "PASS",
+   "original_label_words": 28,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 18,
+   "file": "design-system/diagrams/fig-18.html",
+   "status": "PASS",
+   "original_label_words": 62,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 19,
+   "file": "design-system/diagrams/fig-19.html",
+   "status": "PASS",
+   "original_label_words": 53,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 20,
+   "file": "design-system/diagrams/fig-20.html",
+   "status": "PASS",
+   "original_label_words": 86,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 21,
+   "file": "design-system/diagrams/fig-21.html",
+   "status": "PASS",
+   "original_label_words": 61,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 22,
+   "file": "design-system/diagrams/fig-22.html",
+   "status": "PASS",
+   "original_label_words": 47,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 23,
+   "file": "design-system/diagrams/fig-23.html",
+   "status": "PASS",
+   "original_label_words": 80,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  },
+  {
+   "figure": 24,
+   "file": "design-system/diagrams/fig-24.html",
+   "status": "PASS",
+   "original_label_words": 83,
+   "missing_words": {},
+   "raster": false,
+   "caption_in_book": true
+  }
+ ]
+}
