@@ -71,11 +71,12 @@ def page_texts(pdf):
 
 def main():
     typeset_report = {}
-    # provisional folios: estimate of where each section will fall in the book
-    ch1, n1, p1 = build("ch01", section_html('section.chapter[data-chapter="01"]'), 17)
-    ch2, n2, p2 = build("ch02", section_html('section.chapter[data-chapter="02"]'), 33)
-    tpl, n3, p3 = build("tpl10", template_html("09", "10"), 307)
-    ab, n4, p4 = build("about", typeset.about(EDITION), 367)
+    # provisional folios from the full trial typeset (front matter in roman numerals, Chapter 1 = page 1,
+    # plus allowance for calculator/tracker pages); odd start = recto
+    ch1, n1, p1 = build("ch01", section_html('section.chapter[data-chapter="01"]'), 1)
+    ch2, n2, p2 = build("ch02", section_html('section.chapter[data-chapter="02"]'), 13)
+    tpl, n3, p3 = build("tpl10", template_html("09", "10"), 193)
+    ab, n4, p4 = build("about", typeset.about(EDITION), 243)
     typeset_report["flows"] = {"chapter01_pages": n1, "chapter02_pages": n2, "template10_pages": n3, "about_pages": n4,
                                "diagrams_pending_in_flows": sorted(set(p1 + p2 + p3 + p4), key=lambda x: int(x or 0))}
 

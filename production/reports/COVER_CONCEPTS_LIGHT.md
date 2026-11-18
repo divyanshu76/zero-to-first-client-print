@@ -1,6 +1,6 @@
 # Cover — revised LIGHT editorial concepts A and B
 
-**Status: concepts for review. Not print-ready. Not approved.** Phase 6 (full book) does not start until you approve one cover direction **and** the five-page interior proof.
+**Status: Concept A "Editorial Ripple" APPROVED by the author and LOCKED** (see `cover/APPROVED_COVER_DIRECTION.md`). Concept B was not selected. The cover is still not print-ready: the spine stays provisional until the final page count and printer specs are confirmed. Phase 6 (full book) waits for separate approval of the five-page interior proof.
 
 The first concept (dark navy) is **superseded but preserved**: `cover/cover_concept.html` and `cover/ZTFC_cover_CONCEPT_not_for_print.pdf` are unchanged in the working tree and in Git history (commit `91fd426`).
 

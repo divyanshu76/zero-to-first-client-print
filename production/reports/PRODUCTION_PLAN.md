@@ -7,7 +7,7 @@
 | 2 Content cleanup, resource removal | ✅ done (10 passages await author wording review) | `source/extracted.html`, `source/print_edits.yaml`, `source/book_{print,digital}.html` |
 | 3 Design system and typography | ✅ done | `design-system/` |
 | 4 Five-page proof + cover concepts | ✅ done; cover revised into light concepts A and B | `previews/proof/`, `cover/`, `previews/cover/` |
-| **5 Approval gate** | **⏸ waiting for you: cover choice (A/B) + interior proof** | `reports/COVER_CONCEPTS_LIGHT.md`, `reports/PROOF_AND_DESIGN_REPORT.md` |
+| **5 Approval gate** | **cover ✅ approved (Concept A, locked) · ⏸ interior proof awaiting approval** | `reports/COVER_CONCEPTS_LIGHT.md`, `reports/PROOF_AND_DESIGN_REPORT.md` |
 | 6 Complete interior | not started | |
 | 7 Cover production, printer specs | not started (needs printer answers) | |
 | 8 Automated + visual QA | scripts ready; runs on the full book in Phase 8 | `scripts/run_checks.sh` |

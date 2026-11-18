@@ -16,13 +16,13 @@
 ### The five proof pages (all actual manuscript content, all actual author assets)
 | # | Role | Content | Provisional folio |
 |---|---|---|---|
-| 1 | Chapter opening | Chapter 01: number, title, subtitle, Chapter introduction, Learning objectives (checklist) | 17 |
-| 2 | Body text | Ch 01 continued: services table (repeated header), **Figure 2 rebuilt as vector**, caption, H2, table | 20 |
-| 3 | AI prompts | Ch 02: end of #C02, then #C03, #C04, #C05 complete | 40 |
-| 4 | Printable template | Bonus B **Template 10: Case Study**: all 9 fields on one page with writing lines | 309 |
-| 5 | About the Author | Original portrait (B&W derivative), approved bio verbatim, genuine signature (black), Founder — DeadCode Labs, URL | 367 |
+| 1 | Chapter opening | Chapter 01: number, title, subtitle, Chapter introduction, Learning objectives (checklist) | 1 |
+| 2 | Body text | Ch 01 continued: services table (repeated header), **Figure 2 rebuilt as vector**, caption, H2, table | 4 |
+| 3 | AI prompts | Ch 02: end of #C02, then #C03, #C04, #C05 complete | 20 |
+| 4 | Printable template | Bonus B **Template 10: Case Study**: all 9 fields on one page with writing lines | 195 |
+| 5 | About the Author | Original portrait (B&W derivative), approved bio verbatim, genuine signature (black), Founder — DeadCode Labs, URL | 243 |
 
-Each page was cut from a **real typeset flow** made by the production pipeline (`scripts/build_proof.py`), not composed as a one-off mock-up. Folios are provisional until Phase 6.
+Each page was cut from a **real typeset flow** made by the production pipeline (`scripts/build_proof.py`), not composed as a one-off mock-up. Folios are provisional until Phase 6. They follow the original's convention (front matter in roman numerals, Chapter 1 = page 1) and positions measured in a full trial typeset.
 
 ---
 
@@ -98,6 +98,6 @@ Provisional spine ≈ pages ÷ 2 × paper caliper: at 70 gsm natural (~0.09–0.
 | D6 | 10 rewritten Hinglish passages flagged `author_review: true` in `source/print_edits.yaml` | Read and approve or reword |
 | D7 | For print, convert the black signature PNG from RGB(17,17,17) to a greyscale+alpha file with identical strokes, so it prints as pure K | Approve (pure prepress conversion; the supplied file stays unchanged) |
 | D8 | About the Author placed at the **end** of the book (after Glossary) | Approve, or move to front matter |
-| D9 | Cover: the dark concept was not approved; choose light concept **A (Editorial Ripple)** or **B (Thirty-Day Dial)** | See `reports/COVER_CONCEPTS_LIGHT.md` |
+| D9 | Cover direction | ✅ **APPROVED: Concept A "Editorial Ripple"**, locked (`cover/APPROVED_COVER_DIRECTION.md`) |
 | D10 | Copyright line stays "© 2026 DEADCODE LABS"; author credited on cover, title page and About page | Confirm |
 | D11 | Back-cover copy (in concepts A/B): "Written in Hinglish", statistics as specified | Approve or edit; it only states verified features |

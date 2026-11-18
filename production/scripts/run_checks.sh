@@ -10,6 +10,10 @@ run(){ "$@" || fail=1; }
 step "Original assets unchanged"
 run bash validation/validate.sh
 
+step "Approved cover direction (Concept A) unchanged since approval"
+if sha256sum -c --quiet cover/approved_cover_A.sha256; then echo "PASS  approved cover source unchanged (cover_concept_light_A.html, cover_light_base.css)"
+else echo "FAIL  approved cover source changed: any change must be a documented technical refinement (see cover/APPROVED_COVER_DIRECTION.md), then re-record the hash"; fail=1; fi
+
 step "Extract tagged structure from the original manuscript"
 run python3 scripts/extract_manuscript.py
 step "Rebuild semantic source"
