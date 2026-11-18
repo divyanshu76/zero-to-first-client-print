@@ -31,9 +31,10 @@ SHA-256 of final files: see `reports/FINAL_CHECKSUMS.sha256`.
 
 | Item | Value |
 |---|---|
+| Revision | Folio correction applied (PR #2): duplicate-numbering source removed; digital blank pages unnumbered |
 | Trim | **135.00 × 210.00 mm on all 258 pages** (verified page by page; not A4, not A5) |
 | Extent | **258 pages** = 20 front-matter pages (i–xx) + 237 numbered pages (1–237) + 1 closing blank verso so the count is even |
-| Numbering | Roman for front matter, arabic from Chapter 1 (as in the original); no folio on title pages, stage dividers or blank pages; every folio verified |
+| Numbering | Roman v–xvii for front matter, arabic 1–237 from Chapter 1 (as in the original); no folio on half-title, title, copyright, stage dividers or blank pages; one stamped folio per page from a single numbering source, verified as text and pixels (see `reports/FOLIO_CORRECTION_REPORT.md`) |
 | Margins | Top 17 mm · bottom 19 mm · **inner (gutter) 19 mm** · outer 14 mm, mirrored recto/verso; text block 102 × 174 mm; every line of text verified inside it |
 | Bleed | None needed (nothing prints to the edge); can be added if the printer requires it |
 | Colour | **Black only (K)**: Ghostscript ink coverage shows 0 C/M/Y on all 258 pages. Text at 100 % K; tints K5–K90 |

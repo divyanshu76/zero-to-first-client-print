@@ -371,9 +371,6 @@ def assemble():
 
 
 EXTRA_CSS = """
-/* folios are stamped by folio_overlay() (roman front matter, arabic from Chapter 1) */
-@page { @bottom-right { content: none; } }
-@page :left { @bottom-left { content: none; } }
 h1, h2, h3, h4 { bookmark-level: none; }
 .bm1 { bookmark-level: 1; bookmark-label: attr(data-bm); }
 .bm2 { bookmark-level: 2; bookmark-label: attr(data-bm); }
@@ -450,8 +447,19 @@ def main():
         if a.startswith("nofolio-"):
             nofolio.add(i)
     md = pymupdf.open(raw)
+
+    def is_blank(p):
+        """No text, no images, no drawings other than a full-page background fill."""
+        area = p.rect.width * p.rect.height
+        marks = [d for d in p.get_drawings() if d["rect"].width * d["rect"].height < 0.95 * area]
+        return not p.get_text().strip() and not p.get_image_info() and not marks
+
+    band = lambda p: pymupdf.Rect(0, p.rect.height - 16 * 72 / 25.4, p.rect.width, p.rect.height)  # noqa: E731
+    stray = [i + 1 for i, p in enumerate(md) if p.get_text(clip=band(p)).strip()]
+    if stray:   # single source of folios: the typeset pages must carry none of their own
+        raise SystemExit(f"typeset pages already contain folio-band text (duplicate numbering source): {stray[:10]}")
     for i, p in enumerate(md):
-        if not p.get_text().strip() and not p.get_image_info() and not p.get_drawings():
+        if is_blank(p):
             nofolio.add(i)
     ov = BUILD / f"folios_{EDITION}.pdf"
     folio_overlay(len(doc.pages), ch1, nofolio, ov)
@@ -500,8 +508,7 @@ def main():
         nofolio.add(n_total - 1)
     pm = {"edition": EDITION, "pages": n_total, "blank_pages_added_for_even_count": pad, "front_matter_pages": ch1,
           "main_pages": len(doc.pages) - ch1, "no_folio_pages": sorted(i + 1 for i in nofolio),
-          "intentional_blank_pages": sorted([i + 1 for i, p in enumerate(md)
-                                             if not p.get_text().strip() and not p.get_image_info() and not p.get_drawings()]
+          "intentional_blank_pages": sorted([i + 1 for i, p in enumerate(md) if is_blank(p)]
                                             + ([n_total] if pad else [])),
           "toc": [{"level": e[0], "title": e[1], "id": e[2], "page": labels.get(e[2])} for e in entries], **log}
     (PROD / f"validation/page_map_{EDITION}.json").write_text(json.dumps(pm, ensure_ascii=False, indent=1))

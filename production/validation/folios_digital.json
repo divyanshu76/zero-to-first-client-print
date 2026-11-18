@@ -1,0 +1,39 @@
+{
+ "pdf": "final/ZTFC_2026_digital_edition.pdf",
+ "pages": 257,
+ "front_matter_pages": 20,
+ "pages_with_folio": 237,
+ "pages_without_folio": [
+  1,
+  2,
+  3,
+  4,
+  18,
+  19,
+  20,
+  52,
+  65,
+  66,
+  80,
+  108,
+  109,
+  110,
+  122,
+  150,
+  151,
+  152,
+  198,
+  256
+ ],
+ "roman_range": [
+  "v",
+  "xvii"
+ ],
+ "arabic_range": [
+  "1",
+  "237"
+ ],
+ "problems": [],
+ "raw_build_text_in_folio_band": [],
+ "status": "PASS"
+}

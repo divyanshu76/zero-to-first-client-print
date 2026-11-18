@@ -56,7 +56,8 @@ def _template(num):
 
 
 def build(name, body, start_page):
-    css = f"@page :first {{ counter-reset: page {start_page}; }}"   # odd = recto
+    css = (Path(typeset.DS / "proof-folios.css").read_text()
+           + f"@page :first {{ counter-reset: page {start_page}; }}")   # odd = recto
     html, pending = typeset.compose(body, EDITION, extra_css=css)
     (OUT / f"_{name}.html").write_text(html)
     pdf = OUT / f"_{name}.pdf"

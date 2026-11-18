@@ -44,6 +44,9 @@ run python3 scripts/validate_pdf.py $D validation/digital_pdf_check.json --page-
 step "10. Book QA: folios, Contents, every word, language, margins, templates, calculators, assets"
 run python3 scripts/validate_book.py print
 run python3 scripts/validate_book.py digital
+step "10b. Folio audit: one correct page number per page (text + pixels), single numbering source"
+run python3 scripts/validate_folios.py $P validation/page_map_print.json validation/folios_print.json --raw interior/build/raw_print.pdf
+run python3 scripts/validate_folios.py $D validation/page_map_digital.json validation/folios_digital.json --raw interior/build/raw_digital.pdf
 step "11. Print interior ink: black only (no CMY on any page)"
 cmy=$(gs -q -o - -sDEVICE=inkcov $P | awk '{t+=$1+$2+$3} END {printf "%.6f", t}')
 if [ "$cmy" = "0.000000" ]; then echo "PASS  print interior is K-only on all pages"; else echo "FAIL  CMY ink found: $cmy"; fail=1; fi
