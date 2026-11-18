@@ -1,0 +1,155 @@
+{
+ "file": "previews/proof/ZTFC_interior_proof_5pp_print.pdf",
+ "pages": 5,
+ "fonts": {
+  "QUWLDS+Inter-Bold": {
+   "type": "Type0",
+   "embedded": true,
+   "ext": "otf"
+  },
+  "SXBTPW+Manrope-Ultra-Bold": {
+   "type": "Type0",
+   "embedded": true,
+   "ext": "ttf"
+  },
+  "VLZULQ+Noto-Sans-Devanagari": {
+   "type": "Type0",
+   "embedded": true,
+   "ext": "ttf"
+  },
+  "LNXIQZ+Inter": {
+   "type": "Type0",
+   "embedded": true,
+   "ext": "otf"
+  },
+  "ZMQUBA+Inter-Semi-Bold": {
+   "type": "Type0",
+   "embedded": true,
+   "ext": "otf"
+  },
+  "ENSWGW+Noto-Sans-Devanagari-Semi-Bold": {
+   "type": "Type0",
+   "embedded": true,
+   "ext": "ttf"
+  },
+  "DEVBAD+Inter-Medium": {
+   "type": "Type0",
+   "embedded": true,
+   "ext": "otf"
+  },
+  "NPKWNE+Noto-Sans-Devanagari-Bold": {
+   "type": "Type0",
+   "embedded": true,
+   "ext": "ttf"
+  },
+  "YXXRGO+Manrope-Bold": {
+   "type": "Type0",
+   "embedded": true,
+   "ext": "ttf"
+  },
+  "BYFFHF+Noto-Sans-Devanagari-Medium": {
+   "type": "Type0",
+   "embedded": true,
+   "ext": "ttf"
+  }
+ },
+ "image_colourspaces": [
+  "1",
+  "3"
+ ],
+ "checks": [
+  {
+   "check": "page count",
+   "status": "PASS",
+   "detail": "5 pages"
+  },
+  {
+   "check": "trim size 135 × 210 mm on every page",
+   "status": "PASS",
+   "detail": "all pages exact"
+  },
+  {
+   "check": "all fonts embedded",
+   "status": "PASS",
+   "detail": "10 fonts, all embedded"
+  },
+  {
+   "check": "no Type3 fonts",
+   "status": "PASS",
+   "detail": "none"
+  },
+  {
+   "check": "no dotted-circle / replacement glyphs (broken shaping)",
+   "status": "PASS",
+   "detail": "none"
+  },
+  {
+   "check": "Devanagari orthography (no doubled marks)",
+   "status": "PASS",
+   "detail": "clean"
+  },
+  {
+   "check": "link annotations = 0",
+   "status": "PASS",
+   "detail": "0 found"
+  },
+  {
+   "check": "raster images ≥ 300 ppi effective",
+   "status": "PASS",
+   "detail": "all images ≥ 300 ppi"
+  },
+  {
+   "check": "no accidental blank pages",
+   "status": "PASS",
+   "detail": "none"
+  }
+ ],
+ "page_detail": [
+  {
+   "page": 1,
+   "label": "",
+   "size_mm": [
+    135.0,
+    210.0
+   ],
+   "images": 0
+  },
+  {
+   "page": 2,
+   "label": "",
+   "size_mm": [
+    135.0,
+    210.0
+   ],
+   "images": 0
+  },
+  {
+   "page": 3,
+   "label": "",
+   "size_mm": [
+    135.0,
+    210.0
+   ],
+   "images": 0
+  },
+  {
+   "page": 4,
+   "label": "",
+   "size_mm": [
+    135.0,
+    210.0
+   ],
+   "images": 0
+  },
+  {
+   "page": 5,
+   "label": "",
+   "size_mm": [
+    135.0,
+    210.0
+   ],
+   "images": 2
+  }
+ ],
+ "status": "PASS"
+}

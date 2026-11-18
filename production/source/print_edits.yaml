@@ -1,0 +1,239 @@
+# ZERO TO FIRST CLIENT — documented editorial changes for the paperback.
+#
+# Applied by production/scripts/apply_edits.py to source/extracted.html
+# (the faithful reconstruction of the original PDF) to produce:
+#   source/book_print.html    (paperback interior)
+#   source/book_digital.html  (digital PDF edition)
+#
+# Rules
+#   * Each edit names the exact source text (`old`) and how many times it must
+#     match (`count`). If the count differs, the build stops: nothing is
+#     changed silently.
+#   * `edition`: both | print | digital
+#   * `status`: proposed edits whose Hindi/Hinglish wording needs the author's
+#     confirmation are marked `author_review: true`.
+#   * No prompt instruction text is changed by any edit (validated by
+#     validate_prompts.py against the original).
+#
+# Brief §4: remove the "Download Your Resources" section (pp. xi–xii) and every
+# instruction that depends on the removed portal https://ztfc-resources.vercel.app/
+# or on DOCX/XLSX files that are not part of the printed book.
+
+edits:
+
+  # ------------------------------------------------------------ front matter
+  - id: FM-01
+    edition: both
+    category: resource-removal
+    reason: "Brief §4 — remove the two-page 'Download Your Resources' section (original pp. xi–xii, PDF pp. 11–12)."
+    op: remove_section
+    h1: "Download Your Resources"
+
+  - id: FM-02
+    edition: both
+    category: navigation
+    reason: "Brief §13 — the original Table of Contents carries A4 page numbers and the removed resource page; it is rebuilt from final pagination by the typesetter."
+    op: remove_section
+    h1: "Table of Contents"
+
+  - id: FM-03
+    edition: print
+    category: print-accuracy
+    reason: "Printed references cannot be clicked. Digital edition keeps the original sentence."
+    author_review: true
+    old: "<p><strong>5. References.</strong> Text में [1] जैसे numbers Sources section के references से link हैं। PDF में इन पर click कर सकते हैं।</p>"
+    new: "<p><strong>5. References.</strong> Text में [1] जैसे numbers book के अंत में दिए Appendix: Sources and Further Reading के references हैं।</p>"
+    count: 1
+
+  - id: FM-04
+    edition: both
+    category: resource-removal
+    reason: "Brief §4 — 'How to Use This Book' item 6 pointed to downloadable DOCX/XLSX files on the removed portal. Rewritten to describe what is actually printed in the book."
+    author_review: true
+    old: '<p><strong>6. Bonus files.</strong> Editable templates (DOCX, XLSX), calculators (XLSX), prompts और directory के download links <a href="#page=11">Download Your Resources</a> page पर हैं।</p>'
+    new: "<p><strong>6. Bonus sections.</strong> 104 prompts (Bonus A), 20 templates (Bonus B), 7 calculator sheets (Bonus C) और resource directory (Bonus D) इसी book में हैं। Templates और calculators सीधे book में भरिए, या उसी format को अपनी notebook या spreadsheet में copy कर लीजिए।</p>"
+    count: 1
+
+  # ------------------------------------------------------------ chapter 3
+  - id: CH03-01
+    edition: both
+    category: resource-removal
+    reason: "Workflow card 'Three-package builder' TOOL row linked the removed BUSINESS_CALCULATORS.xlsx; now points to the printed calculator in Bonus C."
+    old: '<a href="https://ztfc-resources.vercel.app/files/BUSINESS_CALCULATORS.xlsx">BUSINESS_CALCULATORS.xlsx</a>, AI prompt'
+    new: "Bonus C का Project Pricing calculator, AI prompt"
+    count: 1
+
+  - id: CH03-02
+    edition: both
+    category: resource-removal
+    reason: "Same workflow card, TOOL USE row: 'Workbook' (removed XLSX) → printed Bonus C sheet. 'देखिए' → 'निकालिए' because on paper the reader calculates the value."
+    author_review: true
+    old: '<dd><a href="https://ztfc-resources.vercel.app/files/BUSINESS_CALCULATORS.xlsx">Workbook</a> की Project Pricing sheet में hours और rate डालिए; हर tier की minimum price वहाँ से देखिए।</dd>'
+    new: "<dd>Bonus C की Project Pricing sheet में hours और rate डालिए; हर tier की minimum price वहाँ से निकालिए।</dd>"
+    count: 1
+
+  - id: CH03-03
+    edition: both
+    category: resource-removal
+    reason: "Recommended tools list named the removed XLSX."
+    old: '<a href="https://ztfc-resources.vercel.app/files/BUSINESS_CALCULATORS.xlsx">BUSINESS_CALCULATORS.xlsx</a> (price floor)'
+    new: "Bonus C calculators (price floor)"
+    count: 1
+
+  # ------------------------------------------------------------ chapter 4
+  - id: CH04-01
+    edition: both
+    category: resource-removal
+    reason: "Demand Scoring Calculator referred to the removed workbook; the same calculation is printed in Bonus C."
+    old: '<a href="https://ztfc-resources.vercel.app/files/BUSINESS_CALCULATORS.xlsx">Workbook</a> में भी यह calculation की जा सकती है।'
+    new: "Bonus C की Demand Score sheet में भी यही calculation है।"
+    count: 1
+
+  # ------------------------------------------------------------ chapter 6
+  - id: CH06-01
+    edition: both
+    category: resource-removal
+    reason: "Project example said the workbook calculates automatically; the printed Bonus C sheet shows the same calculation step by step."
+    old: '<a href="https://ztfc-resources.vercel.app/files/BUSINESS_CALCULATORS.xlsx">Workbook</a> में यह अपने आप calculate होता है।'
+    new: "Bonus C की Project Pricing sheet में यही calculation step-by-step है।"
+    count: 1
+
+  - id: CH06-02
+    edition: both
+    category: resource-removal
+    reason: "Prompt #C-G VERIFY note (not the prompt instruction) pointed to the removed workbook."
+    old: '<span class="pf-label">VERIFY</span> Calculation workbook में खुद चलाइए।'
+    new: '<span class="pf-label">VERIFY</span> Calculation Bonus C की sheet पर खुद चलाइए।'
+    count: 1
+
+  - id: CH06-03
+    edition: both
+    category: resource-removal
+    reason: "Next-step assignment named the removed XLSX."
+    old: '<p><a href="https://ztfc-resources.vercel.app/files/BUSINESS_CALCULATORS.xlsx">BUSINESS_CALCULATORS.xlsx</a> में Hourly Rate और Project Pricing sheets भरिए।'
+    new: "<p>Bonus C की Hourly Rate और Project Pricing sheets भरिए।"
+    count: 1
+
+  # ------------------------------------------------------------ chapter 10
+  - id: CH10-01
+    edition: both
+    category: resource-removal
+    reason: "30-day plan, Day 8 Tools column: 'Workbook' → printed Bonus C."
+    old: '<td><a href="https://ztfc-resources.vercel.app/files/BUSINESS_CALCULATORS.xlsx">Workbook,</a> Docs</td>'
+    new: "<td>Bonus C, Docs</td>"
+    count: 1
+
+  - id: CH10-02
+    edition: both
+    category: resource-removal
+    reason: "30-day plan, Day 30 Tools column: 'Workbook' → printed Bonus C."
+    old: "<td>Workbook</td>"
+    new: "<td>Bonus C</td>"
+    count: 1
+
+  - id: CH10-03
+    edition: both
+    category: resource-removal
+    reason: "Lead tracking paragraph pointed to the workbook's tracker; the printed equivalent is the Client Tracker sheet in Bonus C."
+    author_review: true
+    old: "Workbook में Client Acquisition Tracker तैयार है।"
+    new: "Bonus C की Client Tracker sheet इसी के लिए है।"
+    count: 1
+
+  - id: CH10-04
+    edition: both
+    category: resource-removal
+    reason: "Tools and official links named the removed XLSX and the removed Download Your Resources page."
+    old: '<p><a href="https://ztfc-resources.vercel.app/files/BUSINESS_CALCULATORS.xlsx">BUSINESS_CALCULATORS.xlsx</a>, <a href="#page=11">Download Your Resources</a> page के templates, Google Sheets'
+    new: "<p>Bonus C के calculators, Bonus B के templates, Google Sheets"
+    count: 1
+
+  - id: CH10-05
+    edition: both
+    category: resource-removal
+    reason: "Practical exercise 2 referred to the workbook tracker."
+    old: "Workbook के tracker का एक copy बनाइए।"
+    new: "Bonus C के Client Tracker का एक copy बनाइए।"
+    count: 1
+
+  # ------------------------------------------------------------ bonus A
+  - id: BA-01
+    edition: both
+    category: resource-removal
+    reason: "Prompt #080 (Project profitability review) VERIFY note, not the prompt instruction: 'Workbook' → printed Profit sheet in Bonus C."
+    old: '<span class="pf-label">VERIFY</span> Workbook से जाँचिए।'
+    new: '<span class="pf-label">VERIFY</span> Bonus C की Profit sheet से जाँचिए।'
+    count: 1
+
+  # ------------------------------------------------------------ bonus B
+  - id: BB-01
+    edition: both
+    category: resource-removal
+    reason: "Bonus B introduction described downloadable editable versions and the removed resource page."
+    author_review: true
+    old: '<p>हर template का editable version नीचे दिए गए link से download होता है। यहाँ printable version है। Example column या grey row सिर्फ़ fictional examples के लिए है। ये general formats हैं, legal या tax advice नहीं। सभी files एक साथ: <a href="#page=11">Download Your Resources</a>।</p>'
+    new: "<p>हर template यहाँ printable form में है: सीधे book में भरिए, या उसी format को अपनी notebook या spreadsheet में copy कर लीजिए। Example column या grey row सिर्फ़ fictional examples के लिए है। ये general formats हैं, legal या tax advice नहीं।</p>"
+    count: 1
+
+  - id: BB-02
+    edition: both
+    category: resource-removal
+    reason: "Remove the 'Download: NN_*.docx/.xlsx' link from all 20 template instruction lines (files are not part of the book)."
+    op: regex
+    pattern: ' <strong>Download:</strong> <a href="https://ztfc-resources\.vercel\.app/files/[0-9]{2}_[a-z0-9_]+\.(docx|xlsx)"><code>[0-9]{2}_[a-z0-9_]+\.(docx|xlsx)</code></a>'
+    new: ""
+    count: 20
+
+  - id: BB-03
+    edition: both
+    category: print-accuracy
+    reason: "Template 07 told the reader to fill 'yellow cells' of a spreadsheet. Rewritten for paper; the two result formulas printed with the template are the ones already used in Chapter 6 (25 h × 1.3 = 32.5 h × ₹412 + ₹1,500 = ₹14,890)."
+    author_review: true
+    old: "Yellow cells भरिए; बाकी formula हैं।"
+    new: "Input rows भरिए; दोनों Result rows नीचे दिए formula से निकालिए।"
+    count: 1
+
+  - id: BB-04
+    edition: both
+    category: print-accuracy
+    reason: "Template 17 'Status dropdown' does not exist on paper. The allowed values are the ones Chapter 10 lists for lead tracking."
+    author_review: true
+    old: "Status dropdown से चुनिए।"
+    new: "Status इन्हीं values में से लिखिए: New, Contacted, Replied, Call booked, Proposal sent, Won, Lost, Do not contact।"
+    count: 1
+
+  - id: BB-05
+    edition: both
+    category: resource-removal
+    reason: "Templates 17, 18, 19 said the full tracker is in an Excel file. The paperback prints a blank tracker sheet after the example record."
+    author_review: true
+    old: "<p>पूरी tracker table Excel file में है, जिसमें कई rows, dropdowns और dates पहले से तैयार हैं। यहाँ एक record का format है।</p>"
+    new: "<p>पहले एक record का format (fictional example) है, फिर भरने के लिए blank tracker sheet।</p>"
+    count: 3
+
+  - id: BB-06
+    edition: both
+    category: resource-removal
+    reason: "Template 20 referred to spreadsheet rows. The paperback prints the 30-day planner sheet."
+    author_review: true
+    old: "Spreadsheet में वही 30 rows पहले से भरी हैं, साथ में Done, Actual hours और Note columns हैं।"
+    new: "नीचे की planner sheet में वही 30 days हैं, साथ में Done, Actual hours और Note columns हैं।"
+    count: 1
+
+  # ------------------------------------------------------------ bonus C
+  - id: BC-01
+    edition: both
+    category: resource-removal
+    reason: "Bonus C introduction described the removed XLSX workbook (yellow input cells, purple formula cells). The paperback prints all seven calculator sheets."
+    author_review: true
+    old: '<p>Download: <a href="https://ztfc-resources.vercel.app/files/BUSINESS_CALCULATORS.xlsx"><code>BUSINESS_CALCULATORS.xlsx</code></a>. Yellow cells में अपने numbers डालिए। Purple cells formulas हैं। File में दी गई values सिर्फ़ examples हैं, कोई benchmark या income promise नहीं।</p>'
+    new: "<p>सातों calculator sheets नीचे printable form में हैं। Input lines में अपने numbers लिखिए और formula lines से result निकालिए। Sheets में दी गई values सिर्फ़ examples हैं, कोई benchmark या income promise नहीं।</p>"
+    count: 1
+
+  - id: BC-02
+    edition: both
+    category: resource-removal
+    reason: "Pointed to the removed 07_pricing_calculator.xlsx; its printed equivalent is Template 07 in Bonus B."
+    old: 'Pricing Calculator का छोटा version <a href="https://ztfc-resources.vercel.app/files/07_pricing_calculator.xlsx"><code>07_pricing_calculator.xlsx</code></a> भी है।'
+    new: "Pricing Calculator का छोटा version Bonus B का Template 07 है।"
+    count: 1

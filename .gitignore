@@ -1,2 +1,5 @@
 __pycache__/
 .DS_Store
+# generated intermediates (rebuilt by production/scripts)
+production/source/manuscript_tree.json
+production/previews/proof/_*

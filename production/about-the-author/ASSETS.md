@@ -1,6 +1,6 @@
 # About the Author — production assets
 
-Status: **assets ready; page not yet designed.** The current manuscript (`manuscript/ZERO_TO_FIRST_CLIENT_2026.pdf`) has no About the Author page, so it needs to be added during the print build. Do not edit the manuscript PDF itself.
+Status: **page designed in the proof (`production/about-the-author/about.html`), awaiting approval.** The current manuscript (`manuscript/ZERO_TO_FIRST_CLIENT_2026.pdf`) has no About the Author page, so it needs to be added during the print build. Do not edit the manuscript PDF itself.
 
 | Element | File | Notes |
 |---|---|---|
@@ -9,7 +9,7 @@ Status: **assets ready; page not yet designed.** The current manuscript (`manusc
 | Signature, 1-colour (K only) | `production/SOURCE_AND_BUILD/DIVYANSHU_VERMA_AUTHOR_SIGNATURE_BLACK.png` | For black-only interiors. Same strokes. |
 | Signature, reversed | `production/SOURCE_AND_BUILD/DIVYANSHU_VERMA_AUTHOR_SIGNATURE_WHITE.png` | For dark backgrounds or cover. Same strokes. |
 
-Byline: **Divyanshu Verma**. Imprint: CRAFT & CODE / DEADCODE LABS.
+Byline: **Divyanshu Verma**. Imprint: DeadCode Labs.
 
 Placement guidance: signature below the bio text, left-aligned with it, 1.6–2.4 in wide. It is 1796 px wide, so at 2 in it prints at about 900 ppi. Never scale it past 6 in (300 ppi floor).
 

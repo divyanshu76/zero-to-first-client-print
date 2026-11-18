@@ -1,0 +1,16 @@
+{
+ "html": "source/extracted.html",
+ "original_tokens": 36584,
+ "html_tokens": 36482,
+ "missing_from_html": {},
+ "extra_in_html": {},
+ "missing_count": 0,
+ "extra_count": 0,
+ "allowances_applied": [
+  "Stage divider pages: decorative progress graphic labels ('Find your business', 'Build your business', 'Get your first client', 'Execute and grow') on each of the 4 stage pages are navigation decoration, re-created by the design, not body text.",
+  "Stage label was letter-spaced in the source ('S TAG E'); kept as the word 'Stage'.",
+  "Table header rows repeated by the source layout on continuation pages (A4 page breaks). The new layout repeats headers automatically; the duplicated text is not content.",
+  "Diagram label text is stored only as hidden reference data for the rebuilt vector diagrams (labels joined with ' | '); tokenisation around a few Devanagari dandas differs. Not body text."
+ ],
+ "status": "PASS"
+}

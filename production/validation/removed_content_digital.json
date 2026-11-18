@@ -1,0 +1,152 @@
+{
+ "edition": "digital",
+ "edits_applied": [
+  {
+   "id": "FM-01",
+   "matches": 1,
+   "category": "resource-removal",
+   "author_review": false
+  },
+  {
+   "id": "FM-02",
+   "matches": 1,
+   "category": "navigation",
+   "author_review": false
+  },
+  {
+   "id": "FM-04",
+   "matches": 1,
+   "category": "resource-removal",
+   "author_review": true
+  },
+  {
+   "id": "CH03-01",
+   "matches": 1,
+   "category": "resource-removal",
+   "author_review": false
+  },
+  {
+   "id": "CH03-02",
+   "matches": 1,
+   "category": "resource-removal",
+   "author_review": true
+  },
+  {
+   "id": "CH03-03",
+   "matches": 1,
+   "category": "resource-removal",
+   "author_review": false
+  },
+  {
+   "id": "CH04-01",
+   "matches": 1,
+   "category": "resource-removal",
+   "author_review": false
+  },
+  {
+   "id": "CH06-01",
+   "matches": 1,
+   "category": "resource-removal",
+   "author_review": false
+  },
+  {
+   "id": "CH06-02",
+   "matches": 1,
+   "category": "resource-removal",
+   "author_review": false
+  },
+  {
+   "id": "CH06-03",
+   "matches": 1,
+   "category": "resource-removal",
+   "author_review": false
+  },
+  {
+   "id": "CH10-01",
+   "matches": 1,
+   "category": "resource-removal",
+   "author_review": false
+  },
+  {
+   "id": "CH10-02",
+   "matches": 1,
+   "category": "resource-removal",
+   "author_review": false
+  },
+  {
+   "id": "CH10-03",
+   "matches": 1,
+   "category": "resource-removal",
+   "author_review": true
+  },
+  {
+   "id": "CH10-04",
+   "matches": 1,
+   "category": "resource-removal",
+   "author_review": false
+  },
+  {
+   "id": "CH10-05",
+   "matches": 1,
+   "category": "resource-removal",
+   "author_review": false
+  },
+  {
+   "id": "BA-01",
+   "matches": 1,
+   "category": "resource-removal",
+   "author_review": false
+  },
+  {
+   "id": "BB-01",
+   "matches": 1,
+   "category": "resource-removal",
+   "author_review": true
+  },
+  {
+   "id": "BB-02",
+   "matches": 20,
+   "category": "resource-removal",
+   "author_review": false
+  },
+  {
+   "id": "BB-03",
+   "matches": 1,
+   "category": "print-accuracy",
+   "author_review": true
+  },
+  {
+   "id": "BB-04",
+   "matches": 1,
+   "category": "print-accuracy",
+   "author_review": true
+  },
+  {
+   "id": "BB-05",
+   "matches": 3,
+   "category": "resource-removal",
+   "author_review": true
+  },
+  {
+   "id": "BB-06",
+   "matches": 1,
+   "category": "resource-removal",
+   "author_review": true
+  },
+  {
+   "id": "BC-01",
+   "matches": 1,
+   "category": "resource-removal",
+   "author_review": true
+  },
+  {
+   "id": "BC-02",
+   "matches": 1,
+   "category": "resource-removal",
+   "author_review": false
+  }
+ ],
+ "edit_count": 24,
+ "residual_hits": [],
+ "status": "PASS"
+}

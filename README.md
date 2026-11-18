@@ -1,6 +1,6 @@
 # ZERO TO FIRST CLIENT — Print Production
 
-Private print-production repo for *ZERO TO FIRST CLIENT: The AI-Powered Business Starter Kit* (2026) by **Divyanshu Verma** · CRAFT & CODE / DEADCODE LABS.
+Private print-production repo for *ZERO TO FIRST CLIENT: The AI-Powered Business Starter Kit* (2026) by **Divyanshu Verma** · DeadCode Labs (imprint as locked in the production brief; the manuscript itself credits DEADCODE LABS).
 
 ## Structure
 
@@ -34,3 +34,21 @@ bash production/validation/validate.sh
 This checks that the manuscript, portrait and original signature upload are byte-identical to the recorded checksums. It also checks that the signature PNG is valid, transparent and high-resolution, and that no generated mark remains.
 
 Production outputs (interior, cover, proofs) go in `production/`, never in `manuscript/`.
+
+## Paperback production (135 × 210 mm)
+
+| Path | Contents |
+|---|---|
+| `production/audit/` | Phase 1 audit report, asset inventory, content inventory, Devanagari text-layer fix log |
+| `production/source/` | `extracted.html` (faithful reconstruction of the PDF), `print_edits.yaml` (every documented change), `book_print.html`, `book_digital.html` |
+| `production/design-system/` | `book.css`, colour tokens (print K-only / digital), bundled OFL fonts, rebuilt vector diagrams |
+| `production/about-the-author/` | About page content (approved bio), portrait print derivative + script |
+| `production/scripts/` | Extraction, edits, typesetting, proof builder, all validators, `run_checks.sh` |
+| `production/previews/` | 5-page interior proof (PDF + PNG) and cover concept preview |
+| `production/cover/` | Cover concept (not print-ready) |
+| `production/validation/` | Machine-readable validation reports |
+| `production/reports/` | Proof & design report, production plan, prompt / template / calculator / figure inventories |
+
+Run all checks: `bash production/scripts/run_checks.sh` · Rebuild the proof: `python3 production/scripts/build_proof.py print`
+
+Status: **proof stage, awaiting approval** (see `production/reports/PROOF_AND_DESIGN_REPORT.md`).

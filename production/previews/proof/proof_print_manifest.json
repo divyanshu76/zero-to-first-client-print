@@ -1,0 +1,46 @@
+{
+ "flows": {
+  "chapter01_pages": 12,
+  "chapter02_pages": 19,
+  "template10_pages": 3,
+  "about_pages": 1,
+  "diagrams_pending_in_flows": [
+   "3",
+   "4",
+   "5"
+  ]
+ },
+ "proof": "production/previews/proof/ZTFC_interior_proof_5pp_print.pdf",
+ "pages": [
+  {
+   "proof_page": 1,
+   "role": "chapter opening",
+   "source_flow": "_ch01.pdf",
+   "flow_page_index": 0
+  },
+  {
+   "proof_page": 2,
+   "role": "body text",
+   "source_flow": "_ch01.pdf",
+   "flow_page_index": 3
+  },
+  {
+   "proof_page": 3,
+   "role": "AI prompts",
+   "source_flow": "_ch02.pdf",
+   "flow_page_index": 7
+  },
+  {
+   "proof_page": 4,
+   "role": "printable template",
+   "source_flow": "_tpl10.pdf",
+   "flow_page_index": 2
+  },
+  {
+   "proof_page": 5,
+   "role": "about the author",
+   "source_flow": "_about.pdf",
+   "flow_page_index": 0
+  }
+ ]
+}

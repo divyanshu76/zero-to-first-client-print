@@ -1,0 +1,2362 @@
+{
+ "source": "source/book_digital.html",
+ "summary": {
+  "chapter2": "25 / 25",
+  "chapter_specific_C-A_to_C-L": "12 / 12",
+  "bonus_a_001_to_104": "104 / 104",
+  "total": "141 / 141",
+  "verdict": "141 / 141 prompts verified"
+ },
+ "checks": [
+  {
+   "check": "chapter2 count",
+   "status": "PASS",
+   "detail": "25 / 25"
+  },
+  {
+   "check": "chapter2 missing identifiers",
+   "status": "PASS",
+   "detail": "none"
+  },
+  {
+   "check": "chapter2 sequence order",
+   "status": "PASS",
+   "detail": "in order"
+  },
+  {
+   "check": "chapter_specific count",
+   "status": "PASS",
+   "detail": "12 / 12"
+  },
+  {
+   "check": "chapter_specific missing identifiers",
+   "status": "PASS",
+   "detail": "none"
+  },
+  {
+   "check": "chapter_specific sequence order",
+   "status": "PASS",
+   "detail": "in order"
+  },
+  {
+   "check": "bonus_a count",
+   "status": "PASS",
+   "detail": "104 / 104"
+  },
+  {
+   "check": "bonus_a missing identifiers",
+   "status": "PASS",
+   "detail": "none"
+  },
+  {
+   "check": "bonus_a sequence order",
+   "status": "PASS",
+   "detail": "in order"
+  },
+  {
+   "check": "duplicate identifiers",
+   "status": "PASS",
+   "detail": "none"
+  },
+  {
+   "check": "unknown identifiers",
+   "status": "PASS",
+   "detail": "none"
+  },
+  {
+   "check": "duplicate prompt text",
+   "status": "PASS",
+   "detail": "none"
+  },
+  {
+   "check": "total count",
+   "status": "PASS",
+   "detail": "141 / 141"
+  },
+  {
+   "check": "chapter association",
+   "status": "PASS",
+   "detail": "all prompts in their original chapter/section"
+  },
+  {
+   "check": "required fields (purpose, prompt text, output, verify)",
+   "status": "PASS",
+   "detail": "all present"
+  },
+  {
+   "check": "Chapter 2 prompts carry EXAMPLE field",
+   "status": "PASS",
+   "detail": "all 25 present"
+  },
+  {
+   "check": "prompt title + text unchanged vs original",
+   "status": "PASS",
+   "detail": "all 141 identical"
+  },
+  {
+   "check": "placeholders preserved",
+   "status": "PASS",
+   "detail": "all [placeholders] preserved"
+  }
+ ],
+ "prompts": [
+  {
+   "id": "C-A",
+   "title": "Skill-to-service brainstorm",
+   "category": "Idea discovery",
+   "location": "chapter-01",
+   "purpose": "अपनी skills से realistic service ideas निकालना।",
+   "body": "Act as a practical small-business consultant in India. My skills: [list with honest level 1-5]. Time per day: [hours]. Budget: [₹]. City: [city]. People I can reach easily: [list]. Suggest 5 focused service ideas. For each give: exact buyer, problem solved, what I would deliver, the riskiest assumption, and one way to test it in 7 days without spending money. Do not invent market statistics or income figures. If you are unsure, say so.",
+   "output": "5 ideas with a test for each.",
+   "example": "",
+   "verify": "हर idea के buyer के 5 real नाम खुद ढूँढकर देखिए। न मिलें तो idea कमज़ोर है।",
+   "body_sha256": "d342929e360ead8d",
+   "placeholders": [
+    "[city]",
+    "[hours]",
+    "[list with honest level 1-5]",
+    "[list]",
+    "[₹]"
+   ]
+  },
+  {
+   "id": "C-B",
+   "title": "Devil's advocate review",
+   "category": "Idea discovery",
+   "location": "chapter-01",
+   "purpose": "अपने favourite idea की कमज़ोरियाँ पकड़ना।",
+   "body": "I am planning this service: [business statement]. Act as a sceptical investor who wants me to succeed. List the 7 strongest reasons this may fail in my market, ranked by risk. For each, give one cheap test I can run this week. Do not cite statistics unless you provide a verifiable source, and mark assumptions clearly.",
+   "output": "Ranked risk list with cheap tests.",
+   "example": "",
+   "verify": "Top 3 risks को real prospects से बातचीत में test कीजिए।",
+   "body_sha256": "e31c72c87cba1d33",
+   "placeholders": [
+    "[business statement]"
+   ]
+  },
+  {
+   "id": "C01",
+   "title": "Plain-language explainer",
+   "category": "Research",
+   "location": "chapter-02",
+   "purpose": "किसी भी नए topic को आसान भाषा में समझना।",
+   "body": "Explain [topic] to a beginner running a small service business in India. Use simple Hinglish, one everyday example, and a short list of 5 terms with meanings. At the end, list what I should verify from an official source because it may have changed.",
+   "output": "Explanation, 5 terms, verification list.",
+   "example": "\"GST invoice\" या \"payment gateway\" समझना।",
+   "verify": "Verification list का हर item official site पर देखिए।",
+   "body_sha256": "9aef81ed9fc5c046",
+   "placeholders": [
+    "[topic]"
+   ]
+  },
+  {
+   "id": "C02",
+   "title": "Source finder",
+   "category": "Research",
+   "location": "chapter-02",
+   "purpose": "AI से answer की जगह sources की दिशा लेना।",
+   "body": "I need to verify this claim: \"[claim]\". List the types of primary sources that would confirm or refute it, the official organisation most likely to publish each, and the exact search terms I should use. Do not assert whether the claim is true unless you can name a specific source.",
+   "output": "Source types, organisations, search terms.",
+   "example": "किसी platform की fee का दावा जाँचना।",
+   "verify": "सुझाए गए URL खुद खोलिए; AI का बताया link बन भी सकता है।",
+   "body_sha256": "d48cc00a5d548cae",
+   "placeholders": [
+    "[claim]"
+   ]
+  },
+  {
+   "id": "C03",
+   "title": "Claim extractor",
+   "category": "Research",
+   "location": "chapter-02",
+   "purpose": "किसी draft के सारे checkable facts निकालना।",
+   "body": "Extract every checkable factual claim from the text below into a table with columns: Claim, Type (number/date/law/name/quote/link), Risk if wrong (high/medium/low), Where to verify. Do not rewrite the text. Text: [paste]",
+   "output": "Claim table.",
+   "example": "Blog भेजने से पहले चलाइए।",
+   "verify": "High-risk items पहले खुद check कीजिए।",
+   "body_sha256": "79876b3ed6b15580",
+   "placeholders": [
+    "[paste]"
+   ]
+  },
+  {
+   "id": "C04",
+   "title": "Brief builder",
+   "category": "Writing",
+   "location": "chapter-02",
+   "purpose": "आधी-अधूरी सोच से साफ़ brief बनाना।",
+   "body": "Interview me one question at a time to build a brief for [task]. Ask about goal, audience, constraints, examples, success criteria, and deadline. After my last answer, write a one-page brief and list what is still unclear.",
+   "output": "One-page brief.",
+   "example": "Client के website copy काम से पहले।",
+   "verify": "Brief client को भेजकर \"क्या यह सही है?\" पूछिए।",
+   "body_sha256": "0ec8fff88e0a5e63",
+   "placeholders": [
+    "[task]"
+   ]
+  },
+  {
+   "id": "C05",
+   "title": "Tone rewrite",
+   "category": "Writing",
+   "location": "chapter-02",
+   "purpose": "Text को client-friendly बनाना।",
+   "body": "Rewrite the message below so it is polite, direct and human, for a small business owner in India. Keep all facts the same, keep it under [n] words, and avoid hype words. Give 2 versions: simple English and Roman Hinglish. Message: [paste]",
+   "output": "2 rewritten versions.",
+   "example": "Late reply की apology।",
+   "verify": "Facts, dates और numbers original से मिलाइए।",
+   "body_sha256": "344afc374c59dfd1",
+   "placeholders": [
+    "[n]",
+    "[paste]"
+   ]
+  },
+  {
+   "id": "C06",
+   "title": "Simplifier",
+   "category": "Writing",
+   "location": "chapter-02",
+   "purpose": "Technical बात client को समझाना।",
+   "body": "Explain this technical point to a non-technical business owner in under 90 words, using one analogy and no jargon. Then tell me which detail you left out and whether that omission could mislead them. Point: [paste]",
+   "output": "Short explanation plus omission note.",
+   "example": "Hosting और domain का अंतर।",
+   "verify": "किसी non-technical व्यक्ति को पढ़ाकर देखिए।",
+   "body_sha256": "3c47e0ab53d222b7",
+   "placeholders": [
+    "[paste]"
+   ]
+  },
+  {
+   "id": "C07",
+   "title": "Editor pass",
+   "category": "Writing",
+   "location": "chapter-02",
+   "purpose": "Draft को generic AI language से बचाना।",
+   "body": "Edit the draft below as a strict human copy editor. Remove filler, cliches, repeated ideas and overclaims. Do not add new facts. Return the edited text, then a table of the changes that altered meaning, if any. Draft: [paste]",
+   "output": "Edited text plus change table.",
+   "example": "About page copy।",
+   "verify": "Meaning-changing edits ध्यान से देखिए।",
+   "body_sha256": "9079cecb114d8745",
+   "placeholders": [
+    "[paste]"
+   ]
+  },
+  {
+   "id": "C08",
+   "title": "Problem statement",
+   "category": "Offer",
+   "location": "chapter-02",
+   "purpose": "Service को customer problem की भाषा में लिखना।",
+   "body": "My service: [service]. Buyer: [buyer]. Write 5 problem statements in the buyer's own words, as they might say them to a friend. Then mark which are assumptions I need to confirm in interviews.",
+   "output": "5 statements with assumption flags.",
+   "example": "Salon owner की booking problem।",
+   "verify": "Real interview में इन lines को test कीजिए।",
+   "body_sha256": "0794ffada2efbd57",
+   "placeholders": [
+    "[buyer]",
+    "[service]"
+   ]
+  },
+  {
+   "id": "C09",
+   "title": "Scope limiter",
+   "category": "Offer",
+   "location": "chapter-02",
+   "purpose": "Scope creep पहले से रोकना।",
+   "body": "For this service package: [package], list what is included, what is excluded, what the client must provide, and 5 likely \"small requests\" that are actually extra work. Write a friendly one-line response to each.",
+   "output": "Include and exclude lists, responses.",
+   "example": "Website में \"बस एक और page\"।",
+   "verify": "अपनी actual capacity से मिलाइए।",
+   "body_sha256": "b3e5e4508835f8f4",
+   "placeholders": [
+    "[package]"
+   ]
+  },
+  {
+   "id": "C10",
+   "title": "Interview guide",
+   "category": "Research",
+   "location": "chapter-02",
+   "purpose": "Customer conversation के लिए अच्छे सवाल बनाना।",
+   "body": "Create a 15-minute customer interview guide for [buyer] about [problem]. Questions must be about past behaviour and not hypothetical opinions. Include 8 questions, 3 follow-ups, and tell me what answers would count as a real buying signal.",
+   "output": "Question guide and signal list.",
+   "example": "Clinic owner से website पर बातचीत।",
+   "verify": "Questions में अपना product pitch न हो, यह देखिए।",
+   "body_sha256": "dfc766bb89fffe85",
+   "placeholders": [
+    "[buyer]",
+    "[problem]"
+   ]
+  },
+  {
+   "id": "C11",
+   "title": "Interview synthesis",
+   "category": "Research",
+   "location": "chapter-02",
+   "purpose": "Notes से patterns निकालना।",
+   "body": "Below are my notes from [n] customer interviews. Identify repeated problems, exact phrases worth reusing, contradictions, and signals of willingness to pay. Quote only from my notes; do not infer anything not written. Notes: [anonymised notes]",
+   "output": "Pattern summary with quotes.",
+   "example": "5 interviews के बाद।",
+   "verify": "हर quote original notes में ढूँढिए।",
+   "body_sha256": "bf46d6bbfa6f3e6a",
+   "placeholders": [
+    "[anonymised notes]",
+    "[n]"
+   ]
+  },
+  {
+   "id": "C12",
+   "title": "Profile rewrite",
+   "category": "Marketing",
+   "location": "chapter-02",
+   "purpose": "LinkedIn या Instagram bio को clear बनाना।",
+   "body": "Rewrite my profile for [platform]. Who I help: [buyer]. Result: [result]. Real proof available: [proof]. Give 3 headlines and a short bio. Do not imply clients, awards or experience that I have not listed.",
+   "output": "3 headlines and a bio.",
+   "example": "Beginner web developer।",
+   "verify": "हर claim सच है, यह खुद confirm कीजिए।",
+   "body_sha256": "3afac4cd0060f485",
+   "placeholders": [
+    "[buyer]",
+    "[platform]",
+    "[proof]",
+    "[result]"
+   ]
+  },
+  {
+   "id": "C13",
+   "title": "Content repurposer",
+   "category": "Marketing",
+   "location": "chapter-02",
+   "purpose": "एक idea से कई posts।",
+   "body": "Turn this one insight into a LinkedIn post, a 30-second Reel script, an Instagram carousel outline and a WhatsApp status line. Keep the same core point and avoid exaggeration. Insight: [insight]",
+   "output": "4 content pieces.",
+   "example": "\"Website में phone number ऊपर क्यों रखें\"।",
+   "verify": "Platform के हिसाब से length और tone देखिए।",
+   "body_sha256": "60c5bb1644b7b5c1",
+   "placeholders": [
+    "[insight]"
+   ]
+  },
+  {
+   "id": "C14",
+   "title": "Personalisation helper",
+   "category": "Outreach",
+   "location": "chapter-02",
+   "purpose": "Public जानकारी से एक सच्चा observation बनाना।",
+   "body": "Here is what I noticed on this business's public page: [notes]. Write 3 possible opening lines for a message that mention one specific observation and are not flattering or fake. Under 25 words each. Do not guess facts that I did not provide.",
+   "output": "3 opening lines.",
+   "example": "Clinic की website mobile पर slow लगना।",
+   "verify": "Observation खुद फिर check कीजिए।",
+   "body_sha256": "dd91d9a2e822b68c",
+   "placeholders": [
+    "[notes]"
+   ]
+  },
+  {
+   "id": "C15",
+   "title": "Reply analyser",
+   "category": "Outreach",
+   "location": "chapter-02",
+   "purpose": "Prospect के reply का सही अगला कदम।",
+   "body": "A prospect replied: \"[reply]\". My offer: [offer]. Interpret what this may mean, list 2 possible intents, and draft a short, respectful reply for each. If the message means they are not interested, the reply should end contact.",
+   "output": "Interpretations and replies.",
+   "example": "\"Abhi budget nahi hai\"।",
+   "verify": "दबाव वाली line हटाइए।",
+   "body_sha256": "183c98dd0ac6dcb9",
+   "placeholders": [
+    "[offer]",
+    "[reply]"
+   ]
+  },
+  {
+   "id": "C16",
+   "title": "Call role-play",
+   "category": "Sales",
+   "location": "chapter-02",
+   "purpose": "Discovery call की practice।",
+   "body": "Role-play as [buyer type], a busy and slightly sceptical business owner. I will practise a discovery call for [service]. Ask realistic questions and raise realistic objections. Reply one turn at a time. When I type \"feedback\", score my questions and tell me where I talked too much.",
+   "output": "Interactive practice and feedback.",
+   "example": "पहली real call से पहले 2 rounds।",
+   "verify": "Real call के बाद script update कीजिए।",
+   "body_sha256": "84477044abfdc3ee",
+   "placeholders": [
+    "[buyer type]",
+    "[service]"
+   ]
+  },
+  {
+   "id": "C17",
+   "title": "Proposal first draft",
+   "category": "Sales",
+   "location": "chapter-02",
+   "purpose": "Call notes से proposal draft।",
+   "body": "Using these call notes: [notes], write a one-page proposal with: Understanding of problem, Proposed solution, Deliverables, Timeline, Price [price], Payment terms [terms], Assumptions, Out of scope, Next step. Use only information from my notes, and list gaps as questions rather than inventing details.",
+   "output": "One-page proposal and gaps.",
+   "example": "Website proposal।",
+   "verify": "Dates, price और scope खुद match कीजिए।",
+   "body_sha256": "95d39d3b659bc5dd",
+   "placeholders": [
+    "[notes]",
+    "[price]",
+    "[terms]"
+   ]
+  },
+  {
+   "id": "C18",
+   "title": "Project plan",
+   "category": "Delivery",
+   "location": "chapter-02",
+   "purpose": "Project को milestones में तोड़ना।",
+   "body": "Break this project into milestones with owner (me or client), effort estimate, dependency, and risk: [scope]. Deadline: [date]. Available hours per week: [hours]. Flag if the deadline is unrealistic. Output as a table.",
+   "output": "Milestone table.",
+   "example": "10-day landing page।",
+   "verify": "Estimates में 30% buffer जोड़िए (Chapter 6)।",
+   "body_sha256": "75c8e472d4ddc6c9",
+   "placeholders": [
+    "[date]",
+    "[hours]",
+    "[scope]"
+   ]
+  },
+  {
+   "id": "C19",
+   "title": "QA checklist maker",
+   "category": "Delivery",
+   "location": "chapter-02",
+   "purpose": "Deliverable की checklist।",
+   "body": "Create a final quality checklist for delivering [deliverable] to [client type]. Group items by content, function, brand, legal and handover. Mark items that a human must check manually. Keep it practical, maximum 25 items.",
+   "output": "Grouped checklist.",
+   "example": "Website launch से पहले।",
+   "verify": "एक item actual project पर test कीजिए।",
+   "body_sha256": "537b7eb411f7dcbc",
+   "placeholders": [
+    "[client type]",
+    "[deliverable]"
+   ]
+  },
+  {
+   "id": "C20",
+   "title": "Difficult message",
+   "category": "Delivery",
+   "location": "chapter-02",
+   "purpose": "Delay या गलती की ईमानदार सूचना।",
+   "body": "Draft a message to a client about: [situation]. Own what is mine, state the new date, what I am doing to prevent it from recurring, and what I need from them. Keep it calm, without excuses or over-apologising, under 100 words.",
+   "output": "One honest message.",
+   "example": "Delivery में 2 दिन की देरी।",
+   "verify": "नई date वही लिखिए जो आप पूरी कर सकें।",
+   "body_sha256": "4d6db93b6e96004a",
+   "placeholders": [
+    "[situation]"
+   ]
+  },
+  {
+   "id": "C21",
+   "title": "Formula helper",
+   "category": "Data",
+   "location": "chapter-02",
+   "purpose": "Tracker के लिए spreadsheet formula।",
+   "body": "In Google Sheets, column A has [data], column B has [data]. I want [result]. Write the formula, explain it in one line, give a tiny example with expected output, and describe one case where it may break.",
+   "output": "Formula with test example.",
+   "example": "Follow-up date = sent date + 3।",
+   "verify": "Sample row पर formula चलाकर expected output मिलाइए।",
+   "body_sha256": "e393dc1baff77b1c",
+   "placeholders": [
+    "[data]",
+    "[result]"
+   ]
+  },
+  {
+   "id": "C22",
+   "title": "Automation mapper",
+   "category": "Automation",
+   "location": "chapter-02",
+   "purpose": "क्या automate करना सुरक्षित है, तय करना।",
+   "body": "My repeated process: [steps]. Identify which steps can be automated safely, which need human review, and which should not be automated because of privacy, platform rules or client risk. Suggest the simplest no-code design, and note any step that could break a platform's terms.",
+   "output": "Step table and simple design.",
+   "example": "Contact form से Sheet में entry।",
+   "verify": "Test data से चलाइए, real client data से नहीं।",
+   "body_sha256": "d12944130736d4c6",
+   "placeholders": [
+    "[steps]"
+   ]
+  },
+  {
+   "id": "C23",
+   "title": "7-day skill sprint",
+   "category": "Learning",
+   "location": "chapter-02",
+   "purpose": "Service के लिए ज़रूरी गैप भरना।",
+   "body": "I need to reach a usable level in [sub-skill] for [deliverable] within 7 days, at [hours] a day. Build a daily plan where each day produces a small visible output. Recommend only what to practise, and tell me how to judge the output. Tell me to find current tutorials on official documentation instead of inventing links.",
+   "output": "7-day plan.",
+   "example": "Canva में carousel system।",
+   "verify": "Day 7 output को किसी practitioner से review कराइए।",
+   "body_sha256": "4b22bfefd64dc9f8",
+   "placeholders": [
+    "[deliverable]",
+    "[hours]",
+    "[sub-skill]"
+   ]
+  },
+  {
+   "id": "C24",
+   "title": "Risk review",
+   "category": "Safety",
+   "location": "chapter-02",
+   "purpose": "भेजने से पहले legal और ethical flags।",
+   "body": "Review this content or plan for risks: false claims, unauthorised use of someone's name or logo, privacy issues, spam-like tactics, and guaranteed results. List each risk, why it matters and a safer rewrite. This is not legal advice; mark anything that needs a professional. Content: [paste]",
+   "output": "Risk table with safer rewrites.",
+   "example": "Landing page copy।",
+   "verify": "Serious items पर professional से पूछिए।",
+   "body_sha256": "b6d451b473b593c3",
+   "placeholders": [
+    "[paste]"
+   ]
+  },
+  {
+   "id": "C25",
+   "title": "Weekly review coach",
+   "category": "Review",
+   "location": "chapter-02",
+   "purpose": "अपने data से अगले हफ़्ते का plan।",
+   "body": "This week's numbers: messages sent [n], replies [n], calls [n], proposals [n], won [n], hours worked [n]. Notes: [notes]. Identify the weakest stage of my funnel, suggest 2 small experiments for next week, and tell me what you cannot conclude from such a small sample.",
+   "output": "Bottleneck, 2 experiments, caveats.",
+   "example": "Week 3 review।",
+   "verify": "एक हफ़्ते में एक ही बदलाव test कीजिए।",
+   "body_sha256": "cacdb929e4f57970",
+   "placeholders": [
+    "[n]",
+    "[notes]"
+   ]
+  },
+  {
+   "id": "C-C",
+   "title": "Offer stress test",
+   "category": "Service",
+   "location": "chapter-03",
+   "purpose": "Offer में छिपे confusing हिस्से ढूँढना।",
+   "body": "Here is my service offer: [offer]. Read it as a busy [buyer]. List: 5 questions you still have, 3 phrases that sound vague, the first objection you would raise, and one change that would make it easier to say yes. Do not suggest any promise I cannot control.",
+   "output": "Questions, vague phrases, objection, one change.",
+   "example": "",
+   "verify": "एक असली buyer से भी यही पूछिए।",
+   "body_sha256": "1095fc7dd8504788",
+   "placeholders": [
+    "[buyer]",
+    "[offer]"
+   ]
+  },
+  {
+   "id": "C-D",
+   "title": "Hours estimator",
+   "category": "Service",
+   "location": "chapter-03",
+   "purpose": "Project को tasks में बाँटकर hours निकालना।",
+   "body": "Break down delivering [deliverable] into tasks. For each task give best-case, likely and worst-case hours for someone at [skill level]. Include client communication, revisions, testing and file handover. Total them, and note which estimates are most uncertain.",
+   "output": "Task table with 3 estimates.",
+   "example": "",
+   "verify": "पहले project के असली hours से compare कीजिए और अपनी estimate sheet update कीजिए।",
+   "body_sha256": "7dd00a0357588e52",
+   "placeholders": [
+    "[deliverable]",
+    "[skill level]"
+   ]
+  },
+  {
+   "id": "C-E",
+   "title": "Evidence sheet design",
+   "category": "Market research",
+   "location": "chapter-04",
+   "purpose": "Research के लिए simple tracking format बनाना।",
+   "body": "Design a one-sheet research tracker for validating [service] for [buyer] in [market]. Include columns for source, date, exact quote, signal type and confidence. Add 5 rules for avoiding confirmation bias. Do not include market figures.",
+   "output": "Column list and 5 rules.",
+   "example": "",
+   "verify": "एक real source से एक row भरकर देखिए कि format काम करता है।",
+   "body_sha256": "6c85f0a2b03c8217",
+   "placeholders": [
+    "[buyer]",
+    "[market]",
+    "[service]"
+   ]
+  },
+  {
+   "id": "C-F",
+   "title": "Fictional client brief",
+   "category": "Portfolio",
+   "location": "chapter-05",
+   "purpose": "Demo project के लिए realistic brief।",
+   "body": "Create a realistic fictional client brief for a demo project in [service] for a [buyer] in [city type]. Include business background, target customer, problem, goals, constraints, must-have elements and a success checklist. Label it clearly as fictional and use a name that is unlikely to belong to a real business, and tell me to search the name before using it.",
+   "output": "One-page fictional brief.",
+   "example": "",
+   "verify": "Name को Google और Maps पर खोजिए।",
+   "body_sha256": "3f4cdfca76f9c419",
+   "placeholders": [
+    "[buyer]",
+    "[city type]",
+    "[service]"
+   ]
+  },
+  {
+   "id": "C-G",
+   "title": "Price sanity check",
+   "category": "Pricing",
+   "location": "chapter-06",
+   "purpose": "Quote की assumptions जाँचना।",
+   "body": "Here is my quote calculation: [hours, rate, costs, buffer, price]. Check the arithmetic, list hidden costs I may have missed, list scope items likely to expand, and suggest two ways to reduce scope instead of reducing price. Do not suggest market rates unless you can give a source.",
+   "output": "Arithmetic check, hidden costs, scope options.",
+   "example": "",
+   "verify": "Calculation Bonus C की sheet पर खुद चलाइए।",
+   "body_sha256": "021f92bb847d9381",
+   "placeholders": [
+    "[hours, rate, costs, buffer, price]"
+   ]
+  },
+  {
+   "id": "C-H",
+   "title": "CA question list",
+   "category": "Compliance",
+   "location": "chapter-06",
+   "purpose": "CA से मिलने से पहले सही सवाल।",
+   "body": "I run [service] as a [structure] in [state], India, with expected annual receipts of [range], clients in [locations]. Write a list of 15 questions to ask my CA about GST, income tax, invoices, foreign receipts and records. Do not answer them or state any rule as definite. Group by topic.",
+   "output": "15 grouped questions.",
+   "example": "",
+   "verify": "CA के जवाब लिखकर अपनी compliance sheet में रखिए।",
+   "body_sha256": "e323c5fb303adeeb",
+   "placeholders": [
+    "[locations]",
+    "[range]",
+    "[service]",
+    "[state]",
+    "[structure]"
+   ]
+  },
+  {
+   "id": "C-I",
+   "title": "Lead magnet planner",
+   "category": "Marketing",
+   "location": "chapter-07",
+   "purpose": "Useful और genuine free resource बनाना।",
+   "body": "Suggest 5 one-page lead magnet ideas for [buyer] that help with [problem] without needing my paid service. For each give the title, what it contains, the action the reader can take in 15 minutes and what would make it low quality. Avoid exaggerated promises.",
+   "output": "5 ideas with details.",
+   "example": "",
+   "verify": "2 buyers से पूछिए कि कौन सा वे सच में use करेंगे।",
+   "body_sha256": "6bc7254fc68f5103",
+   "placeholders": [
+    "[buyer]",
+    "[problem]"
+   ]
+  },
+  {
+   "id": "C-J",
+   "title": "Message critic",
+   "category": "Outreach",
+   "location": "chapter-08",
+   "purpose": "भेजने से पहले message की कमज़ोरी पकड़ना।",
+   "body": "Critique this outreach message as a busy [buyer]. Score 1-5 on specificity, relevance, honesty, and ease of reply. Point out anything that sounds automated, pushy or unverifiable. Rewrite it in under 80 words without inventing facts. Message: [paste]",
+   "output": "Scores and rewrite.",
+   "example": "",
+   "verify": "Rewritten message में सभी facts सच हैं, यह जाँचिए।",
+   "body_sha256": "728fc95336fe5f8f",
+   "placeholders": [
+    "[buyer]",
+    "[paste]"
+   ]
+  },
+  {
+   "id": "C-K",
+   "title": "Handover guide",
+   "category": "Delivery",
+   "location": "chapter-09",
+   "purpose": "Client के लिए simple handover document।",
+   "body": "Write a one-page handover guide for a non-technical owner of [deliverable]. Include what they received, how to perform the 3 most common tasks, what not to change, who to contact and what happens if a subscription expires. Use only the details below and flag anything missing. Details: [details]",
+   "output": "One-page guide.",
+   "example": "",
+   "verify": "Guide से खुद तीनों tasks करके देखिए।",
+   "body_sha256": "74add6a4f31c92a6",
+   "placeholders": [
+    "[deliverable]",
+    "[details]"
+   ]
+  },
+  {
+   "id": "C-L",
+   "title": "30-day retrospective",
+   "category": "Review",
+   "location": "chapter-10",
+   "purpose": "30 days के data से अगला plan बनाना।",
+   "body": "Here is my 30-day data: [tracker summary]. Service: [service]. Buyer: [buyer]. Identify what I can and cannot conclude from this sample, the weakest stage, the 3 most useful experiments for the next 30 days and what I should stop doing. Don't be falsely encouraging and don't predict income.",
+   "output": "Retrospective and next plan.",
+   "example": "",
+   "verify": "अपने raw numbers से conclusions जाँचिए।",
+   "body_sha256": "6f07575ba3ce6788",
+   "placeholders": [
+    "[buyer]",
+    "[service]",
+    "[tracker summary]"
+   ]
+  },
+  {
+   "id": "001",
+   "title": "Problem-first idea scan",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Skill से नहीं, problems से ideas निकालना।",
+   "body": "List 15 recurring operational problems faced by [business type] in [location] that a solo service provider could help with. For each, state who feels it, how it is handled today, and the likely evidence I could check. Do not cite figures you cannot source.",
+   "output": "15 problems with checks.",
+   "example": "",
+   "verify": "Top 5 को Maps reviews या interviews से जाँचिए।",
+   "body_sha256": "fe6e483af1bee4e4",
+   "placeholders": [
+    "[business type]",
+    "[location]"
+   ]
+  },
+  {
+   "id": "002",
+   "title": "Adjacent services map",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "मौजूदा skill के पास की services देखना।",
+   "body": "My current skill is [skill]. Map 8 adjacent services I could learn within [weeks], and rate each for skill overlap, likely buyer, startup cost and delivery risk. Explain your rating in one line each.",
+   "output": "Rated table of 8 services.",
+   "example": "",
+   "verify": "हर service के 3 real providers ढूँढिए।",
+   "body_sha256": "945bd307f4764c84",
+   "placeholders": [
+    "[skill]",
+    "[weeks]"
+   ]
+  },
+  {
+   "id": "003",
+   "title": "Micro-niche generator",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "एक broad service को सटीक niches में बाँटना।",
+   "body": "Break down [service] into 12 narrow niches by industry, business stage and urgent problem. For each, give a one-line positioning and how I could find 20 potential buyers manually.",
+   "output": "12 niches with sourcing ideas.",
+   "example": "",
+   "verify": "20 नाम सच में मिलते हैं? न मिलें तो niche छोड़िए।",
+   "body_sha256": "93ba85b48499e2b5",
+   "placeholders": [
+    "[service]"
+   ]
+  },
+  {
+   "id": "004",
+   "title": "Constraint-based ideas",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "आपकी सीमाओं के अंदर ideas ढूँढना।",
+   "body": "My constraints are: [hours/day], [budget], [device], [language], [no client calls or other limits]. Suggest 6 service ideas that fit these constraints, and clearly explain which common ideas I should avoid and why.",
+   "output": "6 fitting ideas, list to avoid.",
+   "example": "",
+   "verify": "Weekly schedule में एक project रखकर देखिए।",
+   "body_sha256": "90ca6cdb94cd4ff3",
+   "placeholders": [
+    "[budget]",
+    "[device]",
+    "[hours/day]",
+    "[language]",
+    "[no client calls or other limits]"
+   ]
+  },
+  {
+   "id": "005",
+   "title": "Past experience miner",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "पुराने अनुभव से छिपी service ढूँढना।",
+   "body": "Interview me one question at a time about my education, jobs, hobbies, tools and problems I have solved for others. After 8 questions, list 5 service ideas based only on my answers, and note the proof I already have for each.",
+   "output": "5 ideas with existing proof.",
+   "example": "",
+   "verify": "Proof असली है या नहीं, खुद जाँचिए।",
+   "body_sha256": "2019c1ac2d03c8bc",
+   "placeholders": []
+  },
+  {
+   "id": "006",
+   "title": "Idea kill test",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "जल्दी पता चले कि idea कहाँ कमज़ोर है।",
+   "body": "For this idea: [idea], write 10 yes/no questions that could kill it. Sort by which is the cheapest to answer first. Next to each, write the exact action I can take this week to answer it.",
+   "output": "10 ordered test questions.",
+   "example": "",
+   "verify": "पहले 3 का जवाब 7 दिनों में लीजिए।",
+   "body_sha256": "a6177b1974b4592e",
+   "placeholders": [
+    "[idea]"
+   ]
+  },
+  {
+   "id": "007",
+   "title": "Local versus online choice",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Local या online market में से चुनना।",
+   "body": "Compare selling [service] to local businesses in [city] against online clients in [country]. Consider trust-building, competition, payment, compliance, communication and time to first conversation. Give a recommendation for a beginner with [situation] and state what would change it.",
+   "output": "Comparison and recommendation.",
+   "example": "",
+   "verify": "दोनों markets के 5-5 buyers से बात कीजिए।",
+   "body_sha256": "8cef6a669347fa59",
+   "placeholders": [
+    "[city]",
+    "[country]",
+    "[service]",
+    "[situation]"
+   ]
+  },
+  {
+   "id": "008",
+   "title": "Skill-gap plan",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Service शुरू करने से पहले gap पहचानना।",
+   "body": "To deliver [service] to a professional standard, list the minimum skills needed. I rate myself as: [ratings]. Identify the gaps that would actually harm a client and the gaps that can wait, and give a small practice task for each critical gap.",
+   "output": "Critical gaps and practice tasks.",
+   "example": "",
+   "verify": "Practice output को किसी experienced व्यक्ति को दिखाइए।",
+   "body_sha256": "165cb43e663abadd",
+   "placeholders": [
+    "[ratings]",
+    "[service]"
+   ]
+  },
+  {
+   "id": "009",
+   "title": "Recurring revenue angle",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "One-time service में repeat मौका ढूँढना।",
+   "body": "My one-time service is [service] for [buyer]. Suggest 5 natural recurring services that follow it, with what triggers the need and what a small monthly scope could look like. Exclude anything that would not create real value.",
+   "output": "5 recurring options.",
+   "example": "",
+   "verify": "Discovery calls में पूछिए कि क्या यह ज़रूरत सच में होती है।",
+   "body_sha256": "2751d4a7903c0baa",
+   "placeholders": [
+    "[buyer]",
+    "[service]"
+   ]
+  },
+  {
+   "id": "010",
+   "title": "Business statement polisher",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Business statement को साफ़ बनाना।",
+   "body": "Rewrite this business statement in 5 different ways under 20 words each: [statement]. Keep it specific about who, outcome and service. Avoid hype. Then pick the clearest one for a non-technical business owner and explain why.",
+   "output": "5 variants and a pick.",
+   "example": "",
+   "verify": "किसी अनजान व्यक्ति से पूछिए कि क्या समझ आया।",
+   "body_sha256": "de187b1f9bab8c10",
+   "placeholders": [
+    "[statement]"
+   ]
+  },
+  {
+   "id": "011",
+   "title": "Search query planner",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Research के लिए सही search terms बनाना।",
+   "body": "Create 25 Google search queries a [buyer] might use when facing [problem], in English and Hinglish. Group them by awareness stage: noticing the problem, exploring solutions, comparing providers. Mark them as guesses to test, not as search volume data.",
+   "output": "25 grouped queries.",
+   "example": "",
+   "verify": "हर query को Google में चलाकर देखिए।",
+   "body_sha256": "8f75bc33d1efb0fb",
+   "placeholders": [
+    "[buyer]",
+    "[problem]"
+   ]
+  },
+  {
+   "id": "012",
+   "title": "Review mining",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Public reviews से problems निकालना।",
+   "body": "Below are public reviews that I manually copied, with names removed: [reviews]. Extract recurring complaints, praise, unmet needs and exact phrases. Count how often each theme appears. Do not invent any theme not present in the text.",
+   "output": "Themes with counts and quotes.",
+   "example": "",
+   "verify": "Counts को एक बार manually match कीजिए।",
+   "body_sha256": "15f0d2469a3f8e40",
+   "placeholders": [
+    "[reviews]"
+   ]
+  },
+  {
+   "id": "013",
+   "title": "Trends interpretation",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Trends के data को ठीक से पढ़ना।",
+   "body": "I checked Google Trends for [terms] in [region] for [period] and saw: [describe]. Explain what this can and cannot tell me, since the data is relative and normalised, and what follow-up checks I should do before deciding.",
+   "output": "Interpretation with limits.",
+   "example": "",
+   "verify": "Google की Trends FAQ से interpretation मिलाइए।",
+   "body_sha256": "66f02735890f7bdd",
+   "placeholders": [
+    "[describe]",
+    "[period]",
+    "[region]",
+    "[terms]"
+   ]
+  },
+  {
+   "id": "014",
+   "title": "Community question finder",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Communities में क्या खोजें, तय करना।",
+   "body": "Which kinds of online communities might [buyer] use to discuss [problem]? Give search phrases I can use to find them, what to read for, and rules for researching ethically without spamming. Tell me to confirm that each community actually exists.",
+   "output": "Community types, phrases, ethics rules.",
+   "example": "",
+   "verify": "हर community खोलकर उसके rules पढ़िए।",
+   "body_sha256": "5f106ab48da22be2",
+   "placeholders": [
+    "[buyer]",
+    "[problem]"
+   ]
+  },
+  {
+   "id": "015",
+   "title": "Interview invitation variants",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Interview request का सही tone।",
+   "body": "Write 4 short interview requests for [buyer] about [problem]: for a warm contact, a referral, a LinkedIn connection and an in-person ask. State clearly that I am not selling, ask for 15 minutes, and make it easy to say no.",
+   "output": "4 request messages.",
+   "example": "",
+   "verify": "भेजते समय कुछ भी बिकाऊ न लगे, देख लीजिए।",
+   "body_sha256": "01d8326b4e58e035",
+   "placeholders": [
+    "[buyer]",
+    "[problem]"
+   ]
+  },
+  {
+   "id": "016",
+   "title": "Validation decision memo",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Evidence को decision में बदलना।",
+   "body": "Evidence: [interviews, competitor notes, signals]. Write a one-page Go, Refine or Drop memo. Separate facts from my interpretation, list what evidence is missing, and describe the next single test. Do not be optimistic beyond the evidence.",
+   "output": "One-page decision memo.",
+   "example": "",
+   "verify": "Facts को original notes से मिलाइए।",
+   "body_sha256": "85f25b51b4266282",
+   "placeholders": [
+    "[interviews, competitor notes, signals]"
+   ]
+  },
+  {
+   "id": "017",
+   "title": "Evidence-based persona",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Notes से persona बनाना।",
+   "body": "Using only these interview notes: [notes], draft a customer persona with role, context, problem, trigger, current solution, budget signals, objections and channels. Mark each line as Observed, Inferred or Unknown.",
+   "output": "Persona with evidence tags.",
+   "example": "",
+   "verify": "Unknown lines अगली interview में पूछिए।",
+   "body_sha256": "c64394066702a012",
+   "placeholders": [
+    "[notes]"
+   ]
+  },
+  {
+   "id": "018",
+   "title": "Jobs to be done",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Customer का असली काम समझना।",
+   "body": "For [buyer] hiring help with [area], write jobs-to-be-done statements in this format: When [situation], I want to [motivation], so I can [outcome]. Give 8, and mark them as hypotheses to be tested.",
+   "output": "8 job statements.",
+   "example": "",
+   "verify": "Interviews में सही और गलत पहचानिए।",
+   "body_sha256": "6fc2682ca2a0b878",
+   "placeholders": [
+    "[area]",
+    "[buyer]",
+    "[motivation]",
+    "[outcome]",
+    "[situation]"
+   ]
+  },
+  {
+   "id": "019",
+   "title": "Buying committee map",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Decision में कौन-कौन है, समझना।",
+   "body": "In a [business size and type], who might influence a decision to buy [service]? Map the user, decider, payer and blocker, with what each cares about and one question to ask each. Mark it as a hypothesis.",
+   "output": "Stakeholder map.",
+   "example": "",
+   "verify": "Call में पूछिए: \"Decision कैसे होता है?\"",
+   "body_sha256": "dff34742d7ec9ad6",
+   "placeholders": [
+    "[business size and type]",
+    "[service]"
+   ]
+  },
+  {
+   "id": "020",
+   "title": "Language bank",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Buyer की अपनी भाषा जमा करना।",
+   "body": "Convert these buyer quotes into a language bank with columns: exact words, underlying problem, where to use (headline, email, proposal). Do not reword the quotes. Quotes: [quotes]",
+   "output": "Language table.",
+   "example": "",
+   "verify": "Publish करते समय personal details मत दीजिए।",
+   "body_sha256": "a9fd5b13c5730f8d",
+   "placeholders": [
+    "[quotes]"
+   ]
+  },
+  {
+   "id": "021",
+   "title": "Website teardown",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Competitor की positioning समझना।",
+   "body": "From this public page text of a competitor: [text], identify the target buyer, main promise, proof, offer structure, CTA and what is vague. Suggest how I might position differently without copying their words or making false comparisons.",
+   "output": "Teardown and differentiation ideas.",
+   "example": "",
+   "verify": "अपनी claims सच रखिए; competitor की बुराई मत कीजिए।",
+   "body_sha256": "2853ac8979b8f2fa",
+   "placeholders": [
+    "[text]"
+   ]
+  },
+  {
+   "id": "022",
+   "title": "Comparison table setup",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Competitors को एक ढाँचे में रखना।",
+   "body": "Create a comparison template for [service] providers with 10 relevant criteria. For each, explain what a good answer looks like and where public evidence is usually found. Add a \"not public\" option so I don't guess.",
+   "output": "Template and guide.",
+   "example": "",
+   "verify": "एक competitor भरकर template test कीजिए।",
+   "body_sha256": "34657cd5d8df4626",
+   "placeholders": [
+    "[service]"
+   ]
+  },
+  {
+   "id": "023",
+   "title": "Differentiation brainstorm",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "अलग दिखने के तरीके ढूँढना।",
+   "body": "Competitors offer: [summary]. My real strengths: [strengths]. Suggest 8 ways to differentiate based on niche, process, communication, speed, language or guarantee of scope. Reject any idea that requires a claim I can't prove.",
+   "output": "8 differentiators.",
+   "example": "",
+   "verify": "Buyers से पूछिए कि उन्हें इनमें से क्या मायने रखता है।",
+   "body_sha256": "a893d8371e60e0ad",
+   "placeholders": [
+    "[strengths]",
+    "[summary]"
+   ]
+  },
+  {
+   "id": "024",
+   "title": "Price signal reader",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Public prices को समझना।",
+   "body": "These are prices I found, with sources and dates: [list]. Organise them by scope, explain why they may not be comparable and what questions I should answer before setting my own. Do not infer an average market rate from this small sample.",
+   "output": "Scope-based view.",
+   "example": "",
+   "verify": "Sources और dates फिर देखिए।",
+   "body_sha256": "86a10a0f12ef5e25",
+   "placeholders": [
+    "[list]"
+   ]
+  },
+  {
+   "id": "025",
+   "title": "Deliverable clarifier",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Vague promise को measurable बनाना।",
+   "body": "Turn this vague offer into concrete deliverables: [offer]. For each, specify quantity, format, owner of inputs and acceptance criteria. Highlight anything I should not promise because I can't control it.",
+   "output": "Deliverable list with criteria.",
+   "example": "",
+   "verify": "Client या दोस्त से पूछिए कि क्या मिलने वाला है।",
+   "body_sha256": "a2cfdf53e31cdc04",
+   "placeholders": [
+    "[offer]"
+   ]
+  },
+  {
+   "id": "026",
+   "title": "Client input checklist",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Delay से बचने के लिए inputs तय करना।",
+   "body": "List everything a client must provide for [service], with why it is needed, a due date relative to kickoff and what happens if it arrives late. Keep the language friendly and practical.",
+   "output": "Input checklist.",
+   "example": "",
+   "verify": "एक demo project में इस list को test कीजिए।",
+   "body_sha256": "09a12f8e755c0e0e",
+   "placeholders": [
+    "[service]"
+   ]
+  },
+  {
+   "id": "027",
+   "title": "Pilot design",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "छोटा paid pilot बनाना।",
+   "body": "Design a low-risk paid pilot of [service] for [buyer]. It should be deliverable in [days], produce something usable alone, have a clear success check and lead naturally to a bigger project. Give 3 options and the risks in each.",
+   "output": "3 pilot options.",
+   "example": "",
+   "verify": "Hours निकालकर floor price से मिलाइए।",
+   "body_sha256": "c12f38473c5ba83e",
+   "placeholders": [
+    "[buyer]",
+    "[days]",
+    "[service]"
+   ]
+  },
+  {
+   "id": "028",
+   "title": "Positioning statement",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Brand की core line बनाना।",
+   "body": "Create 5 positioning statements using: For [buyer] who [problem], [name] is a [category] that [benefit], because [reason to believe]. Use only true reasons from this list: [facts]. Tell me which is the most defensible.",
+   "output": "5 statements and a pick.",
+   "example": "",
+   "verify": "हर reason का proof देखिए।",
+   "body_sha256": "86dc44feb1b40e30",
+   "placeholders": [
+    "[benefit]",
+    "[buyer]",
+    "[category]",
+    "[facts]",
+    "[name]",
+    "[problem]",
+    "[reason to believe]"
+   ]
+  },
+  {
+   "id": "029",
+   "title": "Name generator with checks",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Name के options और जाँच।",
+   "body": "Generate 20 business names for [service] for [buyer] in [market]. Include simple Indian and global-friendly options. Note the pronunciation risk for each, and remind me to check domain, handles and trademarks myself, because you can't verify availability.",
+   "output": "20 names with notes.",
+   "example": "",
+   "verify": "Domain, social handles और trademark खुद check कीजिए।",
+   "body_sha256": "e8c7826718de9048",
+   "placeholders": [
+    "[buyer]",
+    "[market]",
+    "[service]"
+   ]
+  },
+  {
+   "id": "030",
+   "title": "Voice guide",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "एक consistent tone बनाना।",
+   "body": "Create a one-page brand voice guide for [brand] speaking to [buyer]. Include 3 traits, what each means, words to use and avoid, and before and after examples for a WhatsApp reply, an email and a social post.",
+   "output": "Voice guide.",
+   "example": "",
+   "verify": "अपने 3 पुराने messages इसके अनुसार rewrite करके देखिए।",
+   "body_sha256": "5ce7e46cc7465fd4",
+   "placeholders": [
+    "[brand]",
+    "[buyer]"
+   ]
+  },
+  {
+   "id": "031",
+   "title": "Case study draft",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Project से case study लिखना।",
+   "body": "Using only these facts: [project notes], write a 350-word case study with Situation, Problem, Approach, Deliverables, Result and Lessons. Label it [Client project or Demo project]. If there is no measured result, say so. Do not invent numbers or quotes.",
+   "output": "Honest case study.",
+   "example": "",
+   "verify": "हर sentence को notes से मिलाइए।",
+   "body_sha256": "853a20b0fc941ba5",
+   "placeholders": [
+    "[Client project or Demo project]",
+    "[project notes]"
+   ]
+  },
+  {
+   "id": "032",
+   "title": "Demo project picker",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "सबसे relevant demos चुनना।",
+   "body": "My buyer is [buyer] and their top problems are [problems]. Suggest 5 demo projects that would be most convincing and can be done in [hours]. For each, say what skill it shows and how to label it honestly.",
+   "output": "5 demo ideas.",
+   "example": "",
+   "verify": "Target buyer से पूछिए कि कौन सा useful लगता है।",
+   "body_sha256": "5a1f3164939b20d6",
+   "placeholders": [
+    "[buyer]",
+    "[hours]",
+    "[problems]"
+   ]
+  },
+  {
+   "id": "033",
+   "title": "Portfolio critique",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Portfolio का honest review।",
+   "body": "Act as [buyer] looking at my portfolio text: [text]. Tell me what you understood in the first 5 seconds, what makes you doubtful, what's missing before you would contact me and the top 3 fixes. Be direct, and don't suggest fake credibility signals.",
+   "output": "Critique and 3 fixes.",
+   "example": "",
+   "verify": "Real buyer से भी यही test कराइए।",
+   "body_sha256": "5a61657f89155b87",
+   "placeholders": [
+    "[buyer]",
+    "[text]"
+   ]
+  },
+  {
+   "id": "034",
+   "title": "Beginner credibility alternatives",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Client logos के बिना भरोसा।",
+   "body": "I have no clients yet in [service]. List 12 honest ways to build credibility, such as process documentation or teardowns, with effort level and exactly how to present each without implying client work.",
+   "output": "12 credibility options.",
+   "example": "",
+   "verify": "हर proof की wording पढ़िए कि वह misleading तो नहीं।",
+   "body_sha256": "c16b8e12e307b1db",
+   "placeholders": [
+    "[service]"
+   ]
+  },
+  {
+   "id": "035",
+   "title": "Testimonial request",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Permission के साथ feedback माँगना।",
+   "body": "Write a short request asking [person] for honest feedback on [project]. Include 3 guiding questions, make it clear they can decline, and ask for written permission for using their name and the exact words in public.",
+   "output": "Request message.",
+   "example": "",
+   "verify": "Permission record save कीजिए।",
+   "body_sha256": "674c4f7e4f8701c0",
+   "placeholders": [
+    "[person]",
+    "[project]"
+   ]
+  },
+  {
+   "id": "036",
+   "title": "Hero section options",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Homepage की पहली लाइनें बनाना।",
+   "body": "Write 6 hero section options for [service] for [buyer]. Each should have a headline up to 10 words, a sub-headline up to 25 words and one CTA. Avoid vague words like \"innovative\". Don't promise results outside my control.",
+   "output": "6 hero options.",
+   "example": "",
+   "verify": "5-second test कीजिए।",
+   "body_sha256": "4dc8d3f1b0565b39",
+   "placeholders": [
+    "[buyer]",
+    "[service]"
+   ]
+  },
+  {
+   "id": "037",
+   "title": "Services page",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Service details को साफ़ लिखना।",
+   "body": "Write a services page section for these packages: [packages]. For each include who it is for, what is included and not included, timeline and next step. Keep it scannable and honest. Do not add features not listed.",
+   "output": "Page copy.",
+   "example": "",
+   "verify": "Package sheet से मिलाइए।",
+   "body_sha256": "fb7217bd9d0c9fb4",
+   "placeholders": [
+    "[packages]"
+   ]
+  },
+  {
+   "id": "038",
+   "title": "FAQ builder",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "आम सवालों के जवाब।",
+   "body": "Write 10 FAQs for [service] for [buyer], covering price factors, timelines, revisions, ownership, what I need from them and what happens after delivery. Use my policies: [policies]. Flag any answer that needs legal review.",
+   "output": "10 FAQs.",
+   "example": "",
+   "verify": "Policy से हर जवाब मिलाइए।",
+   "body_sha256": "e191207865c95c21",
+   "placeholders": [
+    "[buyer]",
+    "[policies]",
+    "[service]"
+   ]
+  },
+  {
+   "id": "039",
+   "title": "About page storytelling",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Authentic About page।",
+   "body": "Write a 150-word About page from these true facts: [facts]. Focus on why it matters to [buyer] and how I work. No exaggeration, no fake mission statements, and no claims not in the facts.",
+   "output": "About section.",
+   "example": "",
+   "verify": "जो भी लिखा, वह interview में बोल सकें, यह जाँचिए।",
+   "body_sha256": "499c3c35d51f7274",
+   "placeholders": [
+    "[buyer]",
+    "[facts]"
+   ]
+  },
+  {
+   "id": "040",
+   "title": "Local SEO page outline",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Local service page का outline।",
+   "body": "Outline a service page for [service] in [city]. Include suggested headings, local details I should add from real knowledge, internal links, and a list of questions to answer. Do not suggest keyword stuffing or fake locations.",
+   "output": "Page outline.",
+   "example": "",
+   "verify": "Search results में similar pages देखिए।",
+   "body_sha256": "fe501ad36755d373",
+   "placeholders": [
+    "[city]",
+    "[service]"
+   ]
+  },
+  {
+   "id": "041",
+   "title": "Privacy note draft",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Contact form के लिए basic note।",
+   "body": "Draft a plain-language privacy note for a small service website with a contact form that collects [fields]. Say why data is collected, how long it may be kept [period], who processes it [tools] and how to contact me. Mark it as a draft that needs review for applicable law.",
+   "output": "Draft note.",
+   "example": "",
+   "verify": "अपने actual practice से मिलाइए; ज़रूरत हो तो legal review।",
+   "body_sha256": "c97d3a7ceff0da82",
+   "placeholders": [
+    "[fields]",
+    "[period]",
+    "[tools]"
+   ]
+  },
+  {
+   "id": "042",
+   "title": "Content pillars",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Content themes तय करना।",
+   "body": "Suggest 4 content pillars for [service] aimed at [buyer]. For each, give 5 post ideas and what trust it builds. Avoid trending topics that have no link to what I sell.",
+   "output": "4 pillars and 20 ideas.",
+   "example": "",
+   "verify": "Buyer के असली सवालों से मिलाइए।",
+   "body_sha256": "5b5f394cdf36856f",
+   "placeholders": [
+    "[buyer]",
+    "[service]"
+   ]
+  },
+  {
+   "id": "043",
+   "title": "LinkedIn post draft",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "अपनी सीख से post बनाना।",
+   "body": "Turn these rough notes into a LinkedIn post of 150 to 220 words: [notes]. Start with a specific observation, make one clear point and end with a real question. Keep my voice, no emojis or fake humility, and don't add stories or numbers I didn't give.",
+   "output": "LinkedIn post.",
+   "example": "",
+   "verify": "अपनी भाषा में बदलिए और सब facts जाँचिए।",
+   "body_sha256": "48f1ca23165c3399",
+   "placeholders": [
+    "[notes]"
+   ]
+  },
+  {
+   "id": "044",
+   "title": "Reel script writer",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Short video script।",
+   "body": "Write a 30-second Reel script in Hinglish about [topic] for [buyer]. Give hook, 3 quick points, on-screen text, shot suggestions and one CTA. Keep spoken words under 80 and don't use unverifiable claims.",
+   "output": "Script with visuals.",
+   "example": "",
+   "verify": "बोलकर time कीजिए।",
+   "body_sha256": "dce170899d72721a",
+   "placeholders": [
+    "[buyer]",
+    "[topic]"
+   ]
+  },
+  {
+   "id": "045",
+   "title": "Carousel outline",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Slide-by-slide content।",
+   "body": "Create an 8-slide Instagram carousel on [topic], with a headline under 8 words per slide, a short explanation and a design note. Slide 1 must name a specific problem, and the last slide must have one action.",
+   "output": "8-slide outline.",
+   "example": "",
+   "verify": "Phone पर पढ़ने योग्य है, देखिए।",
+   "body_sha256": "716480fcac7449b9",
+   "placeholders": [
+    "[topic]"
+   ]
+  },
+  {
+   "id": "046",
+   "title": "Monthly calendar",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "4 हफ़्तों का plan।",
+   "body": "Create a 4-week content calendar for [channel] with [n] posts per week for [buyer]. Link each post to a pillar and a goal (teach, show, prove, invite). Include prep time so it fits within [hours] per week.",
+   "output": "Calendar table.",
+   "example": "",
+   "verify": "अपने समय के अनुसार घटाइए।",
+   "body_sha256": "8ad3764da65ee1e5",
+   "placeholders": [
+    "[buyer]",
+    "[channel]",
+    "[hours]",
+    "[n]"
+   ]
+  },
+  {
+   "id": "047",
+   "title": "Comment starter",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Genuine comments लिखना।",
+   "body": "Here is a post by a prospect or peer: [post]. Suggest 3 thoughtful comments that add a specific point or question. No flattery, no self-promotion, and no links. Keep each under 30 words.",
+   "output": "3 comments.",
+   "example": "",
+   "verify": "वही पोस्ट करें जो सच में आप सोचते हैं।",
+   "body_sha256": "f2649f37c3a8dff4",
+   "placeholders": [
+    "[post]"
+   ]
+  },
+  {
+   "id": "048",
+   "title": "Hook rewriter",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Weak opening सुधारना।",
+   "body": "Rewrite this opening line in 10 ways for [platform], using curiosity, specificity, contrast or a real question: [line]. Avoid clickbait and anything I cannot back up.",
+   "output": "10 hooks.",
+   "example": "",
+   "verify": "Content में वही बात सच में दीजिए जो hook में है।",
+   "body_sha256": "3911b2a920fb25e5",
+   "placeholders": [
+    "[line]",
+    "[platform]"
+   ]
+  },
+  {
+   "id": "049",
+   "title": "Analytics reader",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Post data से सीखना।",
+   "body": "Here are my post stats: [table]. Identify what is signal and what may be noise given the small sample, and suggest one experiment for next month. Don't infer revenue impact unless the data shows it.",
+   "output": "Findings and one experiment.",
+   "example": "",
+   "verify": "Raw numbers से मिलाइए।",
+   "body_sha256": "e83762b3199d989b",
+   "placeholders": [
+    "[table]"
+   ]
+  },
+  {
+   "id": "050",
+   "title": "Ideal prospect criteria",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "किसे list में रखना है, तय करना।",
+   "body": "Define ideal prospect criteria for [service]. Include must-have, nice-to-have and disqualifying signs, each checkable from public information without scraping or private data. Output as a 0-2 scoring sheet.",
+   "output": "Scoring sheet.",
+   "example": "",
+   "verify": "10 prospects पर चलाकर test कीजिए।",
+   "body_sha256": "42512cf338837e17",
+   "placeholders": [
+    "[service]"
+   ]
+  },
+  {
+   "id": "051",
+   "title": "Source ideas",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Prospects कहाँ मिलेंगे।",
+   "body": "Suggest 15 places to manually find [buyer] in [location], including directories, associations, events and marketplaces. For each, explain how to research it properly and any rules to respect. Tell me to verify each source exists.",
+   "output": "15 sources with notes.",
+   "example": "",
+   "verify": "हर source खोलकर देखिए।",
+   "body_sha256": "cd83933df80bba3d",
+   "placeholders": [
+    "[buyer]",
+    "[location]"
+   ]
+  },
+  {
+   "id": "052",
+   "title": "Visible need checklist",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Public signs से ज़रूरत पहचानना।",
+   "body": "What signs on a public website, Google listing or Instagram page may suggest that a [buyer] could benefit from [service]? List 15 signs, with how to check each, and warn me where a sign can be misleading.",
+   "output": "15 signs with cautions.",
+   "example": "",
+   "verify": "Pattern को आँख से verify कीजिए।",
+   "body_sha256": "aa435d255ea43e81",
+   "placeholders": [
+    "[buyer]",
+    "[service]"
+   ]
+  },
+  {
+   "id": "053",
+   "title": "Observation writer",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Notes से बढ़िया observation।",
+   "body": "From my notes on this business: [notes], write 2 specific and polite observations I can use in a message. Don't criticise harshly, and don't state anything I did not observe. Add one possible related question for each.",
+   "output": "2 observations with questions.",
+   "example": "",
+   "verify": "Page दोबारा खोलकर confirm कीजिए।",
+   "body_sha256": "ca5881c0bc5d23a6",
+   "placeholders": [
+    "[notes]"
+   ]
+  },
+  {
+   "id": "054",
+   "title": "Referral partner ideas",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Non-competing partners ढूँढना।",
+   "body": "Which non-competing service providers often serve [buyer] before or after [service]? List 8 partner types, what I could offer them, and a short partnership intro message that isn't pushy.",
+   "output": "8 partner types and message.",
+   "example": "",
+   "verify": "2 से बात कीजिए; कोई referral fee हो तो साफ़ बताइए।",
+   "body_sha256": "fd0d2ebf76b1e0b7",
+   "placeholders": [
+    "[buyer]",
+    "[service]"
+   ]
+  },
+  {
+   "id": "055",
+   "title": "Data hygiene rules",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Prospect data सुरक्षित रखना।",
+   "body": "Write simple rules for keeping a prospect sheet: what fields to keep, what never to collect, how to record opt-outs, how long to keep data [period] and who can access it. Mark that applicable law should be checked. No legal claims.",
+   "output": "Data rules.",
+   "example": "",
+   "verify": "अपनी sheet को इन rules से मिलाइए।",
+   "body_sha256": "dc1daec5de28d61e",
+   "placeholders": [
+    "[period]"
+   ]
+  },
+  {
+   "id": "056",
+   "title": "Cold email draft",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Personal cold email बनाना।",
+   "body": "Write a cold email to [person role] at [business]. Observation: [observation]. Relevant proof: [proof]. Ask: [small ask]. Limit it to 90 words with a specific subject and an easy way to say no. Don't invent details or use false urgency.",
+   "output": "Email with subject.",
+   "example": "",
+   "verify": "Facts और unsubscribe line check कीजिए।",
+   "body_sha256": "aed793f3d8533aed",
+   "placeholders": [
+    "[business]",
+    "[observation]",
+    "[person role]",
+    "[proof]",
+    "[small ask]"
+   ]
+  },
+  {
+   "id": "057",
+   "title": "Subject line testing",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Clear subject lines।",
+   "body": "Write 10 subject lines under 7 words for this email: [email]. Make them specific and honest. Avoid \"Re:\", fake familiarity, all caps and clickbait.",
+   "output": "10 subject lines.",
+   "example": "",
+   "verify": "Email के content से match होना चाहिए।",
+   "body_sha256": "a65e135f1af24d03",
+   "placeholders": [
+    "[email]"
+   ]
+  },
+  {
+   "id": "058",
+   "title": "Walk-in pitch",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "30-second in-person introduction।",
+   "body": "Write a respectful 30-second walk-in script in Hinglish for approaching [business type] about [service]. Include checking if it's a good time, one observation, a question and a way to leave a card if they're busy.",
+   "output": "Short script.",
+   "example": "",
+   "verify": "किसी दोस्त के साथ practice कीजिए।",
+   "body_sha256": "aa6c2693c1986035",
+   "placeholders": [
+    "[business type]",
+    "[service]"
+   ]
+  },
+  {
+   "id": "059",
+   "title": "Follow-up with value",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Follow-up में कुछ उपयोगी जोड़ना।",
+   "body": "Write 2 follow-up messages to [person] after [first message]. Each must add one piece of real value for their business, such as a quick tip, and shouldn't guilt them. Under 60 words each. The last message must close the loop.",
+   "output": "2 follow-ups.",
+   "example": "",
+   "verify": "Tip सच में काम का है, देखिए।",
+   "body_sha256": "3c70bd6ce1efc7db",
+   "placeholders": [
+    "[first message]",
+    "[person]"
+   ]
+  },
+  {
+   "id": "060",
+   "title": "Instagram DM",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Natural DM लिखना।",
+   "body": "Write 3 short DM options to [business] after I've genuinely engaged with their posts. Mention [specific post], ask a real question and don't pitch in the first message. Under 40 words each.",
+   "output": "3 DMs.",
+   "example": "",
+   "verify": "Volume कम रखिए और copy-paste मत कीजिए।",
+   "body_sha256": "d8d450b1e67854b6",
+   "placeholders": [
+    "[business]",
+    "[specific post]"
+   ]
+  },
+  {
+   "id": "061",
+   "title": "Introduction request",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "किसी से intro माँगना।",
+   "body": "Write a short note asking [contact] to introduce me to [person]. Explain why, and include a 2-line forwardable blurb about me. Make it easy to decline. Tell me to ask before sharing anyone's contact details.",
+   "output": "Request and blurb.",
+   "example": "",
+   "verify": "Consent के बिना number share न हो।",
+   "body_sha256": "fb6236660585a0d1",
+   "placeholders": [
+    "[contact]",
+    "[person]"
+   ]
+  },
+  {
+   "id": "062",
+   "title": "Sequence auditor",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Sequence spammy तो नहीं।",
+   "body": "Review my outreach sequence: [messages and timing]. Identify anything that's pushy, repetitive, misleading, or may violate platform rules. Suggest a lighter version. Note where a professional should confirm legal compliance.",
+   "output": "Audit and lighter version.",
+   "example": "",
+   "verify": "Platform policy खुद पढ़िए।",
+   "body_sha256": "d14c3f76cbfc04fb",
+   "placeholders": [
+    "[messages and timing]"
+   ]
+  },
+  {
+   "id": "063",
+   "title": "Message batch review",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "एक साथ 5 messages जाँचना।",
+   "body": "Here are 5 outreach messages: [messages]. Rank them on specificity, flag sentences that could apply to any business, and rewrite the two weakest using only the facts present.",
+   "output": "Ranking and 2 rewrites.",
+   "example": "",
+   "verify": "Facts न बदले हों, देखिए।",
+   "body_sha256": "8df7bf0fc282f5e7",
+   "placeholders": [
+    "[messages]"
+   ]
+  },
+  {
+   "id": "064",
+   "title": "Call plan",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Call की तैयारी।",
+   "body": "Create a 30-minute discovery call plan for [prospect business] about [service]. Based on [public notes], include an opening, 10 questions, what to listen for and how to end with a clear next step.",
+   "output": "Call plan.",
+   "example": "",
+   "verify": "Questions में से एक pitch न हो, देखिए।",
+   "body_sha256": "b8a05c128cfb4d6d",
+   "placeholders": [
+    "[prospect business]",
+    "[public notes]",
+    "[service]"
+   ]
+  },
+  {
+   "id": "065",
+   "title": "Question improver",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Leading सवाल सुधारना।",
+   "body": "Rewrite these discovery questions so that they're open, non-leading and about real past events: [questions]. Explain the improvement in a few words each.",
+   "output": "Improved questions.",
+   "example": "",
+   "verify": "एक role-play में test कीजिए।",
+   "body_sha256": "c1d156ce8a2cb3e1",
+   "placeholders": [
+    "[questions]"
+   ]
+  },
+  {
+   "id": "066",
+   "title": "Budget conversation",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Budget की बात सहज बनाना।",
+   "body": "Give me 5 natural ways to ask about budget on a call for [service], in English and Hinglish. Include what to say if they say \"you tell me\", and when to share a range. Don't use pressure.",
+   "output": "5 phrasing options.",
+   "example": "",
+   "verify": "आवाज़ में बोलकर देखिए।",
+   "body_sha256": "24303464acff498d",
+   "placeholders": [
+    "[service]"
+   ]
+  },
+  {
+   "id": "067",
+   "title": "Call notes summary",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Notes से recap बनाना।",
+   "body": "Turn these rough call notes into a client recap with what I heard, goals, constraints, open questions and next steps. Don't add anything not in the notes, and list items that need confirmation. Notes: [notes]",
+   "output": "Recap message.",
+   "example": "",
+   "verify": "Client को confirm करने को कहिए।",
+   "body_sha256": "8b7facda92ef74b7",
+   "placeholders": [
+    "[notes]"
+   ]
+  },
+  {
+   "id": "068",
+   "title": "Objection practice",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Objections की practice।",
+   "body": "Quiz me on objections to [service] at [price]. Give me one objection at a time as a [buyer]. After each reply, tell me whether I listened first, whether I got defensive and how to improve. Don't recommend manipulative tactics.",
+   "output": "Interactive practice.",
+   "example": "",
+   "verify": "Real calls से नई objections जोड़िए।",
+   "body_sha256": "713edf263c543323",
+   "placeholders": [
+    "[buyer]",
+    "[price]",
+    "[service]"
+   ]
+  },
+  {
+   "id": "069",
+   "title": "Fit assessment",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Client को ना कहने का decision।",
+   "body": "From these call notes: [notes], assess whether this client is a good fit using goals, budget, timeline, decision-making, respect, and my capacity. List red flags and what to clarify. If it's not a fit, draft a polite decline.",
+   "output": "Fit assessment and decline draft.",
+   "example": "",
+   "verify": "Decision अपना रखिए।",
+   "body_sha256": "aeafaad5d68e3696",
+   "placeholders": [
+    "[notes]"
+   ]
+  },
+  {
+   "id": "070",
+   "title": "Executive summary",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Proposal का पहला हिस्सा।",
+   "body": "Write a 100-word summary for a proposal based on this call recap: [recap]. Use the client's words where possible and state what we'll do and why. Avoid promises about revenue or rankings.",
+   "output": "Summary.",
+   "example": "",
+   "verify": "Client की बात सही पकड़ी, देखिए।",
+   "body_sha256": "e1402c4477144407",
+   "placeholders": [
+    "[recap]"
+   ]
+  },
+  {
+   "id": "071",
+   "title": "Scope of work",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Clear scope लिखना।",
+   "body": "Convert this project description into a scope of work with deliverables, assumptions, client responsibilities, exclusions, acceptance criteria and change request process: [description]. List ambiguities as questions.",
+   "output": "Scope document.",
+   "example": "",
+   "verify": "हर deliverable गिना जा सके।",
+   "body_sha256": "d932e434be0efae9",
+   "placeholders": [
+    "[description]"
+   ]
+  },
+  {
+   "id": "072",
+   "title": "Options builder",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "तीन proposal options बनाना।",
+   "body": "Create 3 options for this client: [need], budget signal [budget]. Each must be a real scope change, not the same work at different prices. Show what's traded off, and recommend one based on their stated goal.",
+   "output": "3 scoped options.",
+   "example": "",
+   "verify": "Floor price से नीचे कोई option न हो।",
+   "body_sha256": "b9e56f2a14b80c13",
+   "placeholders": [
+    "[budget]",
+    "[need]"
+   ]
+  },
+  {
+   "id": "073",
+   "title": "Timeline writer",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Realistic timeline।",
+   "body": "Create a timeline table for this scope: [scope]. Include my tasks, client tasks, review windows, buffer and the rule that delay in inputs moves the dates. Start date: [date]. Hours available per week: [hours]. Flag risks.",
+   "output": "Timeline table.",
+   "example": "",
+   "verify": "Calendar में रखकर देखिए।",
+   "body_sha256": "0bc64a143fed3841",
+   "placeholders": [
+    "[date]",
+    "[hours]",
+    "[scope]"
+   ]
+  },
+  {
+   "id": "074",
+   "title": "Proposal review",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "भेजने से पहले review।",
+   "body": "Review this proposal for clarity, missing terms, inconsistent dates or prices, vague deliverables and overpromises. Give a prioritised fix list. Note anything that needs a lawyer or tax advisor. Proposal: [paste]",
+   "output": "Fix list.",
+   "example": "",
+   "verify": "Calculations खुद match कीजिए।",
+   "body_sha256": "a584c8119cc5af31",
+   "placeholders": [
+    "[paste]"
+   ]
+  },
+  {
+   "id": "075",
+   "title": "Decision follow-up",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Proposal के बाद follow-up।",
+   "body": "Write 3 follow-ups for a proposal sent to [client]: at 2 days, 5 days and 10 days. Each should be short, helpful and give an easy way to say no. Base them on these points from the call: [points].",
+   "output": "3 messages.",
+   "example": "",
+   "verify": "Timing client की बताई timeline से मिलाइए।",
+   "body_sha256": "7e9a471fc5ebf156",
+   "placeholders": [
+    "[client]",
+    "[points]"
+   ]
+  },
+  {
+   "id": "076",
+   "title": "Rate explanation",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Rate को समझाना।",
+   "body": "Explain to a small business owner why [service] costs [price] in simple language, using a task breakdown: [tasks]. Don't be defensive, and don't compare with others in a negative way. Under 120 words.",
+   "output": "Client-friendly explanation.",
+   "example": "",
+   "verify": "Hours असली हों, देखिए।",
+   "body_sha256": "ab25d1ec5256a168",
+   "placeholders": [
+    "[price]",
+    "[service]",
+    "[tasks]"
+   ]
+  },
+  {
+   "id": "077",
+   "title": "Discount alternatives",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Discount माँगने पर विकल्प।",
+   "body": "A client asks for a discount on [package]. Suggest 6 alternatives that protect my margin, such as reduced scope, longer timeline, payment terms or phased delivery. Write a one-sentence offer for each.",
+   "output": "6 alternatives.",
+   "example": "",
+   "verify": "Calculator से margin देखिए।",
+   "body_sha256": "7510b3950b8cda35",
+   "placeholders": [
+    "[package]"
+   ]
+  },
+  {
+   "id": "078",
+   "title": "Price increase note",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Price बढ़ाने की सूचना।",
+   "body": "Write a respectful note telling existing client [name] that my rate will change from [old] to [new] on [date], explaining why in one line, thanking them, and offering to discuss scope. No guilt or threats.",
+   "output": "Note.",
+   "example": "",
+   "verify": "Notice period agreement से मिलाइए।",
+   "body_sha256": "520b2501f1f6848f",
+   "placeholders": [
+    "[date]",
+    "[name]",
+    "[new]",
+    "[old]"
+   ]
+  },
+  {
+   "id": "079",
+   "title": "Retainer pricing",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Monthly retainer तय करना।",
+   "body": "Help me price a monthly retainer for [scope]. Estimate monthly hours with me using [rate], add a buffer, and define what happens with unused hours and extra requests. Ask me for numbers if missing. Don't assume market rates.",
+   "output": "Retainer calculation and terms.",
+   "example": "",
+   "verify": "Bonus C की Profit sheet से जाँचिए।",
+   "body_sha256": "3ca3cb4c04cbe08f",
+   "placeholders": [
+    "[rate]",
+    "[scope]"
+   ]
+  },
+  {
+   "id": "080",
+   "title": "Project profitability review",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Project के बाद margin देखना।",
+   "body": "Project data: quoted [price], hours estimated [x], actual [y], direct costs [z], rate target [r]. Calculate effective hourly rate and margin, explain the gap, and suggest 3 changes for the next quote. Show your arithmetic.",
+   "output": "Profitability review.",
+   "example": "",
+   "verify": "Calculator से result मिलाइए।",
+   "body_sha256": "ead8dc0b25c14fd8",
+   "placeholders": [
+    "[price]",
+    "[r]",
+    "[x]",
+    "[y]",
+    "[z]"
+   ]
+  },
+  {
+   "id": "081",
+   "title": "Kickoff agenda",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Kickoff call की तैयारी।",
+   "body": "Create a 20-minute kickoff agenda for [project], covering goals, deliverables, roles, communication, access, schedule and risks. Add 5 questions to ask, and a follow-up summary template.",
+   "output": "Agenda and summary template.",
+   "example": "",
+   "verify": "Call के बाद summary भेजिए।",
+   "body_sha256": "28c6d32cf51040e3",
+   "placeholders": [
+    "[project]"
+   ]
+  },
+  {
+   "id": "082",
+   "title": "Task breakdown",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Weekly काम छोटे हिस्सों में।",
+   "body": "Break this milestone into tasks of at most 2 hours each: [milestone]. Order by dependency and mark what's blocked by the client. Suggest what to do first today.",
+   "output": "Ordered tasks.",
+   "example": "",
+   "verify": "Day end में plan बनाम actual देखिए।",
+   "body_sha256": "da3bd6b2e7f34073",
+   "placeholders": [
+    "[milestone]"
+   ]
+  },
+  {
+   "id": "083",
+   "title": "Risk register",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Risks पहले सोचना।",
+   "body": "List the top 10 risks for this project: [project], with likelihood, impact, prevention and response. Keep it practical for a solo service provider, and include scope, payment, data and tool risks.",
+   "output": "Risk table.",
+   "example": "",
+   "verify": "Top 3 पर आज action लीजिए।",
+   "body_sha256": "8776522d19a0cded",
+   "placeholders": [
+    "[project]"
+   ]
+  },
+  {
+   "id": "084",
+   "title": "SOP writer",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "बार-बार के काम की SOP।",
+   "body": "Write a simple SOP for [repeated task] from these rough steps: [steps]. Include purpose, tools, step-by-step actions, quality check and common errors, so a new assistant could follow it. Flag missing steps.",
+   "output": "SOP document.",
+   "example": "",
+   "verify": "खुद या किसी और से चलवाकर test कीजिए।",
+   "body_sha256": "43a8e589caacad88",
+   "placeholders": [
+    "[repeated task]",
+    "[steps]"
+   ]
+  },
+  {
+   "id": "085",
+   "title": "Handover checklist",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Project closing की सूची।",
+   "body": "Create a handover checklist for [deliverable]. Include files, credentials transfer through safe methods, documentation, access removal, backups, renewal dates and a final confirmation message.",
+   "output": "Handover checklist.",
+   "example": "",
+   "verify": "Client के साथ एक-एक item confirm कीजिए।",
+   "body_sha256": "cc2f4ca9bc09df85",
+   "placeholders": [
+    "[deliverable]"
+   ]
+  },
+  {
+   "id": "086",
+   "title": "Boundary message",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Working hours की सीमा।",
+   "body": "Write a polite message setting expectations: I reply within [time], in [hours], and urgent issues go through [method]. The client has been messaging at night. Keep it warm and firm, under 60 words.",
+   "output": "Boundary message.",
+   "example": "",
+   "verify": "आप खुद इसे follow कर सकें।",
+   "body_sha256": "3ef6f45e2f2c50da",
+   "placeholders": [
+    "[hours]",
+    "[method]",
+    "[time]"
+   ]
+  },
+  {
+   "id": "087",
+   "title": "Feedback clarifier",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Vague feedback को स्पष्ट करना।",
+   "body": "A client said: \"[vague feedback]\". Write a reply that shows respect, asks 3 specific questions and offers 2 options to choose from, so that we can move forward without guessing.",
+   "output": "Clarifying reply.",
+   "example": "",
+   "verify": "Revision round के हिसाब से count कीजिए।",
+   "body_sha256": "384587dc1f021c32",
+   "placeholders": [
+    "[vague feedback]"
+   ]
+  },
+  {
+   "id": "088",
+   "title": "Scope creep response",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Extra request पर जवाब।",
+   "body": "The client asked for: [request]. Our scope: [scope]. Write a friendly reply saying it's outside scope, and offer a quote, a swap or a later phase. Don't sound annoyed or refuse outright.",
+   "output": "Reply.",
+   "example": "",
+   "verify": "Scope document से मिलाइए।",
+   "body_sha256": "64409e73efdad01d",
+   "placeholders": [
+    "[request]",
+    "[scope]"
+   ]
+  },
+  {
+   "id": "089",
+   "title": "Bad news message",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Mistake की ईमानदार सूचना।",
+   "body": "I made this mistake: [mistake]. Impact: [impact]. Fix: [fix and time]. Write a message that takes ownership, explains simply, gives the fix and prevention, and doesn't over-apologise.",
+   "output": "Message.",
+   "example": "",
+   "verify": "Fix की date realistic हो।",
+   "body_sha256": "91f5d194d5f7f108",
+   "placeholders": [
+    "[fix and time]",
+    "[impact]",
+    "[mistake]"
+   ]
+  },
+  {
+   "id": "090",
+   "title": "Payment reminder ladder",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Invoice reminders।",
+   "body": "Write 4 payment reminders for invoice [no], amount [amount], due [date], increasing in firmness: before due, 3 days late, 10 days late and final notice. Keep it respectful. Use only remedies present in our agreement: [terms].",
+   "output": "4 reminders.",
+   "example": "",
+   "verify": "Terms से बाहर कोई धमकी न हो।",
+   "body_sha256": "4d0e944408517f19",
+   "placeholders": [
+    "[amount]",
+    "[date]",
+    "[no]",
+    "[terms]"
+   ]
+  },
+  {
+   "id": "091",
+   "title": "Saying no to a client",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "गलत request को मना करना।",
+   "body": "A client asked me to [unethical or out-of-scope request, such as fake reviews]. Write a polite but clear refusal that explains the risk and offers a legitimate alternative. Under 80 words.",
+   "output": "Refusal message.",
+   "example": "",
+   "verify": "Alternative सच में legitimate हो।",
+   "body_sha256": "f35a3d759ff92703",
+   "placeholders": [
+    "[unethical or out-of-scope request, such as fake reviews]"
+   ]
+  },
+  {
+   "id": "092",
+   "title": "Project closing note",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "अच्छा closing और अगला कदम।",
+   "body": "Write a project-closing message for [client] that summarises what was delivered, gives care instructions, thanks them, requests feedback and mentions one relevant next idea only if useful: [idea]. No hard selling.",
+   "output": "Closing message.",
+   "example": "",
+   "verify": "सभी delivered items सूची से मिलाइए।",
+   "body_sha256": "d6d35546874cb83b",
+   "placeholders": [
+    "[client]",
+    "[idea]"
+   ]
+  },
+  {
+   "id": "093",
+   "title": "Process mapping",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Automate से पहले process समझना।",
+   "body": "Interview me about [process], one question at a time. Then write the current steps, time per step, errors, inputs and outputs. Only after that suggest which single step would benefit most from automation, and why.",
+   "output": "Process map and one recommendation.",
+   "example": "",
+   "verify": "एक हफ़्ते manually time नोट कीजिए।",
+   "body_sha256": "7bf3a551f925ee49",
+   "placeholders": [
+    "[process]"
+   ]
+  },
+  {
+   "id": "094",
+   "title": "Form-to-sheet design",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Simple lead capture।",
+   "body": "Design a simple automation that sends website form submissions to a Google Sheet and notifies me by email using [tool]. List triggers, actions, field mapping, a test plan and failure checks. Note plan limits should be checked on the tool's pricing page.",
+   "output": "Design and test plan.",
+   "example": "",
+   "verify": "Test entry और failure दोनों चलाकर देखिए।",
+   "body_sha256": "d47130d3cf5acab2",
+   "placeholders": [
+    "[tool]"
+   ]
+  },
+  {
+   "id": "095",
+   "title": "Client reminder design",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Reminders के लिए automation।",
+   "body": "Design a safe reminder workflow for invoices or tasks using [tool]. A human must approve anything sent to clients in the first month. Include data fields, logs, and how to pause it. Avoid messaging anyone without consent.",
+   "output": "Workflow design.",
+   "example": "",
+   "verify": "अपने ही email पर test कीजिए।",
+   "body_sha256": "3899529f1fc0021f",
+   "placeholders": [
+    "[tool]"
+   ]
+  },
+  {
+   "id": "096",
+   "title": "AI workflow safety review",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "AI automation का review।",
+   "body": "Review this AI workflow: [workflow]. What personal data goes where? What can go wrong? Where is human review needed? What happens if the AI output is wrong or the tool is down? Suggest controls in plain language, and flag points needing legal review.",
+   "output": "Safety review.",
+   "example": "",
+   "verify": "Tool की terms और settings खुद पढ़िए।",
+   "body_sha256": "f12a836436357bd6",
+   "placeholders": [
+    "[workflow]"
+   ]
+  },
+  {
+   "id": "097",
+   "title": "Automation ROI estimator",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "क्या automation फ़ायदेमंद है।",
+   "body": "Calculate whether automating [task] is worthwhile: minutes per run [m], runs per month [r], my hourly value [v], tool cost [c], setup hours [s], maintenance hours per month [h]. Show break-even months and state your assumptions.",
+   "output": "ROI calculation.",
+   "example": "",
+   "verify": "Arithmetic खुद चलाइए।",
+   "body_sha256": "dedd036d1140601f",
+   "placeholders": [
+    "[c]",
+    "[h]",
+    "[m]",
+    "[r]",
+    "[s]",
+    "[task]",
+    "[v]"
+   ]
+  },
+  {
+   "id": "098",
+   "title": "Monthly review",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "महीने का business review।",
+   "body": "Summary of this month: revenue [x], costs [y], hours [z], leads [l], projects [p], notes [n]. Identify what improved, what worsened, what to stop and the top priority for next month. State what the data can't prove.",
+   "output": "Review and one priority.",
+   "example": "",
+   "verify": "Bank records से revenue मिलाइए।",
+   "body_sha256": "e5f03a050ed909d8",
+   "placeholders": [
+    "[l]",
+    "[n]",
+    "[p]",
+    "[x]",
+    "[y]",
+    "[z]"
+   ]
+  },
+  {
+   "id": "099",
+   "title": "Client feedback analysis",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Feedback से सुधार।",
+   "body": "Analyse these anonymised client feedback responses: [responses]. Group into strengths and issues, count the themes, suggest 3 process changes and draft one thank-you note. Only use what's in the text.",
+   "output": "Themes and 3 changes.",
+   "example": "",
+   "verify": "Quotes असली हों, देखिए।",
+   "body_sha256": "4e011703083bc84e",
+   "placeholders": [
+    "[responses]"
+   ]
+  },
+  {
+   "id": "100",
+   "title": "Service retirement check",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "कौन सी service बंद करनी चाहिए।",
+   "body": "For each service: [revenue, hours, enjoyment, client quality], recommend Keep, Fix, Reprice or Stop. Show your reasoning and calculate revenue per hour. Tell me if the data is too thin to decide.",
+   "output": "Decision table.",
+   "example": "",
+   "verify": "Calculator से मिलाइए।",
+   "body_sha256": "e37fdc915c287759",
+   "placeholders": [
+    "[revenue, hours, enjoyment, client quality]"
+   ]
+  },
+  {
+   "id": "101",
+   "title": "Template upgrade",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Repeated documents सुधारना।",
+   "body": "Here is a template I use: [template]. Based on these problems from recent projects: [problems], suggest specific edits so that they don't happen again. Show the changed text only.",
+   "output": "Suggested edits.",
+   "example": "",
+   "verify": "अगले project में test कीजिए।",
+   "body_sha256": "7b747a5c09d1dc2e",
+   "placeholders": [
+    "[problems]",
+    "[template]"
+   ]
+  },
+  {
+   "id": "102",
+   "title": "Capacity planner",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "कितना काम लेना है।",
+   "body": "I have [hours] per week. Current projects: [list with hours]. Admin and marketing: [hours]. Tell me how much new work I can accept, when I should say no or join a waitlist, and what to pause first. Show the arithmetic.",
+   "output": "Capacity table.",
+   "example": "",
+   "verify": "Calendar से match कीजिए।",
+   "body_sha256": "606c7090ae2abf21",
+   "placeholders": [
+    "[hours]",
+    "[list with hours]"
+   ]
+  },
+  {
+   "id": "103",
+   "title": "Learning roadmap",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "अगला skill चुनना।",
+   "body": "Given my service: [service], client requests: [requests] and project issues: [issues], recommend 3 skills to learn over the next 90 days, ranked by likely value to my clients. Give a practice project for each, but don't promise income.",
+   "output": "90-day learning plan.",
+   "example": "",
+   "verify": "Clients से पूछिए कि क्या यह उनके काम आएगा।",
+   "body_sha256": "f1ab10ab06824deb",
+   "placeholders": [
+    "[issues]",
+    "[requests]",
+    "[service]"
+   ]
+  },
+  {
+   "id": "104",
+   "title": "Compliance calendar questions",
+   "category": "",
+   "location": "bonus-A",
+   "purpose": "Compliance की याद के लिए।",
+   "body": "I'm a [structure] in [state], India, providing [service]. Create a list of compliance topics to ask my CA about, such as returns, advance tax, GST if applicable and records, in a calendar format with blank dates to fill in. Do not state any specific date as definite.",
+   "output": "Blank calendar with topics.",
+   "example": "",
+   "verify": "Dates सिर्फ़ CA और official portal से भरिए।",
+   "body_sha256": "7f87aecc89110c2e",
+   "placeholders": [
+    "[service]",
+    "[state]",
+    "[structure]"
+   ]
+  }
+ ]
+}
