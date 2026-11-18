@@ -1,0 +1,72 @@
+{
+ "pdf": "production/final/ZTFC_2026_paperback_interior_135x210_PRINT.pdf",
+ "pages": 258,
+ "status": "PASS",
+ "checks": [
+  {
+   "check": "folios on every page (roman front matter, arabic from Chapter 1)",
+   "status": "PASS",
+   "detail": "258 pages correct"
+  },
+  {
+   "check": "Contents page numbers match heading positions",
+   "status": "PASS",
+   "detail": "164 entries verified"
+  },
+  {
+   "check": "every word of the edited manuscript is in the PDF (no lost or clipped text)",
+   "status": "PASS",
+   "detail": "33883 source words all present"
+  },
+  {
+   "check": "original language preserved (Hinglish): every Devanagari word present, none translated away",
+   "status": "PASS",
+   "detail": "10706 Devanagari words in source, 11416 in PDF"
+  },
+  {
+   "check": "all text inside the text block (inner 19 mm / outer 14 mm, mirrored)",
+   "status": "PASS",
+   "detail": "no overflow or clipping"
+  },
+  {
+   "check": "10 chapters",
+   "status": "PASS",
+   "detail": "chapter openers 01–10 present"
+  },
+  {
+   "check": "4 stage dividers",
+   "status": "PASS",
+   "detail": "Stage 01–04 present"
+  },
+  {
+   "check": "20 / 20 templates present with writing space",
+   "status": "PASS",
+   "detail": "20 / 20 templates verified"
+  },
+  {
+   "check": "7 / 7 calculator sheets present (formulas + write-in cells)",
+   "status": "PASS",
+   "detail": "7 / 7 calculators verified"
+  },
+  {
+   "check": "30-day action plan (30 days)",
+   "status": "PASS",
+   "detail": "30 days"
+  },
+  {
+   "check": "glossary (17 terms) and sources (91)",
+   "status": "PASS",
+   "detail": "17 terms, 91 sources"
+  },
+  {
+   "check": "About the Author: portrait + genuine signature placed",
+   "status": "PASS",
+   "detail": "2 images on About page (page 237, physical 257 of 258)"
+  },
+  {
+   "check": "no obsolete download / portal / workbook references",
+   "status": "PASS",
+   "detail": "0 found"
+  }
+ ]
+}

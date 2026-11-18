@@ -1,0 +1,115 @@
+<!doctype html>
+<!-- ZERO TO FIRST CLIENT — LIGHT COVER CONCEPT A · "Editorial Ripple"
+     Concept for review, NOT a print-ready wrap. Spine 13 mm is PROVISIONAL (not final).
+     Front: left-aligned stacked title; growth motif = concentric growth rings widening from one point (zero);
+     the outermost ring carries a violet point (the first client). Rings bleed off the edge.
+     Back: single editorial column, statistics as a ruled list. Barcode = empty placeholder. -->
+<html lang="en"><head><meta charset="utf-8"><title>ZTFC cover concept A (light)</title>
+<link rel="stylesheet" href="cover_light_base.css">
+<style>
+/* ---------- front ---------- */
+.front .imprint { left: 16mm; top: 16mm; font: 700 7pt/1 Inter; letter-spacing: 0.3em; }
+.front .edition { right: 16mm; top: 16mm; font: 600 7pt/1 Inter; letter-spacing: 0.22em; color: var(--navy-3); }
+.front .toprule { left: 16mm; top: 22mm; width: 103mm; border-top: 0.5pt solid var(--hair); }
+.front .title { left: 14.6mm; top: 33mm; width: 112mm; font: 800 60pt/53pt Manrope; letter-spacing: -0.035em; }
+.front .title span { display: block; }
+.front .accent { left: 16.4mm; top: 101mm; width: 11mm; border-top: 1.6pt solid var(--violet); }
+.front .sub { left: 16mm; top: 106mm; width: 96mm; font: 500 12.5pt/17pt Inter; letter-spacing: 0.005em; color: var(--navy); }
+.front .motif { left: 0; top: 0; width: 135mm; height: 210mm; }
+.front .author { left: 16mm; bottom: 16mm; font: 700 11.5pt/1 Manrope; letter-spacing: 0.01em; }
+.front .author-role { left: 16mm; bottom: 10.6mm; font: 500 6.6pt/1 Inter; letter-spacing: 0.16em; color: var(--navy-3); }
+
+/* ---------- spine ---------- */
+.spine-text { position: absolute; left: 50%; top: 50%; width: 186mm; transform: translate(-50%, -50%) rotate(90deg);
+  display: flex; justify-content: space-between; align-items: center; white-space: nowrap; }
+.spine-text .t { font: 800 9pt/1 Manrope; letter-spacing: 0.06em; }
+.spine-text .a { font: 600 6.6pt/1 Inter; letter-spacing: 0.2em; color: var(--navy-2); }
+.spine-text .dot { display: inline-block; width: 1.6mm; height: 1.6mm; border-radius: 50%; background: var(--violet); }
+.spine-text .p { font: 700 6pt/1 Inter; letter-spacing: 0.26em; }
+
+/* ---------- back ---------- */
+.back .eyebrow { left: 16mm; top: 16mm; font: 600 6.4pt/1 Inter; letter-spacing: 0.24em; color: var(--navy-3); }
+.back .toprule { left: 16mm; top: 22mm; width: 103mm; border-top: 0.5pt solid var(--hair); }
+.back .kicker { left: 16mm; top: 30mm; width: 96mm; font: 800 15.5pt/19pt Manrope; letter-spacing: -0.01em; }
+.back .copy { left: 16mm; top: 52mm; width: 103mm; font: 400 8.4pt/12.9pt Inter; color: var(--navy-2); }
+.back .copy p { margin: 0 0 2.4mm; }
+.back .copy b { color: var(--navy); font-weight: 600; }
+.back .stats { left: 16mm; top: 117mm; width: 103mm; border-top: 0.8pt solid var(--navy); }
+.stat { display: flex; align-items: baseline; border-bottom: 0.4pt solid var(--hair); padding: 1.7mm 0 1.5mm; }
+.stat b { width: 19mm; font: 800 12.5pt/1 Manrope; letter-spacing: -0.01em; }
+.stat span { font: 500 8.2pt/1 Inter; color: var(--navy); }
+.stat.last b { color: var(--violet); }
+.back .closing { left: 16mm; top: 162mm; width: 103mm; font: 600 8.4pt/12.6pt Inter; margin: 0; }
+.back .about { left: 16mm; top: 176mm; width: 58mm; font: 400 6.9pt/10pt Inter; color: var(--navy-2); }
+.back .about b { color: var(--navy); font-weight: 600; }
+.back .publisher { left: 16mm; bottom: 14mm; font: 600 6.6pt/9.6pt Inter; color: var(--navy-3); }
+.back .publisher b { color: var(--navy); font-weight: 700; letter-spacing: 0.26em; }
+.back .barcode { right: 16mm; bottom: 14mm; }
+</style></head><body>
+<div class="wrap">
+
+  <!-- BACK -->
+  <div class="panel back">
+    <p class="abs eyebrow">THE AI-POWERED BUSINESS STARTER KIT</p>
+    <div class="abs toprule"></div>
+    <p class="abs kicker">Have a skill, but no<br>paying client yet?</p>
+    <div class="abs copy">
+      <p><b>ZERO TO FIRST CLIENT</b> is a practical, step-by-step handbook for students, job seekers, freelancers and aspiring entrepreneurs who want to turn a skill into a small, focused service business.</p>
+      <p>Learn how to choose one service by scoring rather than guessing, test real demand, package and price your offer, build an honest portfolio without past clients, find and approach the right prospects, handle discovery calls and objections, and deliver projects with a clear process for feedback, referrals and repeat work.</p>
+      <p>AI is treated as your assistant, not your replacement: for research, drafting and practice, with a verification habit at every step. Written in Hinglish, with Indian-market guidance throughout.</p>
+    </div>
+    <div class="abs stats">
+      <div class="stat"><b>10</b><span>Chapters</span></div>
+      <div class="stat"><b>141</b><span>AI Prompts</span></div>
+      <div class="stat"><b>20</b><span>Practical Templates</span></div>
+      <div class="stat"><b>7</b><span>Practical Calculators</span></div>
+      <div class="stat last"><b>30-Day</b><span>Action Plan</span></div>
+    </div>
+    <p class="abs closing">No shortcuts and no income promises: a clear process you can follow, one step at a time.</p>
+    <p class="abs about"><b>Divyanshu Verma</b> is a technology entrepreneur, independent creator, and the founder of DeadCode Labs.</p>
+    <p class="abs publisher"><b>DEADCODE LABS</b><br>https://deadcode.space/</p>
+    <div class="barcode">ISBN / BARCODE AREA<br>placeholder · no ISBN allocated<br>do not print this box</div>
+  </div>
+
+  <!-- SPINE (provisional width) -->
+  <div class="panel spine">
+    <div class="spine-text"><span class="t">ZERO TO FIRST CLIENT</span><span class="dot"></span><span class="a">DIVYANSHU VERMA</span><span class="p">DEADCODE LABS</span></div>
+  </div>
+
+  <!-- FRONT -->
+  <div class="panel front">
+    <svg class="abs motif" viewBox="-3 -3 141 216" width="141mm" height="216mm" style="left:-3mm; top:-3mm;">
+      <!-- growth rings widening from one point (zero); the outermost ring carries the violet point (first client).
+           Rings bleed off the right and bottom trim edges into the 3 mm bleed. -->
+      <g fill="none" stroke="#14213D">
+        <circle cx="112" cy="176" r="5" stroke-width="0.300" stroke-opacity="0.26"/>
+        <circle cx="112" cy="176" r="10" stroke-width="0.316" stroke-opacity="0.35"/>
+        <circle cx="112" cy="176" r="17" stroke-width="0.332" stroke-opacity="0.44"/>
+        <circle cx="112" cy="176" r="25" stroke-width="0.348" stroke-opacity="0.53"/>
+        <circle cx="112" cy="176" r="34" stroke-width="0.364" stroke-opacity="0.62"/>
+        <circle cx="112" cy="176" r="43" stroke-width="0.380" stroke-opacity="0.71"/>
+      </g>
+      <circle cx="112" cy="176" r="52" fill="none" stroke="#6D28D9" stroke-width="0.7"/>
+      <circle cx="112" cy="176" r="1.25" fill="#14213D"/>
+      <circle cx="72.17" cy="142.58" r="2.1" fill="#6D28D9"/>
+      <circle cx="72.17" cy="142.58" r="3.9" fill="none" stroke="#6D28D9" stroke-width="0.3" stroke-opacity="0.7"/>
+    </svg>
+    <p class="abs imprint">DEADCODE LABS</p>
+    <p class="abs edition">2026 EDITION</p>
+    <div class="abs toprule"></div>
+    <h1 class="abs title"><span>ZERO TO</span><span>FIRST</span><span>CLIENT</span></h1>
+    <div class="abs accent"></div>
+    <p class="abs sub">The AI-Powered Business Starter Kit</p>
+    <p class="abs author">Divyanshu Verma</p>
+    <p class="abs author-role">TECHNOLOGY ENTREPRENEUR</p>
+  </div>
+
+  <!-- review guides -->
+  <div class="trim"></div>
+  <div class="spine-guide" style="left:138mm"></div><div class="spine-guide" style="left:calc(138mm + var(--S))"></div>
+  <div class="spine-flag">SPINE 13 mm<br>PROVISIONAL<br>NOT FINAL</div>
+</div>
+<div class="slug"><b>LIGHT COVER CONCEPT A · "Editorial Ripple" · FOR REVIEW, NOT A PRINT-READY WRAP.</b> Panels 135 × 210 mm, 3 mm bleed outside the red trim line.
+<b>Spine 13 mm is a provisional placeholder, NOT FINAL</b>: it will be recalculated from the final page count and the printer's paper caliper.
+Barcode box is an empty placeholder (no ISBN allocated, no barcode invented). No price printed. Screen RGB; the final wrap is built in CMYK to the printer's template, matte lamination.</div>
+</body></html>

@@ -1,0 +1,29 @@
+/* ZERO TO FIRST CLIENT — colour tokens, PAPERBACK INTERIOR
+   Black-and-white interior. Every colour is a DeviceCMYK value on the K
+   channel only, so text prints as solid 100% K (no rich black, no RGB
+   conversion by the printer's RIP) and tints print as clean K screens.
+   Colour is reserved for selected diagrams (see --accent-*), used only
+   where colour materially improves understanding. */
+:root {
+  --paper:        transparent;                 /* natural-shade stock, no page fill */
+  --ink:          device-cmyk(0 0 0 1);        /* body text, headings  K100 */
+  --ink-2:        device-cmyk(0 0 0 0.72);     /* secondary text       K72  */
+  --ink-3:        device-cmyk(0 0 0 0.55);     /* labels, captions     K55  */
+  --rule:         device-cmyk(0 0 0 0.6);      /* hairlines            K60  */
+  --rule-soft:    device-cmyk(0 0 0 0.25);     /* table row rules      K25  */
+  --tint-1:       device-cmyk(0 0 0 0.05);     /* prompt / card fill   K5   */
+  --tint-2:       device-cmyk(0 0 0 0.10);     /* header fills         K10  */
+  --tint-3:       device-cmyk(0 0 0 0.18);     /* stronger fills       K18  */
+  --write-line:   device-cmyk(0 0 0 0.35);     /* template writing lines K35 */
+  --accent:       device-cmyk(0 0 0 1);        /* accent = black in mono interior */
+  --accent-soft:  device-cmyk(0 0 0 0.10);
+  --knockout:     device-cmyk(0 0 0 0);
+  --dg-line:      device-cmyk(0 0 0 0.85);
+  --dg-soft:      device-cmyk(0 0 0 0.10);
+  --dg-strong:    device-cmyk(0 0 0 1);
+  --dg-paper:     device-cmyk(0 0 0 0);
+  --reverse-text: device-cmyk(0 0 0 0);
+  /* selected colour diagrams only (printer must confirm colour-page workflow) */
+  --accent-violet: device-cmyk(0.62 0.80 0 0);
+  --accent-navy:   device-cmyk(1 0.85 0.35 0.45);
+}

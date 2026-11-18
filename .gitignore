@@ -1,2 +1,8 @@
 __pycache__/
 .DS_Store
+# generated intermediates (rebuilt by production/scripts)
+production/source/manuscript_tree.json
+production/previews/proof/_*
+# typesetting intermediates (rebuilt by production/scripts/build_book.py and cover/build_cover_final.py)
+production/interior/build/
+production/final/cover/_cover_final_build.html

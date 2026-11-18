@@ -1,0 +1,87 @@
+{
+ "allowances": [
+  {
+   "reason": "Stage divider pages: decorative progress graphic labels ('Find your business', 'Build your business', 'Get your first client', 'Execute and grow') on each of the 4 stage pages are navigation decoration, re-created by the design, not body text.",
+   "missing": {
+    "your": 12,
+    "business": 8,
+    "and": 4,
+    "client": 4,
+    "Find": 4,
+    "Build": 4,
+    "Get": 4,
+    "Execute": 4,
+    "first": 4,
+    "grow": 4
+   }
+  },
+  {
+   "reason": "Stage label was letter-spaced in the source ('S TAG E'); kept as the word 'Stage'.",
+   "missing": {
+    "S": 4,
+    "TAG": 4,
+    "E": 4
+   },
+   "extra": {
+    "Stage": 4
+   }
+  },
+  {
+   "reason": "Table header rows repeated by the source layout on continuation pages (A4 page breaks). The new layout repeats headers automatically; the duplicated text is not content.",
+   "missing": {
+    "URL": 3,
+    "Source": 3,
+    "Status": 3,
+    "का": 2,
+    "काम": 2,
+    "buyer": 1,
+    "हैं": 1,
+    "Tool": 1,
+    "listed": 1,
+    "tools": 1,
+    "क्या": 1,
+    "जवाब": 1,
+    "आपका": 1,
+    "आप": 1,
+    "ध्यान": 1,
+    "सबसे": 1,
+    "रोज़": 1,
+    "Service": 1,
+    "शुरुआत": 1,
+    "for": 1,
+    "Channel": 1,
+    "verified": 1,
+    "बेचते": 1,
+    "Likely": 1,
+    "Starting": 1,
+    "बड़ी": 1,
+    "चुनौती": 1,
+    "option": 1,
+    "as": 1,
+    "किस": 1,
+    "Free": 1,
+    "Paid": 1,
+    "Limitation": 1,
+    "रखें": 1,
+    "Field": 1,
+    "Best": 1
+   }
+  },
+  {
+   "reason": "Diagram label text is stored only as hidden reference data for the rebuilt vector diagrams (labels joined with ' | '); tokenisation around a few Devanagari dandas differs. Not body text.",
+   "missing": {
+    "button।": 1,
+    "delivery।": 1,
+    "quote।": 1,
+    "05": 1
+   },
+   "extra": {
+    "।": 2,
+    "delivery": 1,
+    "quote": 1,
+    "button": 1,
+    "05।": 1
+   }
+  }
+ ]
+}

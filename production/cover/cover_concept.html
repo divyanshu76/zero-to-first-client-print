@@ -1,0 +1,121 @@
+<!doctype html>
+<!-- ZERO TO FIRST CLIENT — PRELIMINARY COVER CONCEPT (brief §11, §16).
+     NOT a printer-ready wrap. Spine width is a PLACEHOLDER (provisional estimate 13 mm) until the
+     final page count and the printer's paper caliper are confirmed. No ISBN/barcode exists: the
+     barcode area is an empty placeholder. Colours are screen RGB for review; the final wrap will be
+     built in CMYK to the printer's template.
+     Layout: [3 mm bleed][back 135][spine S][front 135][3 mm bleed] × [3 + 210 + 3] mm, plus a 14 mm slug. -->
+<html lang="en"><head><meta charset="utf-8"><title>ZTFC cover concept</title>
+<style>
+@font-face { font-family: Inter; font-weight: 400; src: url(../design-system/fonts/Inter-Regular.otf); }
+@font-face { font-family: Inter; font-weight: 500; src: url(../design-system/fonts/Inter-Medium.otf); }
+@font-face { font-family: Inter; font-weight: 600; src: url(../design-system/fonts/Inter-SemiBold.otf); }
+@font-face { font-family: Inter; font-weight: 700; src: url(../design-system/fonts/Inter-Bold.otf); }
+@font-face { font-family: Manrope; font-weight: 700; src: url(../design-system/fonts/manrope-latin-700-normal.woff2); }
+@font-face { font-family: Manrope; font-weight: 800; src: url(../design-system/fonts/manrope-latin-800-normal.woff2); }
+:root { --navy: #14213D; --ink: #0f1830; --ivory: #F7F4EE; --violet: #8B5CF6; --violet-deep: #6D28D9; --muted: #a9b0c2; --S: 13mm; }
+@page { size: calc(3mm + 135mm + var(--S) + 135mm + 3mm) calc(3mm + 210mm + 3mm + 14mm); margin: 0; }
+html, body { margin: 0; font-family: Inter, sans-serif; }
+.wrap { position: relative; width: calc(276mm + var(--S)); height: 216mm; background: var(--navy); color: var(--ivory); overflow: hidden; }
+.panel { position: absolute; top: 3mm; height: 210mm; }
+.back  { left: 3mm; width: 135mm; }
+.spine { left: 138mm; width: var(--S); }
+.front { left: calc(138mm + var(--S)); width: 135mm; }
+
+/* front */
+.front .imprint { position: absolute; left: 16mm; top: 15mm; font: 700 7.6pt/1 Inter; letter-spacing: 0.28em; color: var(--ivory); }
+.front .edition { position: absolute; right: 16mm; top: 15mm; font: 600 7.6pt/1 Inter; letter-spacing: 0.2em; color: var(--muted); }
+.front .title { position: absolute; left: 15mm; top: 42mm; width: 110mm; font: 800 40pt/39pt Manrope; letter-spacing: -0.03em; margin: 0; }
+.front .title span { display: block; }
+.front .title .two { color: var(--violet); }
+.front .sub { position: absolute; left: 16mm; top: 79mm; width: 100mm; font: 500 12pt/16pt Inter; color: var(--ivory); margin: 0; }
+.front .rule { position: absolute; left: 16mm; top: 93mm; width: 12mm; border-top: 1.2pt solid var(--violet); }
+.front .path { position: absolute; left: 16mm; top: 114mm; width: 103mm; height: 58mm; }
+.front .author { position: absolute; left: 16mm; bottom: 15mm; font: 700 12pt/1 Manrope; letter-spacing: 0.01em; margin: 0; }
+.front .pub { position: absolute; right: 16mm; bottom: 15.6mm; font: 600 7pt/1 Inter; letter-spacing: 0.24em; color: var(--muted); margin: 0; }
+
+/* spine (text runs top-to-bottom, as is standard for Indian/English-language spines) */
+.spine-text { position: absolute; left: 50%; top: 50%; width: 190mm; transform: translate(-50%, -50%) rotate(90deg);
+  display: flex; justify-content: space-between; align-items: center; font: 700 8.6pt/1 Manrope; letter-spacing: 0.08em; white-space: nowrap; }
+.spine-text .t2 { color: var(--violet); }
+.spine-text small { font: 600 6.4pt/1 Inter; letter-spacing: 0.22em; color: var(--muted); }
+.spine-guide { position: absolute; top: 0; bottom: 0; border-left: 0.3pt dashed rgba(247,244,238,0.35); }
+
+/* back */
+.back .kicker { position: absolute; left: 16mm; top: 18mm; width: 103mm; font: 800 15pt/18pt Manrope; margin: 0; }
+.back .copy { position: absolute; left: 16mm; top: 42mm; width: 103mm; font: 400 8.6pt/13.2pt Inter; color: #e6e3dc; }
+.back .copy p { margin: 0 0 2.6mm; }
+.back .stats { position: absolute; left: 16mm; top: 112mm; width: 103mm; display: flex; justify-content: space-between;
+  border-top: 0.6pt solid rgba(247,244,238,0.45); border-bottom: 0.6pt solid rgba(247,244,238,0.45); padding: 3.4mm 0 3mm; }
+.stat b { display: block; font: 800 15pt/1 Manrope; color: var(--ivory); }
+.stat span { display: block; font: 500 6.2pt/8pt Inter; color: var(--muted); margin-top: 1.4mm; width: 19mm; }
+.back .closing { position: absolute; left: 16mm; top: 136mm; width: 103mm; font: 600 8.6pt/13pt Inter; color: var(--ivory); margin: 0; }
+.back .about { position: absolute; left: 16mm; top: 152mm; width: 66mm; font: 400 7.2pt/10.6pt Inter; color: #d4d1ca; margin: 0; }
+.back .about b { color: var(--ivory); font-weight: 600; }
+.back .publisher { position: absolute; left: 16mm; bottom: 15mm; font: 600 7pt/10pt Inter; letter-spacing: 0.02em; color: var(--muted); margin: 0; }
+.back .publisher b { color: var(--ivory); letter-spacing: 0.24em; font-weight: 700; }
+.barcode { position: absolute; right: 16mm; bottom: 14mm; width: 38mm; height: 23mm; background: #fff; color: #555;
+  text-align: center; font: 600 5.6pt/7.4pt Inter; padding: 7mm 2mm 0; box-sizing: border-box; }
+
+/* guides & slug (concept only) */
+.trim { position: absolute; border: 0.3pt solid rgba(255,80,80,0.75); }
+.slug { position: absolute; left: 0; top: 216mm; width: 100%; height: 14mm; background: #fff; color: #222; font: 600 6.6pt/9pt Inter; padding: 2.4mm 4mm; box-sizing: border-box; }
+.slug b { color: #b00020; }
+</style></head><body>
+<div class="wrap">
+  <!-- BACK -->
+  <div class="panel back">
+    <p class="kicker">Have a skill, but no paying client yet?</p>
+    <div class="copy">
+      <p><b>ZERO TO FIRST CLIENT</b> is a practical, step-by-step handbook for students, job seekers, freelancers and aspiring entrepreneurs who want to turn a skill into a small, focused service business.</p>
+      <p>Learn how to choose one service by scoring rather than guessing, test real demand, package and price your offer, build an honest portfolio without past clients, find and approach the right prospects, handle discovery calls and objections, and deliver projects with a clear process for feedback, referrals and repeat work.</p>
+      <p>AI is treated as your assistant, not your replacement: for research, drafting and practice, with a verification habit at every step. Written in Hindi and English, with Indian-market guidance throughout.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>10</b><span>chapters</span></div>
+      <div class="stat"><b>141</b><span>AI prompts</span></div>
+      <div class="stat"><b>20</b><span>ready-to-use templates</span></div>
+      <div class="stat"><b>7</b><span>calculator sheets</span></div>
+      <div class="stat"><b>30</b><span>day action plan</span></div>
+    </div>
+    <p class="closing">No shortcuts and no income promises: a clear process you can follow, one step at a time.</p>
+    <p class="about"><b>Divyanshu Verma</b> is a technology entrepreneur, independent creator, and the founder of DeadCode Labs.</p>
+    <p class="publisher"><b>DEADCODE LABS</b><br>https://deadcode.space/</p>
+    <div class="barcode">ISBN / BARCODE AREA<br>placeholder · no ISBN allocated<br>do not print this box</div>
+  </div>
+
+  <!-- SPINE -->
+  <div class="panel spine">
+    <div class="spine-text"><span>ZERO TO <span class="t2">FIRST CLIENT</span></span><small>DIVYANSHU VERMA</small><small>DEADCODE LABS</small></div>
+  </div>
+  <div class="spine-guide" style="left: 138mm"></div>
+  <div class="spine-guide" style="left: calc(138mm + var(--S))"></div>
+
+  <!-- FRONT -->
+  <div class="panel front">
+    <p class="imprint">DEADCODE LABS</p>
+    <p class="edition">2026 EDITION</p>
+    <h1 class="title"><span>ZERO TO</span><span class="two">FIRST CLIENT</span></h1>
+    <p class="sub">The AI-Powered Business Starter Kit</p>
+    <div class="rule"></div>
+    <!-- motif: five steps from zero to a first client (the book's own Find → Build → Reach → Propose → Client roadmap) -->
+    <svg class="path" viewBox="0 0 103 58" preserveAspectRatio="xMinYMin meet">
+      <g fill="none" stroke="#F7F4EE" stroke-opacity="0.18" stroke-width="0.25">
+        <line x1="0" y1="56" x2="103" y2="56"/><line x1="0" y1="42" x2="103" y2="42"/><line x1="0" y1="28" x2="103" y2="28"/><line x1="0" y1="14" x2="103" y2="14"/>
+      </g>
+      <polyline points="2,56 22,56 22,45 42,45 42,34 62,34 62,23 82,23 82,9 100,9" fill="none" stroke="#8B5CF6" stroke-width="0.9"/>
+      <g fill="#14213D" stroke="#F7F4EE" stroke-width="0.6">
+        <circle cx="2" cy="56" r="1.6"/><circle cx="22" cy="45" r="1.6"/><circle cx="42" cy="34" r="1.6"/><circle cx="62" cy="23" r="1.6"/><circle cx="82" cy="9" r="1.6"/>
+      </g>
+      <circle cx="100" cy="9" r="2.6" fill="#8B5CF6"/>
+    </svg>
+    <p class="author">Divyanshu Verma</p>
+    <p class="pub">FIRST EDITION</p>
+  </div>
+
+  <!-- trim guides (concept only) -->
+  <div class="trim" style="left:3mm; top:3mm; width:calc(270mm + var(--S)); height:210mm;"></div>
+</div>
+<div class="slug"><b>COVER CONCEPT FOR REVIEW. NOT A PRINT-READY WRAP.</b> Trim 135 × 210 mm per panel, 3 mm bleed (outside the red line). Spine <b>13 mm placeholder</b> (provisional, pending final page count and printer caliper).
+Barcode box is an empty placeholder: no ISBN has been allocated. No price printed. Screen RGB; the final wrap will be built in CMYK to the printer's template, with matte lamination.</div>
+</body></html>

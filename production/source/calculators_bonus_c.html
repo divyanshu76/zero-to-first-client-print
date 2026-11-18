@@ -1,0 +1,133 @@
+<!--
+  BONUS C — seven printable calculator sheets (paperback replacement for the removed
+  BUSINESS_CALCULATORS.xlsx). Inserted after the Bonus C index table by build_book.py.
+
+  Integrity rules followed:
+   * Every formula is one already stated in the manuscript (source named on each sheet).
+   * Example values are the manuscript's own example numbers, or simple arithmetic on them
+     (shown). Where the manuscript gives no example value, the cell shows "—".
+   * Hindi notes reuse the manuscript's own sentences.
+   * Sheet names, "when to use", inputs and outputs follow the Bonus C index table.
+-->
+<div class="calculator" data-calc="1" data-name="Hourly Rate">
+  <h2>Calculator 1: Hourly Rate</h2>
+  <p class="calc-meta"><strong>कब:</strong> Pricing से पहले · <strong>आपको मिलता है:</strong> Minimum hourly rate · <strong>Source:</strong> Chapter 6, Cost और rate calculation</p>
+  <table class="calc"><thead><tr><th>#</th><th>Item</th><th>How</th><th>Example</th><th>Your value</th></tr></thead><tbody>
+    <tr><td>A</td><td>Monthly personal need (₹)</td><td>input</td><td>25,000</td><td class="w"></td></tr>
+    <tr><td>B</td><td>Business costs per month (₹)</td><td>input</td><td>3,000</td><td class="w"></td></tr>
+    <tr><td>C</td><td>Need + costs (₹)</td><td>A + B</td><td>28,000</td><td class="w"></td></tr>
+    <tr><td>D</td><td>Tax reserve, % of revenue</td><td>input (planning assumption)</td><td>15%</td><td class="w"></td></tr>
+    <tr><td>E</td><td>Revenue target (₹)</td><td>C ÷ (1 − D)</td><td>28,000 ÷ 0.85 = 32,941</td><td class="w"></td></tr>
+    <tr><td>F</td><td>Billable hours per month</td><td>input</td><td>80</td><td class="w"></td></tr>
+    <tr class="result"><td>G</td><td><strong>Minimum hourly rate (₹)</strong></td><td>E ÷ F</td><td>32,941 ÷ 80 = 412</td><td class="w"></td></tr>
+  </tbody></table>
+  <p class="calc-note">Minimum hourly rate = (Monthly personal need + Business costs + Tax reserve) ÷ Billable hours per month. Billable hours वह समय है जिसका पैसा मिल सकता है। Tax reserve एक planning percentage है, tax calculation नहीं। यह income promise नहीं, sample arithmetic है।</p>
+</div>
+
+<div class="calculator" data-calc="2" data-name="Project Pricing">
+  <h2>Calculator 2: Project Pricing</h2>
+  <p class="calc-meta"><strong>कब:</strong> Quote बनाते समय · <strong>आपको मिलता है:</strong> तीनों packages की floor price और quote · <strong>Source:</strong> Chapter 6 (project example, profit margin); Template 07</p>
+  <table class="calc calc-3"><thead><tr><th>#</th><th>Item</th><th>How</th><th>Example</th><th>Basic</th><th>Standard</th><th>Premium</th></tr></thead><tbody>
+    <tr><td>A</td><td>Estimated hours</td><td>input</td><td>25</td><td class="w"></td><td class="w"></td><td class="w"></td></tr>
+    <tr><td>B</td><td>Buffer %</td><td>input</td><td>30%</td><td class="w"></td><td class="w"></td><td class="w"></td></tr>
+    <tr><td>C</td><td>Buffered hours</td><td>A × (1 + B)</td><td>25 × 1.3 = 32.5</td><td class="w"></td><td class="w"></td><td class="w"></td></tr>
+    <tr><td>D</td><td>Minimum hourly rate (₹)</td><td>Calculator 1, G</td><td>412</td><td class="w"></td><td class="w"></td><td class="w"></td></tr>
+    <tr><td>E</td><td>Value of your time (₹)</td><td>C × D</td><td>32.5 × 412 = 13,390</td><td class="w"></td><td class="w"></td><td class="w"></td></tr>
+    <tr><td>F</td><td>Direct costs (₹)</td><td>input</td><td>1,500</td><td class="w"></td><td class="w"></td><td class="w"></td></tr>
+    <tr class="result"><td>G</td><td><strong>Floor price (₹)</strong></td><td>E + F</td><td>14,890 (≈ 15,000)</td><td class="w"></td><td class="w"></td><td class="w"></td></tr>
+    <tr><td>H</td><td>Your quote (₹)</td><td>G या उससे ऊपर</td><td>—</td><td class="w"></td><td class="w"></td><td class="w"></td></tr>
+    <tr><td>I</td><td>Margin check</td><td>(H − F − E) ÷ H</td><td>—</td><td class="w"></td><td class="w"></td><td class="w"></td></tr>
+  </tbody></table>
+  <p class="calc-note">Floor price के नीचे quote मत कीजिए। Profit margin = (Revenue − Direct costs − Value of your time) ÷ Revenue. अगर आप अपने समय की कीमत नहीं जोड़ते तो "profit" असल में आपकी salary होती है।</p>
+</div>
+
+<div class="calculator" data-calc="3" data-name="Profit">
+  <h2>Calculator 3: Profit</h2>
+  <p class="calc-meta"><strong>कब:</strong> Project के बाद · <strong>आपको मिलता है:</strong> Take-home, effective rate, true profit · <strong>Source:</strong> Chapter 6 (profit margin, Figure 14); Chapter 8 (effective rate in the fictional case study)</p>
+  <table class="calc"><thead><tr><th>#</th><th>Item</th><th>How</th><th>Example</th><th>Your value</th></tr></thead><tbody>
+    <tr><td>A</td><td>Revenue (₹)</td><td>input</td><td>12,000</td><td class="w"></td></tr>
+    <tr><td>B</td><td>Tools, domain, fees (₹)</td><td>input</td><td>—</td><td class="w"></td></tr>
+    <tr><td>C</td><td>Direct costs (₹)</td><td>input</td><td>—</td><td class="w"></td></tr>
+    <tr><td>D</td><td>Tax reserve (₹)</td><td>A × tax reserve %</td><td>—</td><td class="w"></td></tr>
+    <tr class="result"><td>E</td><td><strong>Take-home before your time cost (₹)</strong></td><td>A − B − C − D</td><td>—</td><td class="w"></td></tr>
+    <tr><td>F</td><td>Actual hours (outreach + delivery)</td><td>input</td><td>60 + 18 = 78</td><td class="w"></td></tr>
+    <tr class="result"><td>G</td><td><strong>Effective rate (₹ per hour)</strong></td><td>A ÷ F</td><td>12,000 ÷ 78 ≈ 154</td><td class="w"></td></tr>
+    <tr><td>H</td><td>Value of your time (₹)</td><td>F × minimum hourly rate</td><td>—</td><td class="w"></td></tr>
+    <tr class="result"><td>I</td><td><strong>True profit (₹)</strong></td><td>A − C − H</td><td>—</td><td class="w"></td></tr>
+    <tr><td>J</td><td>Profit margin</td><td>I ÷ A</td><td>—</td><td class="w"></td></tr>
+  </tbody></table>
+  <p class="calc-note">Example numbers Chapter 8 की fictional case study से हैं (₹154 per hour, जो Neha के minimum ₹300 से कम है)। Effective rate अपने minimum hourly rate से compare कीजिए।</p>
+</div>
+
+<div class="calculator" data-calc="4" data-name="Monthly Target">
+  <h2>Calculator 4: Monthly Target</h2>
+  <p class="calc-meta"><strong>कब:</strong> Monthly planning में · <strong>आपको मिलता है:</strong> ज़रूरी projects, proposals, calls, messages · <strong>Source:</strong> Chapter 6 (Figure 14); Chapter 10 (conversion rates), worked backwards</p>
+  <table class="calc"><thead><tr><th>#</th><th>Item</th><th>How</th><th>Example</th><th>Your value</th></tr></thead><tbody>
+    <tr><td>A</td><td>Monthly revenue target (₹)</td><td>input</td><td>30,000</td><td class="w"></td></tr>
+    <tr><td>B</td><td>Average project price (₹)</td><td>input</td><td>15,000</td><td class="w"></td></tr>
+    <tr><td>C</td><td>Close rate (Won ÷ Proposals)</td><td>assumption</td><td>50%</td><td class="w"></td></tr>
+    <tr><td>D</td><td>Proposal rate (Proposals ÷ Calls)</td><td>assumption</td><td>50%</td><td class="w"></td></tr>
+    <tr><td>E</td><td>Call rate (Calls ÷ Replies)</td><td>assumption</td><td>40%</td><td class="w"></td></tr>
+    <tr><td>F</td><td>Reply rate (Replies ÷ Messages)</td><td>assumption</td><td>20%</td><td class="w"></td></tr>
+    <tr class="result"><td>G</td><td><strong>Projects needed</strong></td><td>A ÷ B</td><td>2</td><td class="w"></td></tr>
+    <tr class="result"><td>H</td><td><strong>Proposals needed</strong></td><td>G ÷ C</td><td>4</td><td class="w"></td></tr>
+    <tr class="result"><td>I</td><td><strong>Calls needed</strong></td><td>H ÷ D</td><td>8</td><td class="w"></td></tr>
+    <tr class="result"><td>J</td><td><strong>Replies needed</strong></td><td>I ÷ E</td><td>20</td><td class="w"></td></tr>
+    <tr class="result"><td>K</td><td><strong>Messages needed</strong></td><td>J ÷ F</td><td>100</td><td class="w"></td></tr>
+  </tbody></table>
+  <p class="calc-note">ये example numbers हैं, benchmarks नहीं। Conversion rates आपकी assumptions हैं, इसलिए अपना data आते ही उन्हें बदल दीजिए। Revenue में GST शामिल नहीं माना गया।</p>
+</div>
+
+<div class="calculator" data-calc="5" data-name="Lead Conversion">
+  <h2>Calculator 5: Lead Conversion</h2>
+  <p class="calc-meta"><strong>कब:</strong> Weekly review में · <strong>आपको मिलता है:</strong> Stage-wise rates और सबसे कमज़ोर stage · <strong>Source:</strong> Chapter 10, Performance metrics और conversion calculation</p>
+  <table class="calc"><thead><tr><th>#</th><th>Item</th><th>How</th><th>Example</th><th>Your value</th></tr></thead><tbody>
+    <tr><td>A</td><td>Messages</td><td>count</td><td>50</td><td class="w"></td></tr>
+    <tr><td>B</td><td>Replies</td><td>count</td><td>10</td><td class="w"></td></tr>
+    <tr><td>C</td><td>Calls</td><td>count</td><td>4</td><td class="w"></td></tr>
+    <tr><td>D</td><td>Proposals</td><td>count</td><td>2</td><td class="w"></td></tr>
+    <tr><td>E</td><td>Won</td><td>count</td><td>1</td><td class="w"></td></tr>
+    <tr><td>F</td><td>Revenue (₹)</td><td>sum</td><td>15,000</td><td class="w"></td></tr>
+    <tr class="result"><td>G</td><td><strong>Reply rate</strong></td><td>B ÷ A</td><td>20%</td><td class="w"></td></tr>
+    <tr class="result"><td>H</td><td><strong>Call rate</strong></td><td>C ÷ B</td><td>40%</td><td class="w"></td></tr>
+    <tr class="result"><td>I</td><td><strong>Proposal rate</strong></td><td>D ÷ C</td><td>50%</td><td class="w"></td></tr>
+    <tr class="result"><td>J</td><td><strong>Close rate</strong></td><td>E ÷ D</td><td>50%</td><td class="w"></td></tr>
+    <tr class="result"><td>K</td><td><strong>Overall</strong></td><td>E ÷ A</td><td>2%</td><td class="w"></td></tr>
+    <tr class="result"><td>L</td><td><strong>Revenue per message (₹)</strong></td><td>F ÷ A</td><td>300</td><td class="w"></td></tr>
+    <tr><td>M</td><td>सबसे कमज़ोर stage</td><td>G से J में सबसे कम rate</td><td>—</td><td class="w"></td></tr>
+  </tbody></table>
+  <p class="calc-note">ये example numbers हैं, benchmarks नहीं। छोटे sample पर percentages बहुत बदलते हैं, इसलिए एक हफ़्ते के data से बड़ा नतीजा मत निकालिए।</p>
+</div>
+
+<div class="calculator" data-calc="6" data-name="Client Tracker">
+  <h2>Calculator 6: Client Tracker</h2>
+  <p class="calc-meta"><strong>कब:</strong> रोज़ · <strong>आपको मिलता है:</strong> Status counts, pipeline, suggested next date · <strong>Source:</strong> Chapter 10 (lead tracking status values); Chapter 8 (Day 3, Day 7, Day 14 follow-up rhythm); Template 17</p>
+  <table class="calc calc-tally"><thead><tr><th>Status</th><th>Week 1</th><th>Week 2</th><th>Week 3</th><th>Week 4</th></tr></thead><tbody>
+    <tr><td>New</td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td></tr>
+    <tr><td>Contacted</td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td></tr>
+    <tr><td>Replied</td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td></tr>
+    <tr><td>Call booked</td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td></tr>
+    <tr><td>Proposal sent</td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td></tr>
+    <tr><td>Won</td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td></tr>
+    <tr><td>Lost</td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td></tr>
+    <tr><td>Do not contact</td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td></tr>
+    <tr class="result"><td><strong>Pipeline</strong> (open leads: Contacted to Proposal sent)</td><td class="w"></td><td class="w"></td><td class="w"></td><td class="w"></td></tr>
+  </tbody></table>
+  <p class="calc-note"><strong>Suggested next date:</strong> Last contact + 3 days (Follow-up 1), + 7 days (Follow-up 2), + 14 days (Close the loop), फिर रुक जाइए। "Not interested" या "stop" मिलते ही list से हटाओ और दोबारा contact मत करो। Status values एक जैसी रखिए; हर prospect की row Template 17 में रखिए।</p>
+</div>
+
+<div class="calculator" data-calc="7" data-name="Demand Score">
+  <h2>Calculator 7: Demand Score</h2>
+  <p class="calc-meta"><strong>कब:</strong> Chapter 4 में · <strong>आपको मिलता है:</strong> Go, Refine या Drop · <strong>Source:</strong> Chapter 4, Demand Scoring Calculator</p>
+  <table class="calc calc-score"><thead><tr><th>Factor</th><th>Question</th><th>Score (0 से 5)</th></tr></thead><tbody>
+    <tr><td>Pain</td><td>Problem कितनी चुभती है?</td><td class="w"></td></tr>
+    <tr><td>Frequency</td><td>कितनी बार आती है?</td><td class="w"></td></tr>
+    <tr><td>Spending</td><td>क्या पहले से इस पर पैसा जाता है?</td><td class="w"></td></tr>
+    <tr><td>Reach</td><td>क्या buyers आसानी से मिलते हैं?</td><td class="w"></td></tr>
+    <tr><td>Fit</td><td>क्या आप अच्छा deliver कर सकते हैं?</td><td class="w"></td></tr>
+    <tr class="result"><td colspan="2"><strong>Total out of 25</strong></td><td class="w"></td></tr>
+    <tr><td colspan="2">Serious buyer signals (कम से कम 1 ज़रूरी)</td><td class="w"></td></tr>
+    <tr class="result"><td colspan="2"><strong>Decision:</strong> Go / Refine / Drop</td><td class="w"></td></tr>
+  </tbody></table>
+  <p class="calc-note"><strong>16+:</strong> Go, बशर्ते कम से कम 1 serious buyer signal हो। <strong>10 से 15:</strong> Niche या offer refine कीजिए। <strong>10 से कम:</strong> Drop या रुककर फिर सोचिए। ये cut-offs decision के लिए practical guide हैं, कोई scientific standard नहीं।</p>
+</div>

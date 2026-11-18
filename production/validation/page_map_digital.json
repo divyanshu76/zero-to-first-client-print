@@ -1,0 +1,1006 @@
+{
+ "edition": "digital",
+ "pages": 257,
+ "blank_pages_added_for_even_count": 0,
+ "front_matter_pages": 20,
+ "main_pages": 237,
+ "no_folio_pages": [
+  1,
+  3,
+  4,
+  19,
+  65,
+  109,
+  151
+ ],
+ "intentional_blank_pages": [],
+ "toc": [
+  {
+   "level": 1,
+   "title": "Copyright",
+   "id": "fm-copyright",
+   "page": "iv"
+  },
+  {
+   "level": 1,
+   "title": "Disclaimer",
+   "id": "fm-disclaimer",
+   "page": "v"
+  },
+  {
+   "level": 1,
+   "title": "About DEADCODE LABS",
+   "id": "fm-about-deadcode-labs",
+   "page": "vi"
+  },
+  {
+   "level": 1,
+   "title": "Welcome note",
+   "id": "fm-welcome-note",
+   "page": "vii"
+  },
+  {
+   "level": 1,
+   "title": "Who should read this book?",
+   "id": "fm-who-should-read-this-book",
+   "page": "vii"
+  },
+  {
+   "level": 1,
+   "title": "What you will achieve",
+   "id": "fm-what-you-will-achieve",
+   "page": "ix"
+  },
+  {
+   "level": 1,
+   "title": "How to use this book",
+   "id": "fm-how-to-use-this-book",
+   "page": "x"
+  },
+  {
+   "level": 1,
+   "title": "Learning roadmap",
+   "id": "fm-learning-roadmap",
+   "page": "xii"
+  },
+  {
+   "level": 1,
+   "title": "STAGE 01: FIND YOUR BUSINESS",
+   "id": "nofolio-stage-01",
+   "page": "xix"
+  },
+  {
+   "level": 2,
+   "title": "01 FIND YOUR FIRST BUSINESS IDEA",
+   "id": "ch-01",
+   "page": "1"
+  },
+  {
+   "level": 3,
+   "title": "Service business क्या होता है?",
+   "id": "s-service-business-1",
+   "page": "2"
+  },
+  {
+   "level": 3,
+   "title": "दस realistic low-investment services",
+   "id": "s-realistic-low-investment-services-2",
+   "page": "3"
+  },
+  {
+   "level": 3,
+   "title": "Step 1: Skill assessment",
+   "id": "s-step-1-skill-assessment-3",
+   "page": "4"
+  },
+  {
+   "level": 3,
+   "title": "Step 2: Business idea evaluation matrix",
+   "id": "s-step-2-business-idea-evaluation-matrix-4",
+   "page": "5"
+  },
+  {
+   "level": 3,
+   "title": "Step 3: Competitor research की शुरुआत",
+   "id": "s-step-3-competitor-research-5",
+   "page": "7"
+  },
+  {
+   "level": 3,
+   "title": "Step 4: Target customer चुनना",
+   "id": "s-step-4-target-customer-6",
+   "page": "7"
+  },
+  {
+   "level": 3,
+   "title": "Step 5: Business statement लिखिए",
+   "id": "s-step-5-business-statement-7",
+   "page": "8"
+  },
+  {
+   "level": 3,
+   "title": "Three scenarios (hypothetical)",
+   "id": "s-three-scenarios-hypothetical-8",
+   "page": "8"
+  },
+  {
+   "level": 3,
+   "title": "AI prompts for idea discovery",
+   "id": "s-ai-prompts-for-idea-discovery-9",
+   "page": "10"
+  },
+  {
+   "level": 2,
+   "title": "02 BUILD YOUR AI TOOLKIT",
+   "id": "ch-02",
+   "page": "13"
+  },
+  {
+   "level": 3,
+   "title": "AI क्या कर सकता है, क्या नहीं",
+   "id": "s-ai-10",
+   "page": "14"
+  },
+  {
+   "level": 3,
+   "title": "AI-assisted workflow",
+   "id": "s-ai-assisted-workflow-11",
+   "page": "15"
+  },
+  {
+   "level": 3,
+   "title": "Responsible AI use: तीन rules",
+   "id": "s-responsible-ai-use-rules-12",
+   "page": "15"
+  },
+  {
+   "level": 3,
+   "title": "Tool comparison",
+   "id": "s-tool-comparison-13",
+   "page": "16"
+  },
+  {
+   "level": 3,
+   "title": "Prompt engineering fundamentals",
+   "id": "s-prompt-engineering-fundamentals-14",
+   "page": "18"
+  },
+  {
+   "level": 3,
+   "title": "25 essential copy-paste prompts",
+   "id": "s-25-essential-copy-paste-prompts-15",
+   "page": "19"
+  },
+  {
+   "level": 3,
+   "title": "Basic automation: क्या पहले automate करें",
+   "id": "s-basic-automation-automate-16",
+   "page": "29"
+  },
+  {
+   "level": 2,
+   "title": "03 TURN YOUR SKILL INTO A SERVICE",
+   "id": "ch-03",
+   "page": "33"
+  },
+  {
+   "level": 3,
+   "title": "Skill-to-service transformation",
+   "id": "s-skill-to-service-transformation-17",
+   "page": "34"
+  },
+  {
+   "level": 3,
+   "title": "Deliverables और packages",
+   "id": "s-deliverables-packages-18",
+   "page": "35"
+  },
+  {
+   "level": 3,
+   "title": "Scope, revisions और timelines",
+   "id": "s-scope-revisions-timelines-19",
+   "page": "36"
+  },
+  {
+   "level": 3,
+   "title": "Pilot project: risk कम, payment असली",
+   "id": "s-pilot-project-risk-payment-20",
+   "page": "37"
+  },
+  {
+   "level": 3,
+   "title": "Professional service description",
+   "id": "s-professional-service-description-21",
+   "page": "38"
+  },
+  {
+   "level": 3,
+   "title": "Four detailed service examples",
+   "id": "s-four-detailed-service-examples-22",
+   "page": "38"
+  },
+  {
+   "level": 3,
+   "title": "Service Offer Worksheet",
+   "id": "s-service-offer-worksheet-23",
+   "page": "41"
+  },
+  {
+   "level": 1,
+   "title": "STAGE 02: BUILD YOUR BUSINESS",
+   "id": "nofolio-stage-02",
+   "page": "45"
+  },
+  {
+   "level": 2,
+   "title": "04 MARKET RESEARCH",
+   "id": "ch-04",
+   "page": "47"
+  },
+  {
+   "level": 3,
+   "title": "Customer problems: असली भाषा ढूँढिए",
+   "id": "s-customer-problems-24",
+   "page": "48"
+  },
+  {
+   "level": 3,
+   "title": "Customer persona",
+   "id": "s-customer-persona-25",
+   "page": "50"
+  },
+  {
+   "level": 3,
+   "title": "Competitor analysis",
+   "id": "s-competitor-analysis-26",
+   "page": "52"
+  },
+  {
+   "level": 3,
+   "title": "Customer interviews",
+   "id": "s-customer-interviews-27",
+   "page": "53"
+  },
+  {
+   "level": 3,
+   "title": "Willingness to pay",
+   "id": "s-willingness-to-pay-28",
+   "page": "54"
+  },
+  {
+   "level": 3,
+   "title": "Testing offers before investing",
+   "id": "s-testing-offers-before-investing-29",
+   "page": "55"
+  },
+  {
+   "level": 2,
+   "title": "05 BRAND, IDENTITY AND PORTFOLIO",
+   "id": "ch-05",
+   "page": "61"
+  },
+  {
+   "level": 3,
+   "title": "Business name",
+   "id": "s-business-name-30",
+   "page": "62"
+  },
+  {
+   "level": 3,
+   "title": "Basic brand identity",
+   "id": "s-basic-brand-identity-31",
+   "page": "63"
+  },
+  {
+   "level": 3,
+   "title": "Portfolio without clients",
+   "id": "s-portfolio-without-clients-32",
+   "page": "64"
+  },
+  {
+   "level": 3,
+   "title": "Ethical credibility building",
+   "id": "s-ethical-credibility-building-33",
+   "page": "66"
+  },
+  {
+   "level": 3,
+   "title": "Landing page और copy templates",
+   "id": "s-landing-page-copy-templates-34",
+   "page": "66"
+  },
+  {
+   "level": 3,
+   "title": "Social media optimisation",
+   "id": "s-social-media-optimisation-35",
+   "page": "68"
+  },
+  {
+   "level": 2,
+   "title": "06 PRICING, PROPOSALS AND BUSINESS SETUP",
+   "id": "ch-06",
+   "page": "73"
+  },
+  {
+   "level": 3,
+   "title": "Pricing models",
+   "id": "s-pricing-models-36",
+   "page": "74"
+  },
+  {
+   "level": 3,
+   "title": "Cost और rate calculation",
+   "id": "s-cost-rate-calculation-37",
+   "page": "75"
+  },
+  {
+   "level": 3,
+   "title": "Quotation vs proposal",
+   "id": "s-quotation-vs-proposal-38",
+   "page": "76"
+  },
+  {
+   "level": 3,
+   "title": "Scope, milestones और agreements",
+   "id": "s-scope-milestones-agreements-39",
+   "page": "77"
+  },
+  {
+   "level": 3,
+   "title": "India: business setup basics",
+   "id": "s-india-business-setup-basics-40",
+   "page": "78"
+  },
+  {
+   "level": 3,
+   "title": "International clients",
+   "id": "s-international-clients-41",
+   "page": "83"
+  },
+  {
+   "level": 1,
+   "title": "STAGE 03: GET YOUR FIRST CLIENT",
+   "id": "nofolio-stage-03",
+   "page": "89"
+  },
+  {
+   "level": 2,
+   "title": "07 MARKETING AND CLIENT ACQUISITION",
+   "id": "ch-07",
+   "page": "91"
+  },
+  {
+   "level": 3,
+   "title": "Channel selection",
+   "id": "s-channel-selection-42",
+   "page": "92"
+  },
+  {
+   "level": 3,
+   "title": "Trust बनाने वाला content",
+   "id": "s-trust-content-43",
+   "page": "93"
+  },
+  {
+   "level": 3,
+   "title": "Simple marketing funnel",
+   "id": "s-simple-marketing-funnel-44",
+   "page": "93"
+  },
+  {
+   "level": 3,
+   "title": "30 social media content ideas",
+   "id": "s-30-social-media-content-ideas-45",
+   "page": "94"
+  },
+  {
+   "level": 3,
+   "title": "15 LinkedIn post ideas",
+   "id": "s-15-linkedin-post-ideas-46",
+   "page": "95"
+  },
+  {
+   "level": 3,
+   "title": "10 Instagram Reel scripts",
+   "id": "s-10-instagram-reel-scripts-47",
+   "page": "96"
+  },
+  {
+   "level": 3,
+   "title": "10 short-video hooks",
+   "id": "s-10-short-video-hooks-48",
+   "page": "97"
+  },
+  {
+   "level": 3,
+   "title": "Beginner-friendly content calendar",
+   "id": "s-beginner-friendly-content-calendar-49",
+   "page": "98"
+  },
+  {
+   "level": 3,
+   "title": "Outreach tracking workflow",
+   "id": "s-outreach-tracking-workflow-50",
+   "page": "98"
+  },
+  {
+   "level": 2,
+   "title": "08 HOW TO GET YOUR FIRST PAYING CLIENT",
+   "id": "ch-08",
+   "page": "103"
+  },
+  {
+   "level": 3,
+   "title": "Step 1: सबसे पहले warm list",
+   "id": "s-step-1-warm-list-51",
+   "page": "104"
+  },
+  {
+   "level": 3,
+   "title": "Step 2: Where to find clients",
+   "id": "s-step-2-where-to-find-clients-52",
+   "page": "104"
+  },
+  {
+   "level": 3,
+   "title": "Step 3: Personalised outreach",
+   "id": "s-step-3-personalised-outreach-53",
+   "page": "107"
+  },
+  {
+   "level": 3,
+   "title": "Step 4: Discovery call",
+   "id": "s-step-4-discovery-call-54",
+   "page": "110"
+  },
+  {
+   "level": 3,
+   "title": "Step 5: Handling objections",
+   "id": "s-step-5-handling-objections-55",
+   "page": "111"
+  },
+  {
+   "level": 3,
+   "title": "Step 6: Proposal and closing",
+   "id": "s-step-6-proposal-and-closing-56",
+   "page": "112"
+  },
+  {
+   "level": 3,
+   "title": "Avoiding scams and bad clients",
+   "id": "s-avoiding-scams-and-bad-clients-57",
+   "page": "113"
+  },
+  {
+   "level": 3,
+   "title": "Fictional case study",
+   "id": "s-fictional-case-study-58",
+   "page": "114"
+  },
+  {
+   "level": 3,
+   "title": "The First Client Acquisition System",
+   "id": "s-the-first-client-acquisition-system-59",
+   "page": "114"
+  },
+  {
+   "level": 2,
+   "title": "09 CLIENT DELIVERY, PAYMENT AND RETENTION",
+   "id": "ch-09",
+   "page": "119"
+  },
+  {
+   "level": 3,
+   "title": "Client onboarding",
+   "id": "s-client-onboarding-60",
+   "page": "120"
+  },
+  {
+   "level": 3,
+   "title": "Project planning and communication",
+   "id": "s-project-planning-and-communication-61",
+   "page": "121"
+  },
+  {
+   "level": 3,
+   "title": "Deliverable management और QA",
+   "id": "s-deliverable-management-qa-62",
+   "page": "122"
+  },
+  {
+   "level": 3,
+   "title": "Revisions",
+   "id": "s-revisions-63",
+   "page": "123"
+  },
+  {
+   "level": 3,
+   "title": "Final delivery और payment",
+   "id": "s-final-delivery-payment-64",
+   "page": "123"
+  },
+  {
+   "level": 3,
+   "title": "Client satisfaction, testimonials और referrals",
+   "id": "s-client-satisfaction-testimonials-referrals-65",
+   "page": "125"
+  },
+  {
+   "level": 3,
+   "title": "Repeat business, retainers और CRM",
+   "id": "s-repeat-business-retainers-crm-66",
+   "page": "126"
+  },
+  {
+   "level": 3,
+   "title": "Complaint handling",
+   "id": "s-complaint-handling-67",
+   "page": "127"
+  },
+  {
+   "level": 1,
+   "title": "STAGE 04: EXECUTE AND GROW",
+   "id": "nofolio-stage-04",
+   "page": "131"
+  },
+  {
+   "level": 2,
+   "title": "10 YOUR FIRST 30 DAYS",
+   "id": "ch-10",
+   "page": "133"
+  },
+  {
+   "level": 3,
+   "title": "Week 1: Choose and validate a service",
+   "id": "s-week-1-choose-and-validate-a-service-68",
+   "page": "134"
+  },
+  {
+   "level": 3,
+   "title": "Week 2: Build portfolio and offer",
+   "id": "s-week-2-build-portfolio-and-offer-69",
+   "page": "135"
+  },
+  {
+   "level": 3,
+   "title": "Week 3: Find and approach prospects",
+   "id": "s-week-3-find-and-approach-prospects-70",
+   "page": "135"
+  },
+  {
+   "level": 3,
+   "title": "Week 4: Conversations, proposals, closing",
+   "id": "s-week-4-conversations-proposals-closing-71",
+   "page": "136"
+  },
+  {
+   "level": 3,
+   "title": "Daily tracker",
+   "id": "s-daily-tracker-72",
+   "page": "137"
+  },
+  {
+   "level": 3,
+   "title": "Weekly review",
+   "id": "s-weekly-review-73",
+   "page": "137"
+  },
+  {
+   "level": 3,
+   "title": "Performance metrics और conversion calculation",
+   "id": "s-performance-metrics-conversion-calculation-74",
+   "page": "138"
+  },
+  {
+   "level": 3,
+   "title": "Troubleshooting",
+   "id": "s-troubleshooting-75",
+   "page": "138"
+  },
+  {
+   "level": 3,
+   "title": "What to do if nobody responds",
+   "id": "s-what-to-do-if-nobody-responds-76",
+   "page": "139"
+  },
+  {
+   "level": 3,
+   "title": "How to learn from rejection",
+   "id": "s-how-to-learn-from-rejection-77",
+   "page": "139"
+  },
+  {
+   "level": 3,
+   "title": "Day 30 decision",
+   "id": "s-day-30-decision-78",
+   "page": "139"
+  },
+  {
+   "level": 1,
+   "title": "Bonus A: 100+ AI Prompt Library",
+   "id": "bk-bonus-a-100-ai-prompt-library",
+   "page": "143"
+  },
+  {
+   "level": 2,
+   "title": "Business idea discovery",
+   "id": "s-business-idea-discovery-79",
+   "page": "143"
+  },
+  {
+   "level": 2,
+   "title": "Market research",
+   "id": "s-market-research-80",
+   "page": "146"
+  },
+  {
+   "level": 2,
+   "title": "Customer personas",
+   "id": "s-customer-personas-81",
+   "page": "148"
+  },
+  {
+   "level": 2,
+   "title": "Competitor analysis",
+   "id": "s-competitor-analysis-82",
+   "page": "150"
+  },
+  {
+   "level": 2,
+   "title": "Service creation",
+   "id": "s-service-creation-83",
+   "page": "151"
+  },
+  {
+   "level": 2,
+   "title": "Brand positioning",
+   "id": "s-brand-positioning-84",
+   "page": "152"
+  },
+  {
+   "level": 2,
+   "title": "Portfolio development",
+   "id": "s-portfolio-development-85",
+   "page": "153"
+  },
+  {
+   "level": 2,
+   "title": "Website copywriting",
+   "id": "s-website-copywriting-86",
+   "page": "155"
+  },
+  {
+   "level": 2,
+   "title": "Social media content",
+   "id": "s-social-media-content-87",
+   "page": "157"
+  },
+  {
+   "level": 2,
+   "title": "Lead generation",
+   "id": "s-lead-generation-88",
+   "page": "159"
+  },
+  {
+   "level": 2,
+   "title": "Cold outreach",
+   "id": "s-cold-outreach-89",
+   "page": "161"
+  },
+  {
+   "level": 2,
+   "title": "Discovery calls",
+   "id": "s-discovery-calls-90",
+   "page": "164"
+  },
+  {
+   "level": 2,
+   "title": "Proposal creation",
+   "id": "s-proposal-creation-91",
+   "page": "166"
+  },
+  {
+   "level": 2,
+   "title": "Pricing",
+   "id": "s-pricing-92",
+   "page": "168"
+  },
+  {
+   "level": 2,
+   "title": "Project management",
+   "id": "s-project-management-93",
+   "page": "170"
+  },
+  {
+   "level": 2,
+   "title": "Client communication",
+   "id": "s-client-communication-94",
+   "page": "171"
+  },
+  {
+   "level": 2,
+   "title": "Workflow automation",
+   "id": "s-workflow-automation-95",
+   "page": "174"
+  },
+  {
+   "level": 2,
+   "title": "Business improvement",
+   "id": "s-business-improvement-96",
+   "page": "175"
+  },
+  {
+   "level": 1,
+   "title": "Bonus B: 20 Ready-to-Use Templates",
+   "id": "bk-bonus-b-20-ready-to-use-templates",
+   "page": "179"
+  },
+  {
+   "level": 2,
+   "title": "Template 01: Business Idea Worksheet",
+   "id": "tpl-01",
+   "page": "180"
+  },
+  {
+   "level": 2,
+   "title": "Template 02: Skill Assessment",
+   "id": "tpl-02",
+   "page": "181"
+  },
+  {
+   "level": 2,
+   "title": "Template 03: Customer Persona",
+   "id": "tpl-03",
+   "page": "182"
+  },
+  {
+   "level": 2,
+   "title": "Template 04: Competitor Analysis",
+   "id": "tpl-04",
+   "page": "183"
+  },
+  {
+   "level": 2,
+   "title": "Template 05: Market Validation",
+   "id": "tpl-05",
+   "page": "184"
+  },
+  {
+   "level": 2,
+   "title": "Template 06: Service Offer",
+   "id": "tpl-06",
+   "page": "186"
+  },
+  {
+   "level": 2,
+   "title": "Template 07: Pricing Calculator",
+   "id": "tpl-07",
+   "page": "187"
+  },
+  {
+   "level": 2,
+   "title": "Template 08: One-Page Business Plan",
+   "id": "tpl-08",
+   "page": "188"
+  },
+  {
+   "level": 2,
+   "title": "Template 09: Portfolio Outline",
+   "id": "tpl-09",
+   "page": "189"
+  },
+  {
+   "level": 2,
+   "title": "Template 10: Case Study",
+   "id": "tpl-10",
+   "page": "190"
+  },
+  {
+   "level": 2,
+   "title": "Template 11: Client Proposal",
+   "id": "tpl-11",
+   "page": "191"
+  },
+  {
+   "level": 2,
+   "title": "Template 12: Project Quotation",
+   "id": "tpl-12",
+   "page": "193"
+  },
+  {
+   "level": 2,
+   "title": "Template 13: Scope of Work",
+   "id": "tpl-13",
+   "page": "194"
+  },
+  {
+   "level": 2,
+   "title": "Template 14: Client Onboarding",
+   "id": "tpl-14",
+   "page": "196"
+  },
+  {
+   "level": 2,
+   "title": "Template 15: Project Brief",
+   "id": "tpl-15",
+   "page": "197"
+  },
+  {
+   "level": 2,
+   "title": "Template 16: Invoice",
+   "id": "tpl-16",
+   "page": "198"
+  },
+  {
+   "level": 2,
+   "title": "Template 17: Outreach Tracker",
+   "id": "tpl-17",
+   "page": "200"
+  },
+  {
+   "level": 2,
+   "title": "Template 18: Client CRM",
+   "id": "tpl-18",
+   "page": "203"
+  },
+  {
+   "level": 2,
+   "title": "Template 19: Follow-Up Tracker",
+   "id": "tpl-19",
+   "page": "206"
+  },
+  {
+   "level": 2,
+   "title": "Template 20: 30-Day Business Planner",
+   "id": "tpl-20",
+   "page": "208"
+  },
+  {
+   "level": 1,
+   "title": "Bonus C: Business Calculators",
+   "id": "bk-bonus-c-business-calculators",
+   "page": "211"
+  },
+  {
+   "level": 2,
+   "title": "Calculator 1: Hourly Rate",
+   "id": "calc-1",
+   "page": "212"
+  },
+  {
+   "level": 2,
+   "title": "Calculator 2: Project Pricing",
+   "id": "calc-2",
+   "page": "213"
+  },
+  {
+   "level": 2,
+   "title": "Calculator 3: Profit",
+   "id": "calc-3",
+   "page": "214"
+  },
+  {
+   "level": 2,
+   "title": "Calculator 4: Monthly Target",
+   "id": "calc-4",
+   "page": "215"
+  },
+  {
+   "level": 2,
+   "title": "Calculator 5: Lead Conversion",
+   "id": "calc-5",
+   "page": "216"
+  },
+  {
+   "level": 2,
+   "title": "Calculator 6: Client Tracker",
+   "id": "calc-6",
+   "page": "217"
+  },
+  {
+   "level": 2,
+   "title": "Calculator 7: Demand Score",
+   "id": "calc-7",
+   "page": "218"
+  },
+  {
+   "level": 1,
+   "title": "Bonus D: Business Resource Directory",
+   "id": "bk-bonus-d-business-resource-directory",
+   "page": "219"
+  },
+  {
+   "level": 2,
+   "title": "AI tools",
+   "id": "s-ai-tools-117",
+   "page": "219"
+  },
+  {
+   "level": 2,
+   "title": "Design tools",
+   "id": "s-design-tools-118",
+   "page": "220"
+  },
+  {
+   "level": 2,
+   "title": "Website builders and hosting",
+   "id": "s-website-builders-and-hosting-119",
+   "page": "220"
+  },
+  {
+   "level": 2,
+   "title": "Domain registrars and lookup",
+   "id": "s-domain-registrars-and-lookup-120",
+   "page": "221"
+  },
+  {
+   "level": 2,
+   "title": "Productivity tools",
+   "id": "s-productivity-tools-121",
+   "page": "221"
+  },
+  {
+   "level": 2,
+   "title": "Research tools",
+   "id": "s-research-tools-122",
+   "page": "222"
+  },
+  {
+   "level": 2,
+   "title": "Portfolio platforms and freelance marketplaces",
+   "id": "s-portfolio-platforms-and-freelance-marketplaces-123",
+   "page": "223"
+  },
+  {
+   "level": 2,
+   "title": "Payment providers",
+   "id": "s-payment-providers-124",
+   "page": "224"
+  },
+  {
+   "level": 2,
+   "title": "Indian government business resources",
+   "id": "s-indian-government-business-resources-125",
+   "page": "224"
+  },
+  {
+   "level": 2,
+   "title": "Tax and compliance resources",
+   "id": "s-tax-and-compliance-resources-126",
+   "page": "225"
+  },
+  {
+   "level": 2,
+   "title": "International business resources",
+   "id": "s-international-business-resources-127",
+   "page": "226"
+  },
+  {
+   "level": 1,
+   "title": "Appendix: Sources and Further Reading",
+   "id": "bk-appendix-sources-and-further-reading",
+   "page": "227"
+  },
+  {
+   "level": 2,
+   "title": "What could not be fully verified",
+   "id": "s-what-could-not-be-fully-verified-128",
+   "page": "234"
+  },
+  {
+   "level": 2,
+   "title": "Glossary",
+   "id": "s-glossary-129",
+   "page": "235"
+  },
+  {
+   "level": 1,
+   "title": "About the Author",
+   "id": "about-the-author",
+   "page": "237"
+  }
+ ],
+ "cells_restored": 278,
+ "links_resolved": 140,
+ "links_unresolved": []
+}

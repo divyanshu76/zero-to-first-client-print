@@ -1,0 +1,168 @@
+{
+ "git": {
+  "branch": "claude/ztfc-paperback-production-lj5f4b",
+  "log": [
+   "56d2aea Replace generated author mark with genuine handwritten signature",
+   "e6bf48b Initial print-production structure: manuscript, author assets, author mark"
+  ]
+ },
+ "files": [
+  {
+   "path": ".gitattributes",
+   "bytes": 39,
+   "sha256": "b07ec96efc77afdb836f6cef3c4cf61df8141ce358c2f952677b796b77b87dd4",
+   "role": ""
+  },
+  {
+   "path": ".gitignore",
+   "bytes": 23,
+   "sha256": "9addeec56619685bab330ff2184db9f205a1b4628f551ededcb97800b269ca3e",
+   "role": ""
+  },
+  {
+   "path": "README.md",
+   "bytes": 2352,
+   "sha256": "6a7720d8deb1fde6b00a0591f00e82178eb1e8495ce6e78c8c67a03125c9eddd",
+   "role": ""
+  },
+  {
+   "path": "author-assets/DIVYANSHU_VERMA_AUTHOR_SIGNATURE.png",
+   "bytes": 103917,
+   "sha256": "b3834e4d777adae91889ce1bded32f6d960ee9a1d6b116be39e5b9f7555b7d34",
+   "role": "Genuine signature, cleaned, transparent, original blue ink (digital/colour use)",
+   "pixels": [
+    1796,
+    668
+   ],
+   "mode": "RGBA",
+   "dpi_metadata": [
+    600,
+    600
+   ]
+  },
+  {
+   "path": "author-assets/divyanshu-portrait.jpg",
+   "bytes": 974925,
+   "sha256": "62e67e8d0bfa32fa0c4d09f46ef8b3720fa929046997d3b0a9006b6b3b341794",
+   "role": "Original author portrait (read-only)",
+   "matches_recorded_original_hash": true,
+   "pixels": [
+    1220,
+    1707
+   ],
+   "mode": "RGB",
+   "dpi_metadata": [
+    72,
+    72
+   ],
+   "is_greyscale_content": true
+  },
+  {
+   "path": "author-assets/originals/DIVYANSHU_VERMA_SIGNATURE_ORIGINAL_UPLOAD.png",
+   "bytes": 1155862,
+   "sha256": "a0519ccbd66d15c8a9f75d5723bcd964f0cad1897aa2315970d56b810c9e5b8c",
+   "role": "Genuine handwritten signature, exactly as uploaded (read-only)",
+   "matches_recorded_original_hash": true,
+   "pixels": [
+    2172,
+    724
+   ],
+   "mode": "RGB",
+   "dpi_metadata": null,
+   "is_greyscale_content": false
+  },
+  {
+   "path": "manuscript/ZERO_TO_FIRST_CLIENT_2026.pdf",
+   "bytes": 4497962,
+   "sha256": "04d4405eac9a3e03284be3931e74027e855809ed865d50202f0258a3c7f36875",
+   "role": "Original manuscript (authoritative source, read-only)",
+   "matches_recorded_original_hash": true,
+   "pdf_pages": 142,
+   "pdf_page_sizes_pt": [
+    "594.96x841.92"
+   ],
+   "pdf_page_size_mm": [
+    209.9,
+    297.0
+   ],
+   "pdf_metadata": {
+    "format": "PDF 1.4",
+    "title": "ZERO TO FIRST CLIENT: The AI-Powered Business Starter Kit",
+    "author": "DEADCODE LABS",
+    "subject": "AI-powered service business handbook, 2026 Edition, Edition 1.0",
+    "keywords": "entrepreneurship, freelancing, AI, client acquisition, India, Hindi",
+    "creator": "DEADCODE LABS",
+    "producer": "Chrome + PyMuPDF",
+    "creationDate": "D:20261105153052+00'00'",
+    "modDate": "D:20261105153052+00'00'"
+   }
+  },
+  {
+   "path": "production/SOURCE_AND_BUILD/DIVYANSHU_VERMA_AUTHOR_SIGNATURE_BLACK.png",
+   "bytes": 103923,
+   "sha256": "3f0a3c6be680d23392196618df3ea6060bd644604a13fbb62e7ccef6bb8e099c",
+   "role": "Genuine signature, cleaned, transparent, near-black (print interior)",
+   "pixels": [
+    1796,
+    668
+   ],
+   "mode": "RGBA",
+   "dpi_metadata": [
+    600,
+    600
+   ]
+  },
+  {
+   "path": "production/SOURCE_AND_BUILD/DIVYANSHU_VERMA_AUTHOR_SIGNATURE_WHITE.png",
+   "bytes": 103884,
+   "sha256": "80513771770389f25b38d23b58d9187cc474a2faadc77371f4ac0c565a5dd982",
+   "role": "Genuine signature, cleaned, transparent, white (dark backgrounds/cover)",
+   "pixels": [
+    1796,
+    668
+   ],
+   "mode": "RGBA",
+   "dpi_metadata": [
+    600,
+    600
+   ]
+  },
+  {
+   "path": "production/SOURCE_AND_BUILD/process_signature.py",
+   "bytes": 3004,
+   "sha256": "e507b1188b526014cf5bab1403ff5558e02bb414197705a6e3182244827dc3b4",
+   "role": ""
+  },
+  {
+   "path": "production/about-the-author/ASSETS.md",
+   "bytes": 1390,
+   "sha256": "3e7186eb53b935739f20ac6c06b914c52d972268cc91df7e83729433568ff41f",
+   "role": ""
+  },
+  {
+   "path": "production/validation/originals.sha256",
+   "bytes": 346,
+   "sha256": "06744f8744afb544e1dd0b0bbe86bd0b0ba69fd861a74d2fe6f33a601b505d68",
+   "role": ""
+  },
+  {
+   "path": "production/validation/signature_light_dark_check.png",
+   "bytes": 211498,
+   "sha256": "4a7d2dba4083b3c1d0c451eef91ed3812ff94cb452f39f1a4c1677ed071e1be4",
+   "role": "QA sheet from earlier signature cleanup",
+   "pixels": [
+    898,
+    1002
+   ],
+   "mode": "RGB",
+   "dpi_metadata": null,
+   "is_greyscale_content": false
+  },
+  {
+   "path": "production/validation/validate.sh",
+   "bytes": 1461,
+   "sha256": "0553df0ebac3fcb20664df4b3ef1c1a6106952d7dd81c3c7b166efd7d2991e03",
+   "role": ""
+  }
+ ]
+}

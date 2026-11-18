@@ -1,6 +1,6 @@
 # ZERO TO FIRST CLIENT — Print Production
 
-Private print-production repo for *ZERO TO FIRST CLIENT: The AI-Powered Business Starter Kit* (2026) by **Divyanshu Verma** · CRAFT & CODE / DEADCODE LABS.
+Private print-production repo for *ZERO TO FIRST CLIENT: The AI-Powered Business Starter Kit* (2026) by **Divyanshu Verma** · DeadCode Labs (imprint as locked in the production brief; the manuscript itself credits DEADCODE LABS).
 
 ## Structure
 
@@ -34,3 +34,29 @@ bash production/validation/validate.sh
 This checks that the manuscript, portrait and original signature upload are byte-identical to the recorded checksums. It also checks that the signature PNG is valid, transparent and high-resolution, and that no generated mark remains.
 
 Production outputs (interior, cover, proofs) go in `production/`, never in `manuscript/`.
+
+## Paperback production (135 × 210 mm)
+
+| Path | Contents |
+|---|---|
+| `production/audit/` | Phase 1 audit report, asset inventory, content inventory, Devanagari text-layer fix log |
+| `production/source/` | `extracted.html` (faithful reconstruction of the PDF), `print_edits.yaml` (every documented change), `book_print.html`, `book_digital.html` |
+| `production/design-system/` | `book.css`, colour tokens (print K-only / digital), bundled OFL fonts, rebuilt vector diagrams |
+| `production/about-the-author/` | About page content (approved bio), portrait print derivative + script |
+| `production/scripts/` | Extraction, edits, typesetting, proof builder, all validators, `run_checks.sh` |
+| `production/previews/` | 5-page interior proof and cover concept previews (history) |
+| `production/final/` | Final interior, digital edition, cover artwork, About page, previews |
+| `production/cover/` | Cover concepts (A approved and locked), final cover build script |
+| `production/validation/` | Machine-readable validation reports |
+| `production/reports/` | Proof & design report, production plan, prompt / template / calculator / figure inventories |
+
+Run all checks: `bash production/scripts/run_checks.sh` · Rebuild the proof: `python3 production/scripts/build_proof.py print`
+
+Status: **production complete.** Final files are in `production/final/` and the report is `production/reports/FINAL_PRODUCTION_REPORT.md`.
+
+| Final file | |
+|---|---|
+| `production/final/ZTFC_2026_paperback_interior_135x210_PRINT.pdf` | Paperback interior, 258 pp, 135 × 210 mm, black only |
+| `production/final/ZTFC_2026_digital_edition.pdf` | Digital edition, 257 pp, linked Contents and cross-references |
+| `production/final/cover/ZTFC_cover_FRONT_…pdf`, `…BACK_…pdf` | Final cover artwork (approved Concept A), 3 mm bleed, CMYK |
+| `production/final/cover/ZTFC_cover_SPINE_…PROVISIONAL…pdf`, `…WRAP_PROVISIONAL…NOT_PRINTER_READY.pdf` | Spine and wrap at provisional 13.4 mm, pending the printer's caliper and template |

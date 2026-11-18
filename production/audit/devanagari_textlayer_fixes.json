@@ -1,0 +1,681 @@
+{
+ "count": 135,
+ "rule": "([\\u0900-\\u0903\\u093A-\\u094F\\u0951-\\u0957\\u0962\\u0963])\\1+",
+ "fixes": [
+  {
+   "page": 4,
+   "found": "ाा",
+   "context": "बड़ाा"
+  },
+  {
+   "page": 5,
+   "found": "ाा",
+   "context": "पढ़ााई"
+  },
+  {
+   "page": 5,
+   "found": "ेे",
+   "context": "छोड़ेे"
+  },
+  {
+   "page": 14,
+   "found": "ँँ",
+   "context": "पहुँँच"
+  },
+  {
+   "page": 14,
+   "found": "ाा",
+   "context": "अच्छाा"
+  },
+  {
+   "page": 15,
+   "found": "ँँ",
+   "context": "हूँँ"
+  },
+  {
+   "page": 15,
+   "found": "ँँ",
+   "context": "हूँँ"
+  },
+  {
+   "page": 15,
+   "found": "ाा",
+   "context": "बड़ाा"
+  },
+  {
+   "page": 15,
+   "found": "ीी",
+   "context": "बड़ीी"
+  },
+  {
+   "page": 16,
+   "found": "ीी",
+   "context": "बड़ीी"
+  },
+  {
+   "page": 16,
+   "found": "ाा",
+   "context": "मज़ाा"
+  },
+  {
+   "page": 16,
+   "found": "ँँ",
+   "context": "हूँँ।"
+  },
+  {
+   "page": 16,
+   "found": "ँँ",
+   "context": "हूँँ।"
+  },
+  {
+   "page": 17,
+   "found": "ाा",
+   "context": "अच्छाा"
+  },
+  {
+   "page": 18,
+   "found": "ोो",
+   "context": "कमज़ोोर"
+  },
+  {
+   "page": 18,
+   "found": "ँँ",
+   "context": "हूँँ"
+  },
+  {
+   "page": 19,
+   "found": "ँँ",
+   "context": "हूँँ"
+  },
+  {
+   "page": 19,
+   "found": "ँँ",
+   "context": "पहुँँच"
+  },
+  {
+   "page": 19,
+   "found": "ाा",
+   "context": "बाज़ाार।"
+  },
+  {
+   "page": 20,
+   "found": "ाा",
+   "context": "अच्छाा"
+  },
+  {
+   "page": 20,
+   "found": "ोो",
+   "context": "कमज़ोोर"
+  },
+  {
+   "page": 20,
+   "found": "ोो",
+   "context": "कमज़ोोरियाँ"
+  },
+  {
+   "page": 21,
+   "found": "ँँ",
+   "context": "हूँँ"
+  },
+  {
+   "page": 22,
+   "found": "ाा",
+   "context": "अच्छाा"
+  },
+  {
+   "page": 22,
+   "found": "ाा",
+   "context": "अच्छाा"
+  },
+  {
+   "page": 22,
+   "found": "ाा",
+   "context": "त्मविश्वाास"
+  },
+  {
+   "page": 23,
+   "found": "ेे",
+   "context": "पढ़ेे"
+  },
+  {
+   "page": 24,
+   "found": "ँँ",
+   "context": "हूँँ।"
+  },
+  {
+   "page": 25,
+   "found": "ेे",
+   "context": "पढ़ेे"
+  },
+  {
+   "page": 25,
+   "found": "ाा",
+   "context": "अच्छाा"
+  },
+  {
+   "page": 25,
+   "found": "ेे",
+   "context": "अच्छेे"
+  },
+  {
+   "page": 26,
+   "found": "ोो",
+   "context": "जोड़ोो"
+  },
+  {
+   "page": 27,
+   "found": "ाा",
+   "context": "पढ़ााकर"
+  },
+  {
+   "page": 28,
+   "found": "ेे",
+   "context": "अच्छेे"
+  },
+  {
+   "page": 33,
+   "found": "ेे",
+   "context": "पढ़ेे"
+  },
+  {
+   "page": 34,
+   "found": "ँँ",
+   "context": "हूँँ"
+  },
+  {
+   "page": 34,
+   "found": "ाा",
+   "context": "गुज़ाारिए"
+  },
+  {
+   "page": 34,
+   "found": "ँँ",
+   "context": "पहुँँच"
+  },
+  {
+   "page": 35,
+   "found": "ाा",
+   "context": "अच्छाा"
+  },
+  {
+   "page": 36,
+   "found": "ाा",
+   "context": "पढ़ााइए"
+  },
+  {
+   "page": 36,
+   "found": "ाा",
+   "context": "बढ़ााना।"
+  },
+  {
+   "page": 36,
+   "found": "ीी",
+   "context": "बड़ीी"
+  },
+  {
+   "page": 36,
+   "found": "ाा",
+   "context": "अंदाज़ाा"
+  },
+  {
+   "page": 36,
+   "found": "ाा",
+   "context": "अच्छाा"
+  },
+  {
+   "page": 37,
+   "found": "ाा",
+   "context": "बड़ाा"
+  },
+  {
+   "page": 41,
+   "found": "ाा",
+   "context": "बढ़ााना"
+  },
+  {
+   "page": 43,
+   "found": "ीी",
+   "context": "बड़ीी"
+  },
+  {
+   "page": 44,
+   "found": "ाा",
+   "context": "थोड़ाा"
+  },
+  {
+   "page": 47,
+   "found": "ाा",
+   "context": "थोड़ाा"
+  },
+  {
+   "page": 47,
+   "found": "ाा",
+   "context": "अच्छाा"
+  },
+  {
+   "page": 48,
+   "found": "ेे",
+   "context": "अच्छेे"
+  },
+  {
+   "page": 48,
+   "found": "ाा",
+   "context": "अच्छाा"
+  },
+  {
+   "page": 48,
+   "found": "ेे",
+   "context": "इकट्ठेे"
+  },
+  {
+   "page": 49,
+   "found": "ाा",
+   "context": "अच्छाा"
+  },
+  {
+   "page": 50,
+   "found": "ाा",
+   "context": "इकट्ठाा"
+  },
+  {
+   "page": 51,
+   "found": "ाा",
+   "context": "बड़ाा"
+  },
+  {
+   "page": 51,
+   "found": "ाा",
+   "context": "बढ़ाा"
+  },
+  {
+   "page": 51,
+   "found": "ाा",
+   "context": "चढ़ााकर"
+  },
+  {
+   "page": 52,
+   "found": "ेे",
+   "context": "बड़ेे"
+  },
+  {
+   "page": 52,
+   "found": "ेे",
+   "context": "बड़ेे"
+  },
+  {
+   "page": 52,
+   "found": "ाा",
+   "context": "बढ़ाा"
+  },
+  {
+   "page": 52,
+   "found": "ाा",
+   "context": "चढ़ााकर"
+  },
+  {
+   "page": 54,
+   "found": "ीी",
+   "context": "बड़ीी"
+  },
+  {
+   "page": 58,
+   "found": "ेे",
+   "context": "बड़ेे"
+  },
+  {
+   "page": 59,
+   "found": "ाा",
+   "context": "सज़ाा"
+  },
+  {
+   "page": 60,
+   "found": "ाा",
+   "context": "फ़ाायदा"
+  },
+  {
+   "page": 60,
+   "found": "ाा",
+   "context": "फ़ाायदा"
+  },
+  {
+   "page": 62,
+   "found": "ेे",
+   "context": "बड़ेे"
+  },
+  {
+   "page": 62,
+   "found": "ेे",
+   "context": "बड़ेे"
+  },
+  {
+   "page": 62,
+   "found": "ाा",
+   "context": "अच्छाा"
+  },
+  {
+   "page": 63,
+   "found": "ाा",
+   "context": "बढ़ाा"
+  },
+  {
+   "page": 64,
+   "found": "ाा",
+   "context": "सिफ़ाारिशें"
+  },
+  {
+   "page": 64,
+   "found": "ाा",
+   "context": "सिफ़ाारिश"
+  },
+  {
+   "page": 64,
+   "found": "ाा",
+   "context": "द्वाारा"
+  },
+  {
+   "page": 64,
+   "found": "ेे",
+   "context": "पढ़ेे।"
+  },
+  {
+   "page": 65,
+   "found": "ेे",
+   "context": "पड़ेेगा"
+  },
+  {
+   "page": 65,
+   "found": "ाा",
+   "context": "बढ़ाा"
+  },
+  {
+   "page": 72,
+   "found": "ाा",
+   "context": "अच्छाा"
+  },
+  {
+   "page": 72,
+   "found": "ेे",
+   "context": "जुड़ेे"
+  },
+  {
+   "page": 72,
+   "found": "ाा",
+   "context": "फ़ाायदा"
+  },
+  {
+   "page": 72,
+   "found": "ाा",
+   "context": "थोड़ाा"
+  },
+  {
+   "page": 73,
+   "found": "ाा",
+   "context": "अच्छाा"
+  },
+  {
+   "page": 76,
+   "found": "ाा",
+   "context": "तोड़ाा"
+  },
+  {
+   "page": 77,
+   "found": "ीी",
+   "context": "बड़ीी"
+  },
+  {
+   "page": 78,
+   "found": "ेे",
+   "context": "अच्छेे"
+  },
+  {
+   "page": 78,
+   "found": "ेे",
+   "context": "पढ़ेे"
+  },
+  {
+   "page": 79,
+   "found": "ाा",
+   "context": "इकट्ठाा"
+  },
+  {
+   "page": 79,
+   "found": "ेे",
+   "context": "अच्छेे"
+  },
+  {
+   "page": 81,
+   "found": "ेे",
+   "context": "प्रेेरित"
+  },
+  {
+   "page": 82,
+   "found": "ँँ",
+   "context": "हूँँ"
+  },
+  {
+   "page": 82,
+   "found": "ँँ",
+   "context": "हूँँ।"
+  },
+  {
+   "page": 82,
+   "found": "ँँ",
+   "context": "हूँँ।"
+  },
+  {
+   "page": 83,
+   "found": "ीी",
+   "context": "बड़ीी"
+  },
+  {
+   "page": 83,
+   "found": "ाा",
+   "context": "बढ़ााइए।"
+  },
+  {
+   "page": 85,
+   "found": "ाा",
+   "context": "बड़ाा"
+  },
+  {
+   "page": 85,
+   "found": "ोो",
+   "context": "कमज़ोोरी"
+  },
+  {
+   "page": 86,
+   "found": "ेे",
+   "context": "अच्छेे"
+  },
+  {
+   "page": 86,
+   "found": "ेे",
+   "context": "पढ़ेे"
+  },
+  {
+   "page": 86,
+   "found": "ाा",
+   "context": "इंतज़ाार"
+  },
+  {
+   "page": 87,
+   "found": "ाा",
+   "context": "अच्छाा"
+  },
+  {
+   "page": 89,
+   "found": "ाा",
+   "context": "अच्छाा"
+  },
+  {
+   "page": 89,
+   "found": "ँँ",
+   "context": "हूँँ।"
+  },
+  {
+   "page": 92,
+   "found": "ाा",
+   "context": "बढ़ााया"
+  },
+  {
+   "page": 92,
+   "found": "ँँ",
+   "context": "हूँँ"
+  },
+  {
+   "page": 92,
+   "found": "ाा",
+   "context": "बड़ाा"
+  },
+  {
+   "page": 92,
+   "found": "ीी",
+   "context": "बड़ीी"
+  },
+  {
+   "page": 93,
+   "found": "ाा",
+   "context": "अच्छाा"
+  },
+  {
+   "page": 93,
+   "found": "ेे",
+   "context": "बड़ेे"
+  },
+  {
+   "page": 99,
+   "found": "ाा",
+   "context": "अच्छाा"
+  },
+  {
+   "page": 99,
+   "found": "ाा",
+   "context": "बड़ाा"
+  },
+  {
+   "page": 100,
+   "found": "ाा",
+   "context": "बड़ाा"
+  },
+  {
+   "page": 100,
+   "found": "ीी",
+   "context": "बड़ीी"
+  },
+  {
+   "page": 100,
+   "found": "ैै",
+   "context": "फ़ैैसला"
+  },
+  {
+   "page": 101,
+   "found": "ाा",
+   "context": "थोड़ाा"
+  },
+  {
+   "page": 101,
+   "found": "ाा",
+   "context": "पढ़ााई"
+  },
+  {
+   "page": 103,
+   "found": "ेे",
+   "context": "पड़ेे"
+  },
+  {
+   "page": 103,
+   "found": "ोो",
+   "context": "कमज़ोोर"
+  },
+  {
+   "page": 113,
+   "found": "ीी",
+   "context": "पकड़ीी"
+  },
+  {
+   "page": 115,
+   "found": "ाा",
+   "context": "बढ़ााने"
+  },
+  {
+   "page": 117,
+   "found": "ाा",
+   "context": "अच्छाा"
+  },
+  {
+   "page": 117,
+   "found": "ाा",
+   "context": "फ़ाायदेमंद"
+  },
+  {
+   "page": 120,
+   "found": "ाा",
+   "context": "अंदाज़ाा"
+  },
+  {
+   "page": 123,
+   "found": "ाा",
+   "context": "बढ़ााइए।"
+  },
+  {
+   "page": 128,
+   "found": "ेे",
+   "context": "बड़ेे"
+  },
+  {
+   "page": 133,
+   "found": "ोो",
+   "context": "कमज़ोोर"
+  },
+  {
+   "page": 139,
+   "found": "ाा",
+   "context": "पढ़ाा"
+  },
+  {
+   "page": 139,
+   "found": "ाा",
+   "context": "पढ़ाा"
+  },
+  {
+   "page": 142,
+   "found": "ेे",
+   "context": "पढ़ेे"
+  },
+  {
+   "page": 142,
+   "found": "ाा",
+   "context": "पढ़ाा"
+  },
+  {
+   "page": 142,
+   "found": "ाा",
+   "context": "सिफ़ाारिशें"
+  },
+  {
+   "page": 142,
+   "found": "ीी",
+   "context": "पढ़ीी"
+  },
+  {
+   "page": 142,
+   "found": "ाा",
+   "context": "पढ़ाा"
+  },
+  {
+   "page": 142,
+   "found": "ेे",
+   "context": "पढ़ेे"
+  },
+  {
+   "page": 142,
+   "found": "ाा",
+   "context": "जुड़ाा"
+  },
+  {
+   "page": 142,
+   "found": "ाा",
+   "context": "त्मविश्वाास"
+  }
+ ]
+}

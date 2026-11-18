@@ -1,0 +1,82 @@
+{
+ "ZTFC_cover_BACK_artwork_141x216_incl_3mm_bleed.pdf": {
+  "media_mm": [
+   0.0,
+   0.0,
+   141.0,
+   216.0
+  ],
+  "trim_mm": [
+   3.0,
+   3.0,
+   138.0,
+   213.0
+  ],
+  "rgb_ops": 0,
+  "cmyk_selections": 43,
+  "transparency": 0,
+  "fonts": 6,
+  "all_embedded": true,
+  "images": 0
+ },
+ "ZTFC_cover_FRONT_artwork_141x216_incl_3mm_bleed.pdf": {
+  "media_mm": [
+   148.4,
+   0.0,
+   289.4,
+   216.0
+  ],
+  "trim_mm": [
+   151.4,
+   3.0,
+   286.4,
+   213.0
+  ],
+  "rgb_ops": 0,
+  "cmyk_selections": 43,
+  "transparency": 0,
+  "fonts": 6,
+  "all_embedded": true,
+  "images": 0
+ },
+ "ZTFC_cover_SPINE_artwork_PROVISIONAL_13.4mm.pdf": {
+  "media_mm": [
+   138.0,
+   0.0,
+   151.4,
+   216.0
+  ],
+  "trim_mm": [
+   138.0,
+   3.0,
+   151.4,
+   213.0
+  ],
+  "rgb_ops": 0,
+  "cmyk_selections": 43,
+  "transparency": 0,
+  "fonts": 6,
+  "all_embedded": true,
+  "images": 0
+ },
+ "ZTFC_cover_WRAP_PROVISIONAL_SPINE_13.4mm_NOT_PRINTER_READY.pdf": {
+  "media_mm": [
+   0.0,
+   0.0,
+   289.4,
+   216.0
+  ],
+  "trim_mm": [
+   3.0,
+   3.0,
+   286.4,
+   213.0
+  ],
+  "rgb_ops": 0,
+  "cmyk_selections": 43,
+  "transparency": 0,
+  "fonts": 6,
+  "all_embedded": true,
+  "images": 0
+ }
+}

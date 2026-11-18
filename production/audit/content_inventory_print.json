@@ -1,0 +1,1216 @@
+{
+ "source": "source/book_print.html",
+ "frontmatter": [
+  "Copyright",
+  "Disclaimer",
+  "About DEADCODE LABS",
+  "Welcome note",
+  "Who should read this book?",
+  "What you will achieve",
+  "How to use this book",
+  "Learning roadmap"
+ ],
+ "stages": [
+  {
+   "stage": "01",
+   "title": "FIND YOUR BUSINESS"
+  },
+  {
+   "stage": "02",
+   "title": "BUILD YOUR BUSINESS"
+  },
+  {
+   "stage": "03",
+   "title": "GET YOUR FIRST CLIENT"
+  },
+  {
+   "stage": "04",
+   "title": "EXECUTE AND GROW"
+  }
+ ],
+ "chapters": [
+  {
+   "chapter": "01",
+   "title": "FIND YOUR FIRST BUSINESS IDEA",
+   "subtitle": "दस में से एक service चुनिए, feeling से नहीं, scoring से।",
+   "sections_h2": [
+    "Chapter introduction",
+    "Learning objectives",
+    "Service business क्या होता है?",
+    "दस realistic low-investment services",
+    "Step 1: Skill assessment",
+    "Step 2: Business idea evaluation matrix",
+    "Step 3: Competitor research की शुरुआत",
+    "Step 4: Target customer चुनना",
+    "Step 5: Business statement लिखिए",
+    "Three scenarios (hypothetical)",
+    "Indian market application",
+    "Recommended tools and official links",
+    "AI prompts for idea discovery",
+    "Common mistakes",
+    "Risks and limitations",
+    "Practical exercises",
+    "Chapter summary",
+    "Completion checklist"
+   ],
+   "h3_count": 2,
+   "prompts": [
+    "C-A",
+    "C-B"
+   ],
+   "workflow_cards": [
+    "Demand assessment: 45 minutes में पहली जाँच"
+   ],
+   "callouts": {
+    "tip": 1,
+    "hypothetical": 4,
+    "intl": 1,
+    "assignment": 1
+   },
+   "tables": 4,
+   "figures": [
+    "2"
+   ],
+   "checklists": 2
+  },
+  {
+   "chapter": "02",
+   "title": "BUILD YOUR AI TOOLKIT",
+   "subtitle": "AI कहाँ समय बचाता है, कहाँ गलत होता है, और 25 prompts जो आप आज इस्तेमाल कर सकते हैं।",
+   "sections_h2": [
+    "Chapter introduction",
+    "Learning objectives",
+    "AI क्या कर सकता है, क्या नहीं",
+    "AI-assisted workflow",
+    "Responsible AI use: तीन rules",
+    "Tool comparison",
+    "Prompt engineering fundamentals",
+    "25 essential copy-paste prompts",
+    "Indian market application",
+    "Basic automation: क्या पहले automate करें",
+    "Official resources",
+    "Common mistakes",
+    "Risks and limitations",
+    "Practical exercises",
+    "Chapter summary",
+    "Completion checklist"
+   ],
+   "h3_count": 4,
+   "prompts": [
+    "C01",
+    "C02",
+    "C03",
+    "C04",
+    "C05",
+    "C06",
+    "C07",
+    "C08",
+    "C09",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "C18",
+    "C19",
+    "C20",
+    "C21",
+    "C22",
+    "C23",
+    "C24",
+    "C25"
+   ],
+   "workflow_cards": [
+    "Fact-check workflow: AI output client तक भेजने से पहले"
+   ],
+   "callouts": {
+    "tip": 1,
+    "intl": 1,
+    "assignment": 1
+   },
+   "tables": 3,
+   "figures": [
+    "3",
+    "4",
+    "5"
+   ],
+   "checklists": 2
+  },
+  {
+   "chapter": "03",
+   "title": "TURN YOUR SKILL INTO A SERVICE",
+   "subtitle": "Skill को ऐसे offer में बदलिए जिसे client एक बार पढ़कर समझ जाए और तय कर सके।",
+   "sections_h2": [
+    "Chapter introduction",
+    "Learning objectives",
+    "Skill-to-service transformation",
+    "Deliverables और packages",
+    "Scope, revisions और timelines",
+    "Pilot project: risk कम, payment असली",
+    "Professional service description",
+    "Four detailed service examples",
+    "Service Offer Worksheet",
+    "Indian market application",
+    "Recommended tools and resources",
+    "AI prompts for this chapter",
+    "Common mistakes",
+    "Risks and limitations",
+    "Practical exercises",
+    "Chapter summary",
+    "Completion checklist"
+   ],
+   "h3_count": 8,
+   "prompts": [
+    "C-C",
+    "C-D"
+   ],
+   "workflow_cards": [
+    "Three-package builder"
+   ],
+   "callouts": {
+    "note": 1,
+    "intl": 1,
+    "assignment": 1
+   },
+   "tables": 7,
+   "figures": [
+    "6",
+    "7"
+   ],
+   "checklists": 2
+  },
+  {
+   "chapter": "04",
+   "title": "MARKET RESEARCH",
+   "subtitle": "Paid tools के बिना जानिए कि कौन pay करेगा, कितना, और क्यों।",
+   "sections_h2": [
+    "Chapter introduction",
+    "Learning objectives",
+    "Customer problems: असली भाषा ढूँढिए",
+    "Customer persona",
+    "Competitor analysis",
+    "Customer interviews",
+    "Willingness to pay",
+    "Testing offers before investing",
+    "Indian market application",
+    "Tools and official links",
+    "AI prompts for this chapter",
+    "Common mistakes",
+    "Risks and limitations",
+    "Practical exercises",
+    "Chapter summary",
+    "Completion checklist"
+   ],
+   "h3_count": 5,
+   "prompts": [
+    "C-E"
+   ],
+   "workflow_cards": [
+    "Google Search research",
+    "Google Trends research",
+    "Instagram and LinkedIn research"
+   ],
+   "callouts": {
+    "warning": 1,
+    "hypothetical": 1,
+    "intl": 1,
+    "assignment": 1
+   },
+   "tables": 4,
+   "figures": [
+    "8",
+    "9",
+    "10"
+   ],
+   "checklists": 2
+  },
+  {
+   "chapter": "05",
+   "title": "BRAND, IDENTITY AND PORTFOLIO",
+   "subtitle": "बिना clients के भी भरोसा बनाया जा सकता है, बिना झूठ बोले।",
+   "sections_h2": [
+    "Chapter introduction",
+    "Learning objectives",
+    "Business name",
+    "Basic brand identity",
+    "Portfolio without clients",
+    "Ethical credibility building",
+    "Landing page और copy templates",
+    "Social media optimisation",
+    "Indian market application",
+    "AI prompts for this chapter",
+    "Recommended tools and links",
+    "Common mistakes",
+    "Risks and limitations",
+    "Practical exercises",
+    "Chapter summary",
+    "Completion checklist"
+   ],
+   "h3_count": 7,
+   "prompts": [
+    "C-F"
+   ],
+   "workflow_cards": [
+    "Naming and domain check",
+    "Case study writing"
+   ],
+   "callouts": {
+    "warning": 1,
+    "intl": 1,
+    "assignment": 1
+   },
+   "tables": 3,
+   "figures": [
+    "11",
+    "12"
+   ],
+   "checklists": 2
+  },
+  {
+   "chapter": "06",
+   "title": "PRICING, PROPOSALS AND BUSINESS SETUP",
+   "subtitle": "Price कैसे निकालें, proposal कैसे लिखें, और शुरू में कौन सी paperwork सचमुच ज़रूरी है।",
+   "sections_h2": [
+    "Chapter introduction",
+    "Learning objectives",
+    "Pricing models",
+    "Cost और rate calculation",
+    "Quotation vs proposal",
+    "Scope, milestones और agreements",
+    "India: business setup basics",
+    "International clients",
+    "Recommended tools and official links",
+    "AI prompts for this chapter",
+    "Common mistakes",
+    "Risks and limitations",
+    "Practical exercises",
+    "Chapter summary",
+    "Completion checklist"
+   ],
+   "h3_count": 6,
+   "prompts": [
+    "C-G",
+    "C-H"
+   ],
+   "workflow_cards": [],
+   "callouts": {
+    "hypothetical": 1,
+    "warning": 2,
+    "assignment": 1
+   },
+   "tables": 6,
+   "figures": [
+    "13",
+    "14",
+    "15",
+    "16"
+   ],
+   "checklists": 2
+  },
+  {
+   "chapter": "07",
+   "title": "MARKETING AND CLIENT ACQUISITION",
+   "subtitle": "Followers नहीं, trust और बातचीत। Organic marketing जो एक व्यक्ति रोज़ चला सके।",
+   "sections_h2": [
+    "Chapter introduction",
+    "Learning objectives",
+    "Channel selection",
+    "Trust बनाने वाला content",
+    "Simple marketing funnel",
+    "30 social media content ideas",
+    "15 LinkedIn post ideas",
+    "10 Instagram Reel scripts",
+    "10 short-video hooks",
+    "Beginner-friendly content calendar",
+    "Outreach tracking workflow",
+    "Indian market application",
+    "Tools and official links",
+    "AI prompts for this chapter",
+    "Common mistakes",
+    "Risks and limitations",
+    "Practical exercises",
+    "Chapter summary",
+    "Completion checklist"
+   ],
+   "h3_count": 0,
+   "prompts": [
+    "C-I"
+   ],
+   "workflow_cards": [
+    "Weekly content system: 3 घंटे में"
+   ],
+   "callouts": {
+    "warning": 1,
+    "intl": 1,
+    "assignment": 1
+   },
+   "tables": 3,
+   "figures": [
+    "17"
+   ],
+   "checklists": 2
+  },
+  {
+   "chapter": "08",
+   "title": "HOW TO GET YOUR FIRST PAYING CLIENT",
+   "subtitle": "ढूँढने से लेकर \"हाँ\" तक का पूरा system, जिसे आप रोज़ दोहरा सकते हैं।",
+   "sections_h2": [
+    "Chapter introduction",
+    "Learning objectives",
+    "Step 1: सबसे पहले warm list",
+    "Step 2: Where to find clients",
+    "Step 3: Personalised outreach",
+    "Step 4: Discovery call",
+    "Step 5: Handling objections",
+    "Step 6: Proposal and closing",
+    "Avoiding scams and bad clients",
+    "Fictional case study",
+    "The First Client Acquisition System",
+    "Tools and official resources",
+    "AI prompts for this chapter",
+    "Common mistakes",
+    "Risks and limitations",
+    "Practical exercises",
+    "Chapter summary",
+    "Completion checklist"
+   ],
+   "h3_count": 7,
+   "prompts": [
+    "C-J"
+   ],
+   "workflow_cards": [
+    "Google Maps business research",
+    "Instagram prospect research",
+    "LinkedIn prospecting and directories"
+   ],
+   "callouts": {
+    "warning": 2,
+    "hypothetical": 1,
+    "india": 1,
+    "intl": 1,
+    "assignment": 1
+   },
+   "tables": 5,
+   "figures": [
+    "18",
+    "19",
+    "20"
+   ],
+   "checklists": 2
+  },
+  {
+   "chapter": "09",
+   "title": "CLIENT DELIVERY, PAYMENT AND RETENTION",
+   "subtitle": "पहला \"हाँ\" मिल गया। अब वह काम कीजिए जिससे दूसरा project और referral मिल सके।",
+   "sections_h2": [
+    "Chapter introduction",
+    "Learning objectives",
+    "Client onboarding",
+    "Project planning and communication",
+    "Deliverable management और QA",
+    "Revisions",
+    "Final delivery और payment",
+    "Client satisfaction, testimonials और referrals",
+    "Repeat business, retainers और CRM",
+    "Complaint handling",
+    "Tools and official resources",
+    "AI prompts for this chapter",
+    "Common mistakes",
+    "Risks and limitations",
+    "Practical exercises",
+    "Chapter summary",
+    "Completion checklist"
+   ],
+   "h3_count": 8,
+   "prompts": [
+    "C-K"
+   ],
+   "workflow_cards": [],
+   "callouts": {
+    "india": 1,
+    "intl": 1,
+    "assignment": 1
+   },
+   "tables": 3,
+   "figures": [
+    "21",
+    "22",
+    "23"
+   ],
+   "checklists": 2
+  },
+  {
+   "chapter": "10",
+   "title": "YOUR FIRST 30 DAYS",
+   "subtitle": "एक realistic roadmap। Client की कोई guarantee नहीं, पर एक पूरा process और सच्चे numbers।",
+   "sections_h2": [
+    "Chapter introduction",
+    "Learning objectives",
+    "Week 1: Choose and validate a service",
+    "Week 2: Build portfolio and offer",
+    "Week 3: Find and approach prospects",
+    "Week 4: Conversations, proposals, closing",
+    "Daily tracker",
+    "Weekly review",
+    "Performance metrics और conversion calculation",
+    "Troubleshooting",
+    "What to do if nobody responds",
+    "How to learn from rejection",
+    "Day 30 decision",
+    "Tools and official links",
+    "AI prompts for this chapter",
+    "Common mistakes",
+    "Risks and limitations",
+    "Practical exercises",
+    "Chapter summary",
+    "Completion checklist"
+   ],
+   "h3_count": 0,
+   "prompts": [
+    "C-L"
+   ],
+   "workflow_cards": [],
+   "callouts": {
+    "india": 1,
+    "intl": 1,
+    "assignment": 1
+   },
+   "tables": 8,
+   "figures": [
+    "24"
+   ],
+   "checklists": 2
+  }
+ ],
+ "back_matter": {
+  "Bonus A: 100+ AI Prompt Library": {
+   "h2": [
+    "Business idea discovery",
+    "Market research",
+    "Customer personas",
+    "Competitor analysis",
+    "Service creation",
+    "Brand positioning",
+    "Portfolio development",
+    "Website copywriting",
+    "Social media content",
+    "Lead generation",
+    "Cold outreach",
+    "Discovery calls",
+    "Proposal creation",
+    "Pricing",
+    "Project management",
+    "Client communication",
+    "Workflow automation",
+    "Business improvement"
+   ],
+   "tables": 0,
+   "prompts": 104
+  },
+  "Bonus B: 20 Ready-to-Use Templates": {
+   "h2": [
+    "Template 01: Business Idea Worksheet",
+    "Template 02: Skill Assessment",
+    "Template 03: Customer Persona",
+    "Template 04: Competitor Analysis",
+    "Template 05: Market Validation",
+    "Template 06: Service Offer",
+    "Template 07: Pricing Calculator",
+    "Template 08: One-Page Business Plan",
+    "Template 09: Portfolio Outline",
+    "Template 10: Case Study",
+    "Template 11: Client Proposal",
+    "Template 12: Project Quotation",
+    "Template 13: Scope of Work",
+    "Template 14: Client Onboarding",
+    "Template 15: Project Brief",
+    "Template 16: Invoice",
+    "Template 17: Outreach Tracker",
+    "Template 18: Client CRM",
+    "Template 19: Follow-Up Tracker",
+    "Template 20: 30-Day Business Planner"
+   ],
+   "tables": 22,
+   "prompts": 0
+  },
+  "Bonus C: Business Calculators": {
+   "h2": [],
+   "tables": 1,
+   "prompts": 0
+  },
+  "Bonus D: Business Resource Directory": {
+   "h2": [
+    "AI tools",
+    "Design tools",
+    "Website builders and hosting",
+    "Domain registrars and lookup",
+    "Productivity tools",
+    "Research tools",
+    "Portfolio platforms and freelance marketplaces",
+    "Payment providers",
+    "Indian government business resources",
+    "Tax and compliance resources",
+    "International business resources"
+   ],
+   "tables": 11,
+   "prompts": 0
+  },
+  "Appendix: Sources and Further Reading": {
+   "h2": [
+    "What could not be fully verified",
+    "Glossary"
+   ],
+   "tables": 3,
+   "prompts": 0
+  }
+ },
+ "templates": [
+  {
+   "number": "01",
+   "title": "Business Idea Worksheet",
+   "fields_or_rows": [
+    "Skill level today",
+    "Learning time needed",
+    "Visible demand",
+    "Willingness to pay",
+    "Starting cost",
+    "Reachable customers",
+    "Total (max 65)"
+   ]
+  },
+  {
+   "number": "02",
+   "title": "Skill Assessment",
+   "fields_or_rows": [
+    "Canva design",
+    "",
+    "",
+    ""
+   ]
+  },
+  {
+   "number": "03",
+   "title": "Customer Persona",
+   "fields_or_rows": [
+    "Role and business type",
+    "Location and size",
+    "Top problem, in their words",
+    "Trigger: why now?",
+    "Current solution",
+    "Budget signal",
+    "Decision maker",
+    "Where to find them",
+    "Main objection",
+    "Evidence source"
+   ]
+  },
+  {
+   "number": "04",
+   "title": "Competitor Analysis",
+   "fields_or_rows": [
+    "Sample Studio (fictional)",
+    "",
+    "",
+    "",
+    ""
+   ]
+  },
+  {
+   "number": "05",
+   "title": "Market Validation",
+   "fields_or_rows": [
+    "Buyer phrases collected (target 20)",
+    "Competitors analysed (target 10)",
+    "Interviews completed (target 5)",
+    "People who confirmed same problem",
+    "People who already spent on it",
+    "Strong signals (proposal asked, pilot)",
+    "Pain score, 0-5",
+    "Frequency score, 0-5",
+    "Spending score, 0-5",
+    "Reach score, 0-5",
+    "Fit score, 0-5",
+    "Total out of 25",
+    "Decision: Go, Refine or Drop",
+    "Next single test"
+   ]
+  },
+  {
+   "number": "06",
+   "title": "Service Offer",
+   "fields_or_rows": [
+    "Example: Deliverables",
+    "Buyer",
+    "Deliverables",
+    "Timeline",
+    "Revisions",
+    "Excluded",
+    "Client inputs",
+    "Price",
+    "Next step"
+   ]
+  },
+  {
+   "number": "07",
+   "title": "Pricing Calculator",
+   "fields_or_rows": [
+    "Estimated hours",
+    "Buffer %",
+    "Minimum hourly rate (₹)",
+    "Direct costs (₹)",
+    "Result: buffered hours",
+    "Result: floor price (₹)"
+   ]
+  },
+  {
+   "number": "08",
+   "title": "One-Page Business Plan",
+   "fields_or_rows": [
+    "Business statement",
+    "Target customer",
+    "Problem",
+    "Offer and price range",
+    "Proof",
+    "Channels",
+    "30-day effort goals",
+    "Costs per month",
+    "Key risks",
+    "Decision date"
+   ]
+  },
+  {
+   "number": "09",
+   "title": "Portfolio Outline",
+   "fields_or_rows": [
+    "Home",
+    "Services",
+    "Work",
+    "About",
+    "Contact"
+   ]
+  },
+  {
+   "number": "10",
+   "title": "Case Study",
+   "fields_or_rows": [
+    "Label",
+    "Situation",
+    "Problem",
+    "Decision 1 and why",
+    "Decision 2 and why",
+    "Decision 3 and why",
+    "Delivered",
+    "Result",
+    "Lesson"
+   ]
+  },
+  {
+   "number": "11",
+   "title": "Client Proposal",
+   "fields_or_rows": [
+    "Client and date",
+    "Your situation",
+    "What we will do",
+    "Deliverables",
+    "Timeline",
+    "Investment",
+    "Payment terms",
+    "Revisions",
+    "Not included",
+    "Assumptions",
+    "Next step",
+    "Valid until"
+   ]
+  },
+  {
+   "number": "12",
+   "title": "Project Quotation",
+   "fields_or_rows": [
+    "1",
+    "",
+    "",
+    ""
+   ]
+  },
+  {
+   "number": "13",
+   "title": "Scope of Work",
+   "fields_or_rows": [
+    "Project",
+    "Deliverables with acceptance check",
+    "Client responsibilities",
+    "Exclusions",
+    "Revision rounds and definition",
+    "Timeline trigger",
+    "Change requests",
+    "Ownership",
+    "Confidentiality",
+    "Cancellation",
+    "Approval"
+   ]
+  },
+  {
+   "number": "14",
+   "title": "Client Onboarding",
+   "fields_or_rows": [
+    "Project confirmation sent",
+    "Written approval saved",
+    "Advance received, invoice sent",
+    "Brief form completed",
+    "Assets shared",
+    "Access given safely",
+    "Kickoff call",
+    "First update date set"
+   ]
+  },
+  {
+   "number": "15",
+   "title": "Project Brief",
+   "fields_or_rows": [
+    "Business description",
+    "Project goal",
+    "Target audience",
+    "Must include",
+    "Examples liked",
+    "Examples disliked",
+    "Brand assets",
+    "Deadline and why",
+    "Final approver",
+    "Access needed"
+   ]
+  },
+  {
+   "number": "16",
+   "title": "Invoice",
+   "fields_or_rows": [
+    "Invoice number",
+    "Date",
+    "From: name and address",
+    "GSTIN, if registered",
+    "To: client and address",
+    "Client GSTIN, if any",
+    "Place of supply, if applicable",
+    "SAC code, if applicable"
+   ]
+  },
+  {
+   "number": "17",
+   "title": "Outreach Tracker",
+   "fields_or_rows": [
+    "Date",
+    "Name",
+    "Business",
+    "Source",
+    "Observation",
+    "Channel",
+    "Consent basis",
+    "Status",
+    "Last contact",
+    "Next action date",
+    "Notes"
+   ]
+  },
+  {
+   "number": "18",
+   "title": "Client CRM",
+   "fields_or_rows": [
+    "Client",
+    "Contact",
+    "Email or phone",
+    "Stage",
+    "Project",
+    "Value (₹)",
+    "Last contact",
+    "Next date",
+    "Testimonial permission",
+    "Notes"
+   ]
+  },
+  {
+   "number": "19",
+   "title": "Follow-Up Tracker",
+   "fields_or_rows": [
+    "Prospect",
+    "First message date",
+    "Follow-up 1 (Day 3)",
+    "Done?",
+    "Follow-up 2 (Day 7)",
+    "Done?",
+    "Close loop (Day 14)",
+    "Status",
+    "Notes"
+   ]
+  },
+  {
+   "number": "20",
+   "title": "30-Day Business Planner",
+   "fields_or_rows": [
+    "Hourly Rate",
+    "Project Pricing",
+    "Profit",
+    "Monthly Target",
+    "Lead Conversion",
+    "Client Tracker",
+    "Demand Score"
+   ]
+  }
+ ],
+ "calculators": [
+  {
+   "sheet": "Hourly Rate",
+   "when": "Pricing से पहले",
+   "inputs": "Monthly need, costs, tax reserve, billable hours",
+   "outputs": "Minimum hourly rate"
+  },
+  {
+   "sheet": "Project Pricing",
+   "when": "Quote बनाते समय",
+   "inputs": "Hours, buffer, direct costs, margin",
+   "outputs": "तीनों packages की floor price और quote"
+  },
+  {
+   "sheet": "Profit",
+   "when": "Project के बाद",
+   "inputs": "Revenue, costs, fees, actual hours",
+   "outputs": "Take-home, effective rate, true profit"
+  },
+  {
+   "sheet": "Monthly Target",
+   "when": "Monthly planning में",
+   "inputs": "Target, average price, assumed rates",
+   "outputs": "ज़रूरी projects, proposals, calls, messages"
+  },
+  {
+   "sheet": "Lead Conversion",
+   "when": "Weekly review में",
+   "inputs": "Messages, replies, calls, proposals, won",
+   "outputs": "Stage-wise rates और सबसे कमज़ोर stage"
+  },
+  {
+   "sheet": "Client Tracker",
+   "when": "रोज़",
+   "inputs": "Lead details और status",
+   "outputs": "Status counts, pipeline, suggested next date"
+  },
+  {
+   "sheet": "Demand Score",
+   "when": "Chapter 4 में",
+   "inputs": "पाँच 0 से 5 scores, buyer signals",
+   "outputs": "Go, Refine या Drop"
+  }
+ ],
+ "figures": [
+  {
+   "figure": "1",
+   "source_page": "8",
+   "section": "Learning roadmap",
+   "caption": "Figure 1. पूरा journey: Zero से first client attempt तक, दस chapters में।"
+  },
+  {
+   "figure": "2",
+   "source_page": "16",
+   "section": "Chapter 01",
+   "caption": "Figure 2. तीनों circles का overlap ही आपकी service है। दाईं तरफ़ scoring weights हैं, जो नीचे की matrix में इस्तेमाल होंगे।"
+  },
+  {
+   "figure": "3",
+   "source_page": "23",
+   "section": "Chapter 02",
+   "caption": "Figure 3. Human-in-the-loop workflow. Brief, Verify और Deliver आपके हाथ में रहते हैं।"
+  },
+  {
+   "figure": "4",
+   "source_page": "25",
+   "section": "Chapter 02",
+   "caption": "Figure 4. Job के हिसाब से tools। हर row से एक चुनिए; सब कुछ एक साथ खरीदने की ज़रूरत नहीं।"
+  },
+  {
+   "figure": "5",
+   "source_page": "26",
+   "section": "Chapter 02",
+   "caption": "Figure 5. RCTFV prompt framework. Verification आखिरी step नहीं, prompt का ही हिस्सा है।"
+  },
+  {
+   "figure": "6",
+   "source_page": "34",
+   "section": "Chapter 03",
+   "caption": "Figure 6. पाँच steps में skill एक खरीदने लायक service बनती है। नीचे की row एक hypothetical video editor का example है।"
+  },
+  {
+   "figure": "7",
+   "source_page": "35",
+   "section": "Chapter 03",
+   "caption": "Figure 7. Package के बीच फर्क scope का होना चाहिए, और तीनों tiers समझने में आसान होने चाहिए।"
+  },
+  {
+   "figure": "8",
+   "source_page": "43",
+   "section": "Chapter 04",
+   "caption": "Figure 8. पाँच research steps और decision rule। आखिरी दो steps में real लोगों से बात होती है।"
+  },
+  {
+   "figure": "9",
+   "source_page": "45",
+   "section": "Chapter 04",
+   "caption": "Figure 9. Persona card का example। सभी details काल्पनिक हैं। आपके card में हर line के पीछे कोई evidence होना चाहिए।"
+  },
+  {
+   "figure": "10",
+   "source_page": "47",
+   "section": "Chapter 04",
+   "caption": "Figure 10. Positioning map का illustration। अपने 5 से 10 real competitors रखकर बनाइए।"
+  },
+  {
+   "figure": "11",
+   "source_page": "51",
+   "section": "Chapter 05",
+   "caption": "Figure 11. Brand identity की layers। ऊपर की layer नीचे की सब चीज़ें तय करती है, इसलिए logo से शुरू मत कीजिए।"
+  },
+  {
+   "figure": "12",
+   "source_page": "53",
+   "section": "Chapter 05",
+   "caption": "Figure 12. Portfolio का simple structure। Beginner के लिए यह एक ही लंबे page पर भी हो सकता है।"
+  },
+  {
+   "figure": "13",
+   "source_page": "60",
+   "section": "Chapter 06",
+   "caption": "Figure 13. Floor आपकी cost से, range market से, और ceiling client की value से आती है।"
+  },
+  {
+   "figure": "14",
+   "source_page": "60",
+   "section": "Chapter 06",
+   "caption": "Figure 14. Revenue calculation का hypothetical example। अपने numbers Monthly Target sheet में डालिए।"
+  },
+  {
+   "figure": "15",
+   "source_page": "61",
+   "section": "Chapter 06",
+   "caption": "Figure 15. Proposal से payment तक: दो parties, एक clear sequence।"
+  },
+  {
+   "figure": "16",
+   "source_page": "63",
+   "section": "Chapter 06",
+   "caption": "Figure 16. GST registration को समझने का map। अपने case के लिए professional से confirm कीजिए।"
+  },
+  {
+   "figure": "17",
+   "source_page": "70",
+   "section": "Chapter 07",
+   "caption": "Figure 17. Client acquisition funnel का illustration। यह benchmark नहीं है। Chapter 10 में अपने actual numbers measure कीजिए।"
+  },
+  {
+   "figure": "18",
+   "source_page": "77",
+   "section": "Chapter 08",
+   "caption": "Figure 18. Lead generation process। Weekly review बताता है कि कौन सा source काम कर रहा है।"
+  },
+  {
+   "figure": "19",
+   "source_page": "79",
+   "section": "Chapter 08",
+   "caption": "Figure 19. Outreach sequence। ये days एक suggested rhythm हैं, कोई तय नियम नहीं। ना मिलते ही रुक जाइए।"
+  },
+  {
+   "figure": "20",
+   "source_page": "81",
+   "section": "Chapter 08",
+   "caption": "Figure 20. 30-minute discovery call। ज़्यादातर समय client बोलता है।"
+  },
+  {
+   "figure": "21",
+   "source_page": "87",
+   "section": "Chapter 09",
+   "caption": "Figure 21. पहले 48 घंटे का onboarding sequence।"
+  },
+  {
+   "figure": "22",
+   "source_page": "89",
+   "section": "Chapter 09",
+   "caption": "Figure 22. Delivery lifecycle। Client को कुछ दिखाने से पहले Self QA, और revisions का सीमित loop।"
+  },
+  {
+   "figure": "23",
+   "source_page": "92",
+   "section": "Chapter 09",
+   "caption": "Figure 23. Client retention loop।"
+  },
+  {
+   "figure": "24",
+   "source_page": "96",
+   "section": "Chapter 10",
+   "caption": "Figure 24. चार weekly milestones और उनके outputs।"
+  }
+ ],
+ "thirty_day_plan_days": [
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "19",
+  "20",
+  "21",
+  "22",
+  "23",
+  "24",
+  "25",
+  "26",
+  "27",
+  "28",
+  "29",
+  "30"
+ ],
+ "glossary_terms": [
+  "Lead /Prospect",
+  "Qualified lead",
+  "Pipeline",
+  "Discovery call",
+  "Scope",
+  "Scope creep",
+  "Deliverable",
+  "Milestone",
+  "Retainer",
+  "Pilot",
+  "CTA",
+  "Opt-in",
+  "LUT",
+  "SAC",
+  "FIRC",
+  "CRM",
+  "Hallucination"
+ ],
+ "appendix_sources": [
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16",
+  "17",
+  "18",
+  "19",
+  "20",
+  "21",
+  "22",
+  "23",
+  "24",
+  "25",
+  "26",
+  "27",
+  "28",
+  "29",
+  "30",
+  "31",
+  "32",
+  "33",
+  "34",
+  "35",
+  "36",
+  "37",
+  "38",
+  "39",
+  "40",
+  "41",
+  "42",
+  "43",
+  "44",
+  "45",
+  "46",
+  "47",
+  "48",
+  "49",
+  "50",
+  "51",
+  "52",
+  "53",
+  "54",
+  "55",
+  "56",
+  "57",
+  "58",
+  "59",
+  "60",
+  "61",
+  "62",
+  "63",
+  "64",
+  "65",
+  "66",
+  "67",
+  "68",
+  "69",
+  "70",
+  "71",
+  "72",
+  "73",
+  "74",
+  "75",
+  "76",
+  "77",
+  "78",
+  "79",
+  "80",
+  "81",
+  "82",
+  "83",
+  "84",
+  "85",
+  "86",
+  "87",
+  "88",
+  "89",
+  "90",
+  "91"
+ ],
+ "totals": {
+  "chapters": 10,
+  "prompts": 141,
+  "workflow_cards": 12,
+  "callouts": {
+   "warning": 8,
+   "tip": 2,
+   "hypothetical": 7,
+   "intl": 9,
+   "assignment": 10,
+   "note": 1,
+   "india": 3
+  },
+  "tables": 86,
+  "figures": 24,
+  "templates": 20,
+  "calculators": 7,
+  "thirty_day_plan_days": 30,
+  "glossary_terms": 17,
+  "appendix_sources": 91
+ }
+}
